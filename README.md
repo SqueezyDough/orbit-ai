@@ -6,4 +6,5 @@
 
 ### Usage 
 ```nodemon <file>```
+
 Nodemon will automatically reload the node application
