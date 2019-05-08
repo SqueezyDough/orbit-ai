@@ -1,0 +1,26 @@
+{
+  "name": "Project-Tech",
+  "version": "1.0.0",
+  "description": "Blind Date",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SqueezyDough/Project-Tech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SqueezyDough/Project-Tech/issues"
+  },
+  "homepage": "https://github.com/SqueezyDough/Project-Tech#readme",
+  "dependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
