@@ -1,10 +1,8 @@
 # Project-Tech
-## Dependencies
-### Nodemon
-#### Installation
-```npm install nodemon```
+## Installation
+```npm install```
 
-#### Usage 
-```nodemon <file>```
+## Usage 
+```npm run dev```
 
-Nodemon will automatically reload the node application
+Nodemon will automatically reload the node application on save
