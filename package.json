@@ -20,7 +20,10 @@
     "url": "https://github.com/SqueezyDough/Project-Tech/issues"
   },
   "homepage": "https://github.com/SqueezyDough/Project-Tech#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2"
+  },
   "devDependencies": {
     "nodemon": "^1.19.0"
   }
