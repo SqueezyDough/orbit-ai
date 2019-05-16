@@ -3,9 +3,14 @@
 ```npm install```
 
 ## Usage 
+To start developing run:
 ```npm run dev```
 
-Nodemon will automatically reload the node application on save
+To (auto)compile sass file run:
+```npm run watch```
+
+To compile manually run:
+```npm run compile```
 
 ## License
 This project is licensed under the terms of the MIT license.
