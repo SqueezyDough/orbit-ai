@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "dev": "node server.js nodemon lib/js/index.js",
+    "build": "node server.js",
+    "dev": "nodemon lib/js/index.js",
     "watch": "onchange 'lib/scss/**/*.scss' -- npm run compile",
     "compile": "node-sass lib/scss/site.scss lib/css/site.css"
   },
