@@ -4,16 +4,20 @@ const Schema = mongoose.Schema,
     bcrypt = require('bcrypt'),
     SALT_WORK_FACTOR = 10;
 
+// fix deprecation warning
+mongoose.set('useCreateIndex', true);
+
 let UserSchema = new Schema({
     email: {
         type: String,
         required: [true, 'Field is required'],
         index: true,
-        unique: [true, 'Email already exists']
+        unique: [true, 'Email already exists'],
+        uniqueCaseInsensitive: true
     },
     password: {
         type: String,
-        required: true
+        required: true,
     },
     firstName: {
         type: String,
@@ -48,6 +52,9 @@ let UserSchema = new Schema({
     },
     images: {
         type: []
+    },
+    matches: {
+        type: []
     }
 }, { autoCreate: true }); // autocreate: create the underlying collections
 
@@ -63,7 +70,7 @@ UserSchema.virtual('fullname')
     });
 
 // validate email
-UserSchema.plugin(uniqueValidator);
+UserSchema.plugin(uniqueValidator, { message: 'Error, expected {PATH} to be unique.' });
 
 // Hash password
 UserSchema.pre('save', function (next) {
