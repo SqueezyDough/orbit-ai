@@ -1,28 +1,31 @@
-var express = require('express')
-const mongo = require('mongodb').MongoClient
-var bodyParser = require('body-parser')
-var multer = require('multer')
+const express = require('express')
+const mongoose = require('mongoose')
+const schema = require('./user.model').UserSchema;
+
+const bodyParser = require('body-parser')
+const multer = require('multer')
 
 require('dotenv').config();
 
-const url = `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}`
 
-mongo.connect(url,{ useNewUrlParser: true }, function (err, client) {
-    if (err) {
-    throw err
-    }
+const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
 
-    db = client.db(process.env.DB_NAME)
+mongoose.connect(url,  { useNewUrlParser: true }).then(
+  () => {
+    //construct model
+    let User = mongoose.model('User', schema);
 
-    const collection = db.collection('users')
+    // create new instance of user
+    let newUser = new User({
+      fullname: 'Leroy van Biljouw',
+      birthdate: new Date('1993-10-19'),
+      gender: 'male',
+      sexualPreference: 'female'
+    })
 
-    //collection.insertMany([{name: 'Togo'}, {name: 'Syd'}], (err, result) => {
+    console.log(newUser);
 
-    //})
-
-    collection.find().toArray((err, items) => {
-        console.log(items)
-      })
-
-      client.close()
-})
+    newUser.save();
+    },
+  err => { console,log(err) }
+);
