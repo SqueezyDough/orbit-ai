@@ -61,7 +61,7 @@ let UserSchema = new Schema({
 // Virtual property for fullname. This won't be stored in MongoDB
 UserSchema.virtual('fullname')
     // get concatenated first and last name
-    .get(function () { return `${this.firstName} ${this.prefix} ${this.lastName}` })
+    .get(function () { return `${this.firstName} ${this.lastName}` })
 
     // set first and last name from fullname
     .set(function (fullname) {
