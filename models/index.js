@@ -17,6 +17,7 @@ mongoose.connect(url,  { useNewUrlParser: true }).then(
 
     // create new instance of user
     let newUser = new User({
+      email: "lvanbiljouw@hotmail.com",
       fullname: 'Leroy van Biljouw',
       birthdate: new Date('1993-10-19'),
       gender: 'male',
@@ -25,7 +26,9 @@ mongoose.connect(url,  { useNewUrlParser: true }).then(
 
     console.log(newUser);
 
-    newUser.save();
-    },
+    newUser.save(function (err) {
+      console.log(err);
+    });
+  },
   err => { console,log(err) }
 );
