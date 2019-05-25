@@ -1,17 +1,19 @@
+/* eslint-disable no-console */
 const mongoose = require("mongoose");
 const schema = require("../models/user.model").UserSchema;
-// eslint-disable-next-line no-unused-vars
-const bodyParser = require("body-parser");
 
 require("dotenv").config();
 
 // conn string
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
 
-exports.test = function (req, res) {
-    res.send = "test";
+exports.user_join = function (req, res) {
+    res.render("pages/join", {
+        title: "Join"
+    });
 };
 
+// create
 exports.user_create = function (req, res) {
     mongoose.connect(url,  { useNewUrlParser: true }).then(
         () => {
@@ -22,19 +24,24 @@ exports.user_create = function (req, res) {
             let user = new UserSchema({
                 email: req.body.email,
                 password: req.body.password,
-                fullname: req.body.fullname,
+                fullName: req.body.fullName,
+                firstName: req.body.firstName,
+                lastName: req.body.lastName,
                 birthdate: new Date(req.body.birthdate),
                 gender: req.body.gender,
                 sexualPreference: req.body.sexualPreference
             });
 
+            // save user
             user.save(function (err) {
                 if (err) {
-                    return next(err);
+                    console.log(err);
+                }
+                else {
+                    console.log(`User created: \n ${user}`);
+                    res.send(`User created: \n ${user}`);
                 }
             });
-
-            res.send("User created successfully");
         },
         err => { console.log(err); }
     );
