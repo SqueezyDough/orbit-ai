@@ -62,14 +62,14 @@ let UserSchema = new Schema({
 }, { autoCreate: true }); // autocreate: create the underlying collections
 
 // Virtual property for fullname. This won't be stored in MongoDB
-UserSchema.virtual("fullname")
+UserSchema.virtual("fullName")
     // get concatenated first and last name
     .get(function () { return `${this.firstName} ${this.lastName}`; })
 
     // set first and last name from fullname
-    .set(function (fullname) {
-        this.firstName = fullname.substr(0, fullname.indexOf(" "));
-        this.lastName = fullname.substr(fullname.indexOf(" ") + 1);
+    .set(function (fullName) {
+        this.firstName = fullName.substr(0, fullName.indexOf(" "));
+        this.lastName = fullName.substr(fullName.indexOf(" ") + 1);
     });
 
 // validate email
