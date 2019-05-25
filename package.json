@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "node server.js",
-    "dev": "nodemon models/index.js",
+    "dev": "nodemon controllers/user.controller.js",
     "watch": "onchange 'lib/scss/**/*.scss' -- npm run compile",
     "compile": "node-sass lib/scss/site.scss lib/css/site.css"
   },
@@ -35,6 +35,7 @@
     "multer": "^1.4.1"
   },
   "devDependencies": {
+    "eslint": "^5.16.0",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.0",
     "onchange": "^5.2.0"
