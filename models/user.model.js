@@ -48,13 +48,13 @@ let UserSchema = new Schema({
         type: String
     },
     hobbies: {
-        type: []
+        type: Array
     },
     images: {
-        type: []
+        type: Array
     },
     matches: {
-        type: []
+        type: Array
     }
 }, { autoCreate: true }); // autocreate: create the underlying collections
 
