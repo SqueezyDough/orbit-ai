@@ -1,7 +1,9 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true,
+        "mongo": true,
     },
     "extends": "eslint:recommended",
     "globals": {
@@ -13,5 +15,7 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"]
     }
 };
