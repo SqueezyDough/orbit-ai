@@ -7,7 +7,7 @@ const multer = require('multer')
 
 require('dotenv').config();
 
-
+// conn string
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
 
 mongoose.connect(url,  { useNewUrlParser: true }).then(
@@ -24,8 +24,6 @@ mongoose.connect(url,  { useNewUrlParser: true }).then(
       gender: 'male',
       sexualPreference: 'female'
     })
-
-    console.log(newUser);
 
     newUser.save(function (err) {
       console.log(err);
