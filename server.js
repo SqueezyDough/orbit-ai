@@ -12,7 +12,7 @@ const path = require("path");
 const exphbs = require("express-handlebars");
 
 const app = express();
-const port = 3000;
+const port = 3025;
 
 app
     .use(bodyParser.urlencoded({ extended: false }))
