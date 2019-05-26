@@ -1,5 +1,4 @@
 @import "./base.scss";
-
-@import 'layout/global-nav.scss';
-
-@import 'blocks/form.scss';
+@import "./variables.scss";
+@import "layout/global-nav.scss";
+@import "blocks/form.scss";
