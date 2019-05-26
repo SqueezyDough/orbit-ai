@@ -3,14 +3,22 @@
 ```npm install```
 
 ## Usage 
-To start developing run:
+Run app in terminal
+```npm run build```
+
+Run nodemon
 ```npm run dev```
 
-To (auto)compile sass file run:
+Run (auto)compile sass file
 ```npm run watch```
 
-To compile manually run:
+Run to compile manually
 ```npm run compile```
+
+## Plugins
+This project uses an editorconfig file to keep all codestyles consistent.
+If your code editor does not support editorconfig natively please install a plugin for your code editor.
+See https://editorconfig.org/#overview for further details.
 
 ## License
 This project is licensed under the terms of the MIT license.
