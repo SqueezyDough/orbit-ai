@@ -1,5 +1,15 @@
+@font-face {
+    font-family: "Questrial";
+    src: url("../fonts/Questrial-Regular.ttf");
+}
+
 $red: #E04A5C;
 $black: #000;
 
 $mainThemeColor: $red;
 $secondaryThemeColor: $black;
+
+$bg-gradient--dark: radial-gradient(48% 97%, #88321E 52%, #481411 73%, #141414 97%);
+$bg-gradient--light: radial-gradient(48% 94%, #F6998D 54%, #F7BDA3 73%, #FFC6A7 95%);
+
+$mainFontFamily: "Questrial";
