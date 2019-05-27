@@ -1,4 +1,6 @@
-# Project-Tech
+# Blind_Abstraction.IO
+
+
 ## Installation
 Clone repository
 `git clone https://github.com/SqueezyDough/Project-Tech.git`
