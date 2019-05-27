@@ -2,6 +2,8 @@
 
 const express = require("express");
 
+require("dotenv").config();
+
 // eslint-disable-next-line no-unused-vars
 const bodyParser = require("body-parser");
 
@@ -12,7 +14,7 @@ const path = require("path");
 const exphbs = require("express-handlebars");
 
 const app = express();
-const port = 3025;
+const port = process.env.ENV_PORT;
 
 app
     .use(bodyParser.urlencoded({ extended: false }))
