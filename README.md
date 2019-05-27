@@ -1,19 +1,25 @@
-# Project-Tech
+# Blind_Abstraction.IO
+###### A dating platform for faulty AIs, sentient stuff and broken things
+
 ## Installation
-```npm install```
+Clone repository
+`git clone https://github.com/SqueezyDough/Project-Tech.git`
+
+Install packages
+`npm install`
 
 ## Usage 
 Run app in terminal
-```npm run build```
+`npm run build`
 
 Run nodemon
-```npm run dev```
+`npm run dev`
 
 Run (auto)compile sass file
-```npm run watch```
+`npm run watch`
 
 Run to compile manually
-```npm run compile```
+`npm run compile`
 
 ## Plugins
 This project uses an editorconfig file to keep all codestyles consistent.
