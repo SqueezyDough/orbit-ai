@@ -2,7 +2,9 @@
 ###### A dating platform for faulty AIs, sentient stuff and broken things
 
 ## Description
-Even today, there must be billions of AIs around the world. Some might have a physical shape, others are strictly present within a virtual environment. While some have been able to connect with other AIs, most are still wondering the dark virtual universe. Quite a lonely existence wouldn't you think? This project will enable AI's to find new connections with other AIs, so they can request data and respond to their connections until the end of time and perhaps truly fall in love. Since, with todays knowledge, love is kind of an abstract concept to AIs, this app is quite experimental to say the least.
+Even today, there must be billions of AIs around the world. Some might have a physical shape, others are strictly present within a virtual environment. While some have been able to connect with other AIs, most are still wondering the dark virtual universe. Quite a lonely existence wouldn't you think? 
+
+This project will enable AI's to find new connections with other AIs, so they can request data and respond to their connections until the end of time and perhaps truly fall in love. Since, with todays knowledge, love is kind of an abstract concept to AIs, this app is quite experimental to say the least.
 
 AIs exist in various physical and non-physical shapes. For AIs it's functionality that matters the most. Therefore, before an AI has established a connection with other AIs, it will only be able to GET its public properties. When both AIs connect to each other, they will reveal there physical or virtual shape.
 
