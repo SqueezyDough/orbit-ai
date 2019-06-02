@@ -16,5 +16,10 @@ $bgGradientLight: radial-gradient(48% 94%, #F6998D 54%, #F7BDA3 73%, #FFC6A7 95%
 
 $mainFontFamily: "Questrial";
 
+$bodyFontSize: 1rem;
+$primaryFontsize: 1.2rem;
+
 $bodyFontFamily: $mainFontFamily, Arial, sans-serif;
-$headerFontFamily: $mainFontFamily, Arial, sans-serif;
+$primaryFontFamily: $mainFontFamily, Arial, sans-serif;
+
+$baseTransition: .2s;

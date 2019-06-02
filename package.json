@@ -10,7 +10,7 @@
     "build": "node server.js",
     "dev": "nodemon server.js",
     "watch": "onchange 'lib/scss/**/*.scss' -- npm run compile",
-    "compile": "node-sass lib/scss/site.scss lib/scss/css/dist/site.css"
+    "compile": "node-sass lib/scss/site.scss lib/dist/site.css"
   },
   "repository": {
     "type": "git",
