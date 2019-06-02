@@ -1,6 +1,8 @@
-@import "./base.scss";
-@import "./mixins.scss";
-@import "./variables.scss";
-@import "./buttons.scss";
-@import "layout/global-nav.scss";
-@import "blocks/form.scss";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_icons.scss";
+@import "./_buttons.scss";
+@import "./_base.scss";
+@import "layout/_global-nav.scss";
+@import "blocks/_form.scss";
+@import "pages/home.scss";

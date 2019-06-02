@@ -1,26 +1,103 @@
-.button {
-	padding: 6px 30px;
-	background-color: $mainThemeColor;
-	font-family: $mainFontFamily;
-	font-size: $primaryFontsize;
-	color: $tertiaryThemeColor;
-	letter-spacing: 0.2px;
-	border: none;
-	border-radius: 50%;
-	transition: hover $baseTransition;
-}
-
-.button--primary {
-	@extend .button;
-
-	background-image: linear-gradient(-180deg, #E1597A 0%, #B14228 100%);
-
+// Add transition effect to buttons
+.btn-transition {
 	&:hover {
-		background-image: none;
-		background-color: $tertiaryThemeColor;
+		&::before {
+			right: -2.25rem;
+			background-color: $watusi;
+		}
+
+		&::after {
+			right: -2.25rem;
+		}
+	}
+
+	&::before {
+		content: '';
+		height: 2rem;
+		width: 2rem;
+		position: absolute;
+		top: 0;
+		right: -1rem;
+		z-index: -1;
+		background-color: $opacBlack;
+		border-radius: 50%;
+		transition: $baseTransition;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -2rem;
+		z-index: -1;
+		transition: $baseTransition;
 	}
 }
 
+.btn {
+	padding: 6px 30px;
+	position: relative;
+	z-index: 1;
+	background-color: $mainThemeColor;
+	font-family: $mainFontFamily;
+	font-size: $bodyFontSize;
+	color: $tertiaryThemeColor;
+	letter-spacing: 0.2px;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: all $baseTransition;
+}
 
+.btn--primary {
+	@extend .btn;
+	@extend .btn-transition;
+	background-image: linear-gradient(-180deg, #E1597A 0%, #B14228 100%);
+	transition: all $baseTransition;
 
+	&:hover {
+		color: $watusi;
+	}
 
+	&::after {
+		@extend .icon--arrow-r !optional;
+	}
+}
+
+.btn--secondary {
+	@extend .btn;
+	@extend .btn-transition;
+	padding: 6px;
+	background: none;
+	color: $secondaryThemeColor;
+	transition: all $baseTransition;
+
+	&:hover {
+		color: $watusi;
+	}
+
+	&::after {
+		@extend .icon--arrow-r !optional;
+	}
+}
+
+.btn--tertiary {
+	@extend .btn;
+	@extend .btn-transition;
+	padding: 6px;
+	background: none;
+	color: $secondaryThemeColor;
+	transition: all $baseTransition;
+
+	&:hover {
+		color: $watusi;
+	}
+
+	&::before {
+		content: none;
+	}
+
+	&::after {
+		@extend .icon--carrot-r !optional;
+	}
+}
