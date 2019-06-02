@@ -1,0 +1,16 @@
+.icon {
+	height: 2rem;
+	width: 2rem;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon--arrow-r {
+	@extend .icon;
+	background-image: url('../images/icons/arrow-r.svg')
+}
+
+.icon--carrot-r {
+	@extend .icon;
+	background-image: url('../images/icons/carrot-r.svg');
+}
