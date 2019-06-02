@@ -1,0 +1,26 @@
+.button{
+	padding: 6px 30px;
+	background-color: $mainThemeColor;
+	font-family: $mainFontFamily;
+	font-size: $primaryFontsize;
+	color: $tertiaryThemeColor;
+	letter-spacing: 0.2px;
+	border: none;
+	border-radius: 50%;
+	transition: hover $baseTransition;
+}
+
+.button--primary {
+	@extend .button;
+
+	background-image: linear-gradient(-180deg, #E1597A 0%, #B14228 100%);
+
+	&:hover {
+		background-image: none;
+		background-color: $tertiaryThemeColor;
+	}
+}
+
+
+
+

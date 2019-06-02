@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Questrial";
+    src: url("../fonts/Questrial-Regular.ttf");
+}
+
+$red: #E04A5C;
+$roman: #DE6555;
+$black: #000;
+
+$mainThemeColor: $red;
+$secondaryThemeColor: $roman;
+$tertiaryThemeColor: $black;
+
+$bgGradientDark: radial-gradient(48% 97%, #88321E 52%, #481411 73%, #141414 97%);
+$bgGradientLight: radial-gradient(48% 94%, #F6998D 54%, #F7BDA3 73%, #FFC6A7 95%);
+
+$mainFontFamily: "Questrial";
+
+$bodyFontSize: 1rem;
+$primaryFontsize: 1.2rem;
+
+$bodyFontFamily: $mainFontFamily, Arial, sans-serif;
+$primaryFontFamily: $mainFontFamily, Arial, sans-serif;
+
+$baseTransition: .2s;

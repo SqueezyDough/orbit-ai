@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Questrial";
+  src: url("../fonts/Questrial-Regular.ttf"); }
+
+.button, .button--primary {
+  padding: 6px 30px;
+  background-color: #E04A5C;
+  font-family: "Questrial";
+  font-size: 1.2rem;
+  color: #000;
+  letter-spacing: 0.2px;
+  border: none;
+  border-radius: 50%;
+  transition: hover 0.2s; }
+
+.button--primary {
+  background-image: linear-gradient(-180deg, #E1597A 0%, #B14228 100%); }
+  .button--primary:hover {
+    background-image: none;
+    background-color: #000; }
+
+.global-nav {
+  color: brown; }
+
+form {
+  border: 2px solid blue; }
