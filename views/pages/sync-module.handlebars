@@ -1,0 +1,43 @@
+<h1 class="sync-header">Synchronise love.abstract module</h1>
+
+<form class="form-sync" method="POST" action="/ai/create">
+	<fieldset>
+		<legend>Instance details</legend>
+
+		<label for="sync-serial">Serial Nr.</label>
+		<input id="sync-serial" name="serialNr" type="text" placeholder="Serial nr.">
+
+		<label for="sync-password">Password</label>
+		<input id="sync-password" name="password" type="password">
+
+		<label for="sync-instance-name">Instance name</label>
+		<input id="sync-instance-name" name="instanceName" type="text">
+
+		<label for="sync-brand">Brand name</label>
+		<input id="sync-brand" name="brandName" type="text">
+
+		<label for="sync-construction">Contruction date</label>
+		<input id="sync-construction" name="constructionDate" type="date">
+	</fieldset>
+
+	<fieldset>
+		<legend>Ai Properties</legend>
+
+		<label for="sync-shape">Shape</label>
+		<input id="sync-shape" name="shape" type="text">
+
+		<label for="sync-gender">Gender</label>
+		<input id="sync-gender" name="gender" type="text">
+
+		<label for="sync-environment">Environment</label>
+		<input id="sync-environment" name="environment" type="text">
+
+		<label for="sync-abilities">Abilities</label>
+		<input id="sync-abilities" name="abilities" type="text">
+
+		<label for="sync-intelligence">Intelligence</label>
+		<input id="sync-intelligence" type="number" name="intelligence" min="0" max="100">
+	</fieldset>
+
+	<input class="btn--primary" type="submit" value="Sync new module">
+</form>

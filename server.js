@@ -8,7 +8,7 @@ require("dotenv").config();
 const bodyParser = require("body-parser");
 
 const routes = require("./routes/index.js");
-const user = require("./routes/user.route");
+const ai = require("./routes/ai.route");
 
 const path = require("path");
 const exphbs = require("express-handlebars");
@@ -19,8 +19,11 @@ const port = process.env.ENV_PORT;
 app
     .use(bodyParser.urlencoded({ extended: false }))
     .use("/", routes)
-    .use("/users", user)
+    .use("/ai", ai)
     .use("/lib", express.static(path.join(__dirname, "lib")))
-    .set("view engine", "handlebars")
-    .engine("handlebars", exphbs({defaultLayout: "main"}))
+	.set("view engine", "handlebars")
+	.engine("handlebars", exphbs({
+		defaultLayout: "main",
+		partialsDir: __dirname + "/views/partials"
+	}))
     .listen(port, () => console.log(`App listening on port ${port}!`));
