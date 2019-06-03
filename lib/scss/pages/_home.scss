@@ -1,4 +1,10 @@
-.baai-title {
+.brand__logo {
+	width: 7.5rem;
+}
+
+.brand__title {
+	margin-top: 5rem;
+
 	span {
 		&:first-of-type {
 			color: $secondaryThemeColor;
@@ -10,7 +16,7 @@
 	}
 }
 
-.baai-sub-title {
-	margin-top: -1rem;
+.brand__sub-title {
+	margin: -1rem 0 3rem;
 	font-size: $bodyFontSize;
 }
