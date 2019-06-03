@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="34px" viewBox="0 0 33 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-320.000000, -14.000000)">
+            <g id="Group-4" transform="translate(320.000000, 14.000000)">
+                <rect id="Rectangle" stroke="#979797" fill-rule="nonzero" x="5.5" y="6.5" width="21" height="21" rx="2"></rect>
+                <path d="M14.75,31.5 L12.5,31.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero" transform="translate(13.500000, 31.500000) rotate(90.000000) translate(-13.500000, -31.500000) "></path>
+                <path d="M19.75,31.5 L17.5,31.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero" transform="translate(18.500000, 31.500000) rotate(90.000000) translate(-18.500000, -31.500000) "></path>
+                <text id="AI" font-family="AvenirNext-Medium, Avenir Next" font-size="14" font-weight="400" letter-spacing="0.1750001" fill="#FFFFFF">
+                    <tspan x="9" y="21">AI</tspan>
+                </text>
+                <path d="M5,9.5 L0.5,9.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M2.75,14.5 L0.5,14.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M2.75,19.5 L0.5,19.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M31.75,14.5 L29.5,14.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M31.75,19.5 L29.5,19.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M32,10.5 L27.5,10.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M32,24.5 L27.5,24.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M5,24.5 L0.5,24.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M11,30.5 L6.5,30.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero" transform="translate(8.500000, 30.500000) rotate(90.000000) translate(-8.500000, -30.500000) "></path>
+                <path d="M26,30.5 L21.5,30.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero" transform="translate(23.500000, 30.500000) rotate(90.000000) translate(-23.500000, -30.500000) "></path>
+                <path d="M11,3 L6.5,3" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero" transform="translate(8.500000, 3.000000) rotate(90.000000) translate(-8.500000, -3.000000) "></path>
+                <path d="M26,3 L21.5,3" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero" transform="translate(23.500000, 3.000000) rotate(90.000000) translate(-23.500000, -3.000000) "></path>
+                <path d="M14.75,2 L12.5,2" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero" transform="translate(13.500000, 2.000000) rotate(90.000000) translate(-13.500000, -2.000000) "></path>
+                <path d="M19.75,2 L17.5,2" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero" transform="translate(18.500000, 2.000000) rotate(90.000000) translate(-18.500000, -2.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

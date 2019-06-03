@@ -21,10 +21,18 @@ h2 {
 
 a {
 	text-decoration: none;
+	cursor: pointer;
+	transition: all $baseTransition;
 
 	&:hover {
 		text-decoration: none;
+		color: $secondaryThemeColor
 	}
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
 }
 
 fieldset {

@@ -1,3 +1,27 @@
-.global-nav {
-    color: brown;
+.global-nav__menu {
+	display: flex;
+	justify-content: space-between;
 }
+
+.global-nav__menu__logo {
+	margin-top: .5rem;
+	height: 2.5rem;
+}
+
+.global-nav__menu__myAi {
+	margin-left: -4rem;
+	background-color: none;
+	color: $white;
+	line-height: 3rem;
+
+	&::after {
+		@extend .icon--myAi;
+		content: '';
+		height: 3rem;
+		width: 3rem;
+		position: absolute;
+		right: 0;
+	}
+
+}
+
