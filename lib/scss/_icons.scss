@@ -14,3 +14,8 @@
 	@extend .icon;
 	background-image: url('../images/icons/carrot-r.svg');
 }
+
+.icon--myAi {
+	@extend .icon;
+	background-image: url('../images/icons/myAi.svg');
+}
