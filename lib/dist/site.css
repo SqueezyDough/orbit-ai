@@ -14,6 +14,22 @@
 .icon--carrot-r, .btn--tertiary::after {
   background-image: url("../images/icons/carrot-r.svg"); }
 
+body {
+  min-height: 100vh;
+  background-color: #141414;
+  background-image: url("../images/gradient-dark.png");
+  background-position-y: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Questrial", Arial, sans-serif;
+  color: #FFF; }
+
+h1 {
+  font-size: 1.8rem; }
+
+h2 {
+  font-size: 1.4rem; }
+
 .btn-transition:hover::before, .btn--primary:hover::before, .btn--secondary:hover::before, .btn--tertiary:hover::before {
   right: -2.25rem;
   background-color: #FEE0D0; }
@@ -79,33 +95,22 @@
   .btn--tertiary::before {
     content: none; }
 
-body {
-  min-height: 100%;
-  background-color: #141414;
-  background-image: radial-gradient(48% 97%, #88321E 52%, #481411 73%, #141414 97%);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  font-family: "Questrial", Arial, sans-serif;
-  color: #FFF; }
-
-h1 {
-  font-size: 1.8rem; }
-
-h2 {
-  font-size: 1.4rem; }
-
 .global-nav {
   color: brown; }
 
 .sync-form {
   border: 2px solid red; }
 
-.baai-title span:first-of-type {
-  color: #DE6555; }
+.brand__logo {
+  width: 7.5rem; }
 
-.baai-title span:nth-of-type(2) {
-  color: #E04A5C; }
+.brand__title {
+  margin-top: 5rem; }
+  .brand__title span:first-of-type {
+    color: #DE6555; }
+  .brand__title span:nth-of-type(2) {
+    color: #E04A5C; }
 
-.baai-sub-title {
-  margin-top: -1rem;
+.brand__sub-title {
+  margin: -1rem 0 3rem;
   font-size: 1rem; }
