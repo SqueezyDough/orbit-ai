@@ -7,29 +7,29 @@ const Schema = mongoose.Schema,
 // fix deprecation warning
 mongoose.set("useCreateIndex", true);
 
-let UserSchema = new Schema({
-    email: {
+let AiSchema = new Schema({
+    serialNr: {
         type: String,
         required: [true, "Field is required"],
         index: true,
-        unique: [true, "Email already exists"],
+        unique: [true, "Serial nr already exists"],
         uniqueCaseInsensitive: true
     },
     password: {
         type: String,
         required: true,
     },
-    firstName: {
+    brandName: {
         type: String,
         required: [true, "Field is required"],
-        max: [100, "First name must be below 100 characters"]
+        max: [100, "Model name must be below 100 characters"]
     },
-    lastName: {
+    instanceName: {
         type: String,
         required: [true, "Field is required"],
         max: [100, "Last name must be below 100 characters"]
     },
-    birthdate: {
+    contructionDate: {
         type: Date,
         required: [true, "Field is required"]
     },
@@ -37,19 +37,21 @@ let UserSchema = new Schema({
         type: String,
         required: [true, "Field is required"]
     },
-    sexualPreference: {
-        type: String,
-        required: [true, "Field is required"]
+	intelligence: {
+		type: Number,
     },
-    avatarUrl: {
-        type: String,
-    },
-    description: {
+    environment: {
+        type: String
+	},
+	shape: {
         type: String
     },
-    hobbies: {
+    abilities: {
         type: Array
-    },
+	},
+	avatarUrl: {
+        type: String,
+	},
     privateImages: {
         type: Array
     },
@@ -62,47 +64,47 @@ let UserSchema = new Schema({
 }, { autoCreate: true }); // autocreate: create the underlying collections
 
 // Virtual property for fullname. This won't be stored in MongoDB
-UserSchema.virtual("fullName")
+AiSchema.virtual("brandModel")
     // get concatenated first and last name
-    .get(function () { return `${this.firstName} ${this.lastName}`; })
+    .get(function () { return `${this.brandName} - ${this.instanceName}`; })
 
     // set first and last name from fullname
-    .set(function (fullName) {
-        this.firstName = fullName.substr(0, fullName.indexOf(" "));
-        this.lastName = fullName.substr(fullName.indexOf(" ") + 1);
+    .set(function (brandModel) {
+        this.brandName = brandModel.substr(0, brandModel.indexOf(" "));
+        this.instanceName = brandModel.substr(brandModel.indexOf(" ") + 1);
     });
 
 // validate email
-UserSchema.plugin(uniqueValidator, { message: "Error, expected {PATH} to be unique." });
+AiSchema.plugin(uniqueValidator, { message: "Error, expected {PATH} to be unique." });
 
 // Hash password
-UserSchema.pre("save", function (next) {
-    var user = this;
+AiSchema.pre("save", function (next) {
+    var ai = this;
 
     // only hash the password if it has been modified (or is new)
-    if (!user.isModified("password")) return next();
+    if (!ai.isModified("password")) return next();
 
     // generate salt
     bcrypt.genSalt(SALT_WORK_FACTOR, function (err, salt) {
         if (err) return next(err);
 
         // hash the password along with the new salt
-        bcrypt.hash(user.password, salt, function (err, hash) {
+        bcrypt.hash(ai.password, salt, function (err, hash) {
             if (err) return next(err);
 
             // override the plain password with the hashed one
-            user.password = hash;
+            ai.password = hash;
             next();
         });
     });
 });
 
-// compare user input with hashed password
-UserSchema.methods.comparePassword = function (candidatePassword, cb) {
+// compare ai input with hashed password
+AiSchema.methods.comparePassword = function (candidatePassword, cb) {
     bcrypt.compare(candidatePassword, this.password, function (err, isMatch) {
         if (err) return cb(err);
         cb (null, isMatch);
     });
 };
 
-module.exports = mongoose.model("User", UserSchema);
+module.exports = mongoose.model("Ai", AiSchema);

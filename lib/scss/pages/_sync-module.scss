@@ -1,0 +1,15 @@
+.form-sync {
+	input {
+		display: block;
+		margin: 0 0 1rem;
+
+		&[type="submit"] {
+			margin: 2rem 0 3rem;
+		}
+	}
+}
+
+.sync-header {
+	font-size: $mediumFontSize;
+	margin: 3rem 0 0;
+}

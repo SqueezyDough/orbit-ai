@@ -69,7 +69,7 @@
 	@extend .btn;
 	@extend .btn-transition;
 	margin: 1rem 3rem 1.5rem 0;
-	padding: 10px;
+	padding: 10px 10px 10px 0;
 	background: none;
 	color: $secondaryThemeColor;
 	transition: all $baseTransition;
