@@ -76,7 +76,6 @@ AiSchema.virtual("brandModel")
         this.instanceName = brandModel.substr(brandModel.indexOf(" ") + 1);
 	});
 
-
 // validate serial nr
 AiSchema.plugin(uniqueValidator, { message: "Error, expected {PATH} to be unique." });
 

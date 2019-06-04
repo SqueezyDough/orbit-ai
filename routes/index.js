@@ -12,6 +12,14 @@ router.get("/sync", auth.sync);
 router.post("/sync", auth.doSync);
 
 //route for unsync action
-router.get("/unsync", auth.unSync);
+router.get("/unsync", isLoggedIn, auth.unSync);
+
+function isLoggedIn(req, res, next) {
+	if (req.isAuthenticated()) {
+		return next();
+	} else {
+	res.redirect("/");
+	}
+}
 
 module.exports = router;

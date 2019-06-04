@@ -1,10 +1,34 @@
 const passport = require("passport");
+const mongoose = require("mongoose");
+const Ai = require("../models/ai.model");
+
+require("dotenv").config();
+const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
+
+
+
 const syncController = {};
 
 // Restrict access to root page
 syncController.home = function(req, res) {
-	res.render("home", { ai : req.ai });
-	console.log(req.isAuthenticated());
+	if(req.isAuthenticated()) {
+		mongoose.connect(url,  { useNewUrlParser: true }).then(
+			() => {
+				Ai.findOne({ _id: req.session.passport.user }, function (err, ai) {
+					if (err) {
+						console.log(err);
+					}
+					res.render("v-universe", {
+						title : "Virtual Universe",
+						ai : ai,
+				    isSynced: req.isAuthenticated()
+					});
+				});
+			}
+		);
+	} else {
+			res.render("home");
+	}
 };
 
 // Go to login page
