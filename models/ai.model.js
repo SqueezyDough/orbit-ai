@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+const passportLocalMongoose = require("passport-local-mongoose");
 const uniqueValidator = require("mongoose-unique-validator");
 const Schema = mongoose.Schema,
     bcrypt = require("bcrypt"),
-    SALT_WORK_FACTOR = 10;
+	SALT_WORK_FACTOR = 10;
 
 // fix deprecation warning
 mongoose.set("useCreateIndex", true);
@@ -13,7 +14,8 @@ let AiSchema = new Schema({
         required: [true, "Field is required"],
         index: true,
         unique: [true, "Serial nr already exists"],
-        uniqueCaseInsensitive: true
+		uniqueCaseInsensitive: true,
+		trim: true
     },
     password: {
         type: String,
@@ -72,10 +74,14 @@ AiSchema.virtual("brandModel")
     .set(function (brandModel) {
         this.brandName = brandModel.substr(0, brandModel.indexOf(" "));
         this.instanceName = brandModel.substr(brandModel.indexOf(" ") + 1);
-    });
+	});
 
-// validate email
+
+// validate serial nr
 AiSchema.plugin(uniqueValidator, { message: "Error, expected {PATH} to be unique." });
+
+// authentication
+AiSchema.plugin(passportLocalMongoose);
 
 // Hash password
 AiSchema.pre("save", function (next) {
@@ -98,13 +104,5 @@ AiSchema.pre("save", function (next) {
         });
     });
 });
-
-// compare ai input with hashed password
-AiSchema.methods.comparePassword = function (candidatePassword, cb) {
-    bcrypt.compare(candidatePassword, this.password, function (err, isMatch) {
-        if (err) return cb(err);
-        cb (null, isMatch);
-    });
-};
 
 module.exports = mongoose.model("Ai", AiSchema);
