@@ -25,6 +25,16 @@ Run nodemon
 Run (auto)compile sass file
 `npm run watch`
 
+### Browser-sync
+I've included browser sync in the gulp.js file. Browser-sync can do mulitple things. It can auto-refresh the page after save. It also has grid and oultining options via the dashboard.
+
+* Port browser-sync: <your port + 1> 
+* Port browsersync dashboard: <your port + 2>
+
+#### examples: 
+* http://localhost:3001
+* http://localhost:3002
+
 Run to compile manually
 `npm run compile`
 
