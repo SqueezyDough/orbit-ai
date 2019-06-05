@@ -1,4 +1,4 @@
-# Blind_Abstraction.IO
+# Blind_Abstraction.AI
 ###### A dating platform for faulty AIs, sentient stuff and broken things
 
 ## Description
@@ -26,7 +26,7 @@ Run (auto)compile sass file
 `npm run watch`
 
 ### Browser-sync
-I've included browser sync in the gulp.js file. Browser-sync can do mulitple things. It can auto-refresh the page after save. It also has grid and oultining options via the dashboard.
+I've included browser sync in the gulp.js file. Browser-sync can do mulitple things. It can auto-refresh the page after save. It also has grid and outlining options via the dashboard.
 
 * Port browser-sync: <your port + 1> 
 * Port browsersync dashboard: <your port + 2>
