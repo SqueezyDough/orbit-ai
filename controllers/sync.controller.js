@@ -5,12 +5,11 @@ const Ai = require("../models/ai.model");
 require("dotenv").config();
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
 
-
-
 const syncController = {};
 
 // Restrict access to root page
 syncController.home = function(req, res) {
+	// redirect to universe if synced
 	if(req.isAuthenticated()) {
 		mongoose.connect(url,  { useNewUrlParser: true }).then(
 			() => {
@@ -18,16 +17,17 @@ syncController.home = function(req, res) {
 					if (err) {
 						console.log(err);
 					}
-					res.render("v-universe", {
-						title : "Virtual Universe",
+					res.render("pages/universe", {
+						title : `${process.env.APP_NAME} - Virtual Universe`,
 						ai : ai,
-				    isSynced: req.isAuthenticated()
+						isSynced: req.isAuthenticated()
 					});
 				});
 			}
 		);
 	} else {
-			res.render("home");
+		// anonymous ais
+		res.render("home");
 	}
 };
 

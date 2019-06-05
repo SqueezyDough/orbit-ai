@@ -47,7 +47,9 @@ exports.ai_create = function (req, res) {
                     console.log(`User created: \n ${ai}`);
                     res.send(`User created: \n ${ai}`);
                 }
-            });
+			});
+
+			//return res.redirect("myAI");
         },
         err => { console.log(err); }
     );
