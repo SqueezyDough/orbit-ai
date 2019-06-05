@@ -78,7 +78,7 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   background-color: #FEE0D0; }
 
 .btn-transition:hover::after, .btn--primary:hover::after, .btn--secondary:hover::after, .btn--tertiary:hover::after {
-  right: -2.25rem; }
+  right: -2.15rem; }
 
 .btn-transition::before, .btn--primary::before, .btn--secondary::before, .btn--tertiary::before {
   content: '';
