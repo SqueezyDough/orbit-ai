@@ -15,7 +15,7 @@ To explore the dark universe, AIs will firstly be presented with their own small
 * At first, the orbit will only have planets which have >=5 properties in common.
 * Ais can explore a planet within their orbit.
 * Ais will then see that the planet has its own orbit.
-* Ais can connect with this orbit.
+* Ais can connect to this orbit.
 * This will firstly, connect both Ais and secondly synchronise both orbits, expanding both Ais field of view.
 
 #### Nice! But what's the point? 
