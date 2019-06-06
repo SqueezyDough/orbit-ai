@@ -17,15 +17,18 @@
 .icon--myAi, .global-nav__menu__myAi::after {
   background-image: url("../images/icons/myAi.svg"); }
 
-body {
-  min-height: 100vh;
+html {
+  min-height: 100%;
   background-color: #141414;
   background-image: url("../images/gradient-dark.png");
   background-position-y: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Questrial", Arial, sans-serif;
-  color: #FFF; }
+  background-position: center; }
+
+body {
+  margin: 0;
+  font-family: "Questrial", Arial, sans-serif; }
 
 h1 {
   font-size: 1.8rem;
@@ -72,6 +75,14 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   font-size: 1rem; }
   input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="password"]:focus {
     outline-color: #DE6555; }
+
+.t-container {
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box; }
+
+.is-hidden {
+  display: none; }
 
 .btn-transition:hover::before, .btn--primary:hover::before, .btn--secondary:hover::before, .btn--tertiary:hover::before {
   right: -2.25rem;
@@ -149,7 +160,7 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   height: 2.5rem; }
 
 .global-nav__menu__myAi {
-  margin-left: -4rem;
+  margin-left: -3.5rem;
   background-color: none;
   color: #FFF;
   line-height: 3rem; }
@@ -184,3 +195,160 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 .sync-header {
   font-size: 1.4rem;
   margin: 3rem 0 0; }
+
+.universe {
+  position: absolute;
+  min-height: 425px;
+  width: 100vw;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+.solar-system {
+  display: flex;
+  flex-wrap: wrap; }
+
+.orbit__name {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #FFF;
+  text-align: center;
+  opacity: .6; }
+  .orbit__name > span {
+    display: block;
+    color: #FEE0D0; }
+
+.orbit {
+  width: 280px;
+  height: 280px;
+  margin: 50px auto 0;
+  position: relative; }
+
+.star {
+  width: 220px;
+  height: 220px;
+  background-image: url("../../lib/images/star.png");
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #FEE0D0;
+  position: relative;
+  top: 30px;
+  left: 30px;
+  z-index: 0; }
+
+.orbit-wrapper {
+  width: 60px;
+  position: absolute;
+  top: 0;
+  left: 110px;
+  transform: translate3d(0, 0, 0);
+  pointer-events: none; }
+
+.planet {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; }
+
+@keyframes planet-1 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(337deg); }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(697deg); } }
+
+.orbit-wrapper--1 {
+  animation: planet-1 24.28571s linear infinite; }
+  .orbit-wrapper--1 .planet {
+    display: inline-block;
+    margin: 117px;
+    width: -174px;
+    height: -174px;
+    opacity: 0.48571;
+    background-color: #16A59F;
+    pointer-events: auto;
+    cursor: pointer; }
+    .orbit-wrapper--1 .planet:hover {
+      opacity: 1; }
+
+@keyframes planet-2 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(182deg); }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(542deg); } }
+
+.orbit-wrapper--2 {
+  animation: planet-2 110s linear infinite; }
+  .orbit-wrapper--2 .planet {
+    display: inline-block;
+    margin: 122px;
+    width: -184px;
+    height: -184px;
+    opacity: 0.46667;
+    background-color: #E04A5C;
+    pointer-events: auto;
+    cursor: pointer; }
+    .orbit-wrapper--2 .planet:hover {
+      opacity: 1; }
+
+@keyframes planet-3 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(139deg); }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(499deg); } }
+
+.orbit-wrapper--3 {
+  animation: planet-3 110s linear infinite; }
+  .orbit-wrapper--3 .planet {
+    display: inline-block;
+    margin: 121px;
+    width: -182px;
+    height: -182px;
+    opacity: 0.5;
+    background-color: #DE6555;
+    pointer-events: auto;
+    cursor: pointer; }
+    .orbit-wrapper--3 .planet:hover {
+      opacity: 1; }
+
+@keyframes planet-4 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(188deg); }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(548deg); } }
+
+.orbit-wrapper--4 {
+  animation: planet-4 20s linear infinite; }
+  .orbit-wrapper--4 .planet {
+    display: inline-block;
+    margin: 143px;
+    width: -226px;
+    height: -226px;
+    opacity: 0.48571;
+    background-color: #A22C65;
+    pointer-events: auto;
+    cursor: pointer; }
+    .orbit-wrapper--4 .planet:hover {
+      opacity: 1; }
+
+@keyframes planet-5 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(230deg); }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(590deg); } }
+
+.orbit-wrapper--5 {
+  animation: planet-5 26.66667s linear infinite; }
+  .orbit-wrapper--5 .planet {
+    display: inline-block;
+    margin: 113px;
+    width: -166px;
+    height: -166px;
+    opacity: 0.48571;
+    background-color: #DE6555;
+    pointer-events: auto;
+    cursor: pointer; }
+    .orbit-wrapper--5 .planet:hover {
+      opacity: 1; }

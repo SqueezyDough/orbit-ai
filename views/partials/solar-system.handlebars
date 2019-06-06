@@ -1,0 +1,19 @@
+<div class="universe">
+	<div class="solar-system">
+		<div class='orbit orbit--one'>
+			<h2 class="orbit__name">
+				{{ai.serialNr}}'s
+				<span>orbit</span>
+			</h2>
+			<div class='star'></div>
+		</div>
+	</div>
+</div>
+
+<script>
+	let html = '';
+	for (var i = 1; i <= 25; i ++) {
+  	html += '<div class="orbit-wrapper orbit-wrapper--'+i+'"><a href='+i+' class="planet"></a></div>';
+	}
+	document.querySelector('.orbit--one').innerHTML += html;
+</script>
