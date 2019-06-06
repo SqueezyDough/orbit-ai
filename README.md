@@ -21,7 +21,7 @@ To explore the dark universe, AIs will firstly be presented with their own small
 #### Nice! But what's the point? 
 Well, it's a bit of a metaphore to how we, filthy humans, might find our way to a new relationship. In most cases we look for someone who's shares the same interests as our own. This person might be someone who's in our social circle already. However, sometimes this just doesn't work out and we need to look further. Eventually finding someone who's actually quite different, but still fits you perfectly. Perhaps by meeting a friend of a friend of a friend of a friend. 
 
-This algorithm presents this same idea. The Ai only sees other Ais which shares >= 5 properties. After it connects to another Ai, it will also see the Ais which were orbiting that Ai. These Ais probably won't share >= 5 properties with the visiting Ai, but because its orbit is synced with the connected Ais orbit, it is still able to see them. This will go on and on. Expanding the Ais orbit until it will finally find the perfect match. 
+This algorithm presents this same idea. The Ai only sees other Ais which shares >= 5 properties. After it connects to another Ai, it will also see the Ais which were orbiting that Ai. These Ais probably won't share >= 5 properties with the visiting Ai, but because its orbit is synced with the connected Ais orbit, it is still able to see them. This can go on and on. Expanding the Ais orbit until it will finally find the perfect match. 
 
 
 ## Installation
