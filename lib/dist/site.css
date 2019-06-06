@@ -255,18 +255,18 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-1 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(337deg); }
+    transform: translate3d(0, 0, 0) rotate(7deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(697deg); } }
+    transform: translate3d(0, 0, 0) rotate(367deg); } }
 
 .orbit-wrapper--1 {
-  animation: planet-1 24.28571s linear infinite; }
+  animation: planet-1 20s linear infinite; }
   .orbit-wrapper--1 .planet {
     display: inline-block;
-    margin: 117px;
-    width: -174px;
-    height: -174px;
-    opacity: 0.48571;
+    margin: 128px;
+    width: -196px;
+    height: -196px;
+    opacity: 0.55;
     background-color: #16A59F;
     pointer-events: auto;
     cursor: pointer; }
@@ -275,19 +275,19 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-2 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(182deg); }
+    transform: translate3d(0, 0, 0) rotate(163deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(542deg); } }
+    transform: translate3d(0, 0, 0) rotate(523deg); } }
 
 .orbit-wrapper--2 {
-  animation: planet-2 110s linear infinite; }
+  animation: planet-2 60s linear infinite; }
   .orbit-wrapper--2 .planet {
     display: inline-block;
-    margin: 122px;
-    width: -184px;
-    height: -184px;
-    opacity: 0.46667;
-    background-color: #E04A5C;
+    margin: 133px;
+    width: -206px;
+    height: -206px;
+    opacity: 0.6;
+    background-color: #DE6555;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--2 .planet:hover {
@@ -295,19 +295,19 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-3 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(139deg); }
+    transform: translate3d(0, 0, 0) rotate(40deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(499deg); } }
+    transform: translate3d(0, 0, 0) rotate(400deg); } }
 
 .orbit-wrapper--3 {
-  animation: planet-3 110s linear infinite; }
+  animation: planet-3 21.11111s linear infinite; }
   .orbit-wrapper--3 .planet {
     display: inline-block;
-    margin: 121px;
-    width: -182px;
-    height: -182px;
-    opacity: 0.5;
-    background-color: #DE6555;
+    margin: 109px;
+    width: -158px;
+    height: -158px;
+    opacity: 0.46;
+    background-color: #A22C65;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--3 .planet:hover {
@@ -315,19 +315,19 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-4 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(188deg); }
+    transform: translate3d(0, 0, 0) rotate(351deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(548deg); } }
+    transform: translate3d(0, 0, 0) rotate(711deg); } }
 
 .orbit-wrapper--4 {
-  animation: planet-4 20s linear infinite; }
+  animation: planet-4 35s linear infinite; }
   .orbit-wrapper--4 .planet {
     display: inline-block;
-    margin: 143px;
-    width: -226px;
-    height: -226px;
-    opacity: 0.48571;
-    background-color: #A22C65;
+    margin: 134px;
+    width: -208px;
+    height: -208px;
+    opacity: 0.46;
+    background-color: #DE6555;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--4 .planet:hover {
@@ -335,19 +335,19 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-5 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(230deg); }
+    transform: translate3d(0, 0, 0) rotate(77deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(590deg); } }
+    transform: translate3d(0, 0, 0) rotate(437deg); } }
 
 .orbit-wrapper--5 {
-  animation: planet-5 26.66667s linear infinite; }
+  animation: planet-5 24.28571s linear infinite; }
   .orbit-wrapper--5 .planet {
     display: inline-block;
-    margin: 113px;
-    width: -166px;
-    height: -166px;
-    opacity: 0.48571;
-    background-color: #DE6555;
+    margin: 117px;
+    width: -174px;
+    height: -174px;
+    opacity: 0.46;
+    background-color: #16A59F;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--5 .planet:hover {
