@@ -12,7 +12,7 @@ To explore the dark universe, AIs will firstly be presented with their own small
 #### In short:
 * Ais have their own orbit.
 * Orbits contain other possible connections (presented by planets).
-* Firstly, the orbit will only have planets which have >=5 properties in common.
+* At first, the orbit will only have planets which have >=5 properties in common.
 * Ais can explore a planet within their orbit.
 * Ais will then see that the planet has its own orbit.
 * Ais can connect with this orbit.
