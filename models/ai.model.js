@@ -54,16 +54,10 @@ let AiSchema = new Schema({
 	avatarUrl: {
         type: String,
 	},
-    privateImages: {
-        type: Array
-    },
-    publicImages: {
-        type: Array
-    },
-    matches: {
+    orbit: {
         type: Array
     }
-}, { autoCreate: true }); // autocreate: create the underlying collections
+});
 
 // Virtual property for fullname. This won't be stored in MongoDB
 AiSchema.virtual("brandModel")

@@ -15,6 +15,7 @@ const ai = require("./routes/ai.route");
 
 const path = require("path");
 const exphbs = require("express-handlebars");
+require("./views/helpers/helpers");
 
 const app = express();
 const port = process.env.ENV_PORT || 3000;

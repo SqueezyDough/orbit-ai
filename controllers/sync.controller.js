@@ -1,7 +1,6 @@
 const passport = require("passport");
 const mongoose = require("mongoose");
 const Ai = require("../models/ai.model");
-
 require("dotenv").config();
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
 
@@ -13,10 +12,12 @@ syncController.home = function(req, res) {
 	if(req.isAuthenticated()) {
 		mongoose.connect(url,  { useNewUrlParser: true }).then(
 			() => {
-				Ai.findOne({ _id: req.session.passport.user }, function (err, ai) {
+				Ai.findOne({ _id: req.session.passport.user }, function (err, ai, next) {
 					if (err) {
-						console.log(err);
+						next(err);
 					}
+
+					//let orbit = universe.connectOrbit;
 					res.render("pages/universe", {
 						title : `${process.env.APP_NAME} - Virtual Universe`,
 						ai : ai,

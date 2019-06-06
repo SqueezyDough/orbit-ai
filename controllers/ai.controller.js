@@ -40,9 +40,9 @@ exports.ai_create = function (req, res) {
 
             // save user
             ai.save(function (err) {
-                if (err) {
-                    console.log(err);
-                }
+				if (err) {
+					console.log(err);
+				}
                 else {
                     console.log(`User created: \n ${ai}`);
                     res.send(`User created: \n ${ai}`);

@@ -1,1 +1,16 @@
-{{> solar-system}}
+<div class="universe">
+	<div class="solar-system">
+		<div class='orbit orbit--one'>
+			<h2 class="orbit__name">
+				{{ai.serialNr}}'s
+				<span>orbit</span>
+			</h2>
+			<div class='star'></div>
+			{{#each ai.orbit}}
+				<div class="orbit-wrapper orbit-wrapper--{{increment @index}}">
+					<a href='{{this}}' class="planet"></a>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>
