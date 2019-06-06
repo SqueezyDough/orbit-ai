@@ -1,0 +1,111 @@
+$orbit-size: 280px;
+$planet-size: 60px;
+$planet-count: 5;
+$colors: #DE6555,
+		 #E04A5C,
+		 #A22C65,
+		 #16A59F,
+		 #15AE7D;
+
+.universe {
+	position: absolute;
+	min-height: 425px;
+	width: 100vw;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.solar-system {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.orbit__name {
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	color: $white;
+	text-align: center;
+	opacity: .6;
+
+	> span{
+		display: block;
+		color: $watusi;
+	}
+}
+
+.orbit {
+	width: $orbit-size;
+	height: $orbit-size;
+	margin: 50px auto 0;
+	position: relative;
+}
+
+.star {
+	width: $orbit-size - $planet-size;
+	height: $orbit-size - $planet-size;
+	background-image: url('../../lib/images/star.png');
+	background-size: cover;
+	border-radius: 50%;
+	border: 2px solid $watusi;
+	position: relative;
+	top: $planet-size / 2;
+	left: $planet-size / 2;
+	z-index: 0;
+}
+
+.orbit-wrapper {
+	width: $planet-size;
+	position: absolute;
+	top: 0;
+	left: ($orbit-size - $planet-size) / 2;
+	transform: translate3d(0,0,0);
+	pointer-events: none;
+}
+
+.planet {
+	width: $planet-size;
+	height: $planet-size;
+	border-radius: 50%;
+}
+
+@for $i from 1 through $planet-count {
+	$rotation: random(360);
+	$border: 100 + random(60);
+	$opacity: random(10);
+	$speed: 10 + 100/random(10);
+	$color-key: random( length($colors) );
+	$color: nth( $colors, $color-key );
+
+	@keyframes planet-#{$i} {
+		0% {
+			transform: translate3d(0,0,0) rotate(#{$rotation}deg);
+		}
+		100% {
+			transform: translate3d(0,0,0) rotate(#{$rotation + 360}deg);
+		}
+  	}
+
+	.orbit-wrapper--#{$i} {
+    	animation: planet-#{$i} #{$speed}s linear infinite;
+
+		.planet {
+			display: inline-block;
+			margin: #{$border}px ;
+			width: $planet-size - $border * 2;
+			height: $planet-size - $border * 2;
+			opacity: 0.4 + (0.6/$opacity);
+			background-color: $color;
+			pointer-events: auto;
+			cursor: pointer;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

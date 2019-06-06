@@ -1,12 +1,16 @@
-body {
-	min-height: 100vh;
+html {
+	min-height: 100%;
 	background-color: $codGrey;
 	background-image: url('../images/gradient-dark.png');
 	background-position-y: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+}
+
+body {
+	margin: 0;
 	font-family: $bodyFontFamily;
-	color: $white;
 }
 
 h1 {
@@ -65,4 +69,14 @@ input[type="text"], input[type="number"],  input[type="date"], input[type="passw
 	&:focus {
 		outline-color: $secondaryThemeColor;
 	}
+}
+
+.t-container {
+	width: 100%;
+	padding: 0 1rem;
+	box-sizing: border-box;
+}
+
+.is-hidden {
+	display: none;
 }

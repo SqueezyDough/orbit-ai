@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <title>{{title}}</title>
 	<link rel="stylesheet" type="text/css" href="../lib/dist/site.css">
+	<link rel="icon" href="../../lib/images/orbitai-tiny.svg" type="image/x-icon"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	{{#unless ai.isSynced}}
+	<div class="t-container">
+	{{#if ai}}
  		{{> global-nav}}
-	{{/unless}}
+	{{/if}}
 
 
-    {{{body}}}
-
+ 		{{{body}}}
+	</div>
 </body>
 </html>
