@@ -31,11 +31,20 @@ Clone repository
 Install packages
 `npm install`
 
-## Usage 
-Run app in terminal
-`npm run build`
+### .env
+This projects uses a .env file. Add it to this project. Here's sample file:
+```
+ENV_PORT=<yourport>
+DB_HOST=<hostname>
+DB_USER=<username>
+DB_PASS=<password>
+DB_NAME=<dbname>
+APP_NAME=<appname>
+APP_SECRET=<appsecret (any string)>
+```
 
-Run nodemon
+## Usage 
+Run app
 `npm run dev`
 
 Run (auto)compile sass file
