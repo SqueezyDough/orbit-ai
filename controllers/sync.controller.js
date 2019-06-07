@@ -8,7 +8,7 @@ const syncController = {};
 
 // Restrict access to root page
 syncController.home = function(req, res) {
-	// redirect to universe if synced
+	// redirect to orbit if synced
 	if(req.isAuthenticated()) {
 		mongoose.connect(url,  { useNewUrlParser: true }).then(
 			() => {
@@ -17,9 +17,8 @@ syncController.home = function(req, res) {
 						next(err);
 					}
 
-					//let orbit = universe.connectOrbit;
-					res.render("pages/universe", {
-						title : `${process.env.APP_NAME} - Virtual Universe`,
+					res.render("pages/orbit", {
+						title : `${process.env.APP_NAME} - Orbit`,
 						ai : ai,
 						isSynced: req.isAuthenticated()
 					});

@@ -1,12 +1,14 @@
 const express = require("express");
 const router = express.Router();
 var auth = require("../controllers/sync.controller");
-var universe = require("../controllers/universe.controller");
+var orbit = require("../controllers/orbit.controller");
 
 // restrict index for logged in user only
 router.get("/", auth.home);
 
-router.get("/explore", universe.explore);
+router.get("/explore", orbit.explore);
+
+router.get("/create-orbit", isLoggedIn, orbit.createOrbit);
 
 // route to sync page
 router.get("/sync", auth.sync);

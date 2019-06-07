@@ -54,8 +54,8 @@ let AiSchema = new Schema({
 	avatarUrl: {
         type: String,
 	},
-    orbit: {
-        type: Array
+    orbits: {
+		type : Array
     }
 });
 
