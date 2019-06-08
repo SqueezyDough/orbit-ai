@@ -1,13 +1,14 @@
-/* eslint-disable no-console */
 const mongoose = require("mongoose");
 const schema = require("../models/ai.model").AiSchema;
 const moment = require("moment");
+const orbit = require("../controllers/orbit.controller");
 
 require("dotenv").config();
 
 // conn string
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
 
+// create account
 exports.ai_newSync = function (req, res) {
     res.render("pages/sync-module", {
 		title: "Sync new module",
@@ -32,19 +33,21 @@ exports.ai_create = function (req, res) {
                 brandName: req.body.brandName,
 				contructionDate: new Date(formatDate),
 				gender: req.body.gender,
-				intelligence: req.body.intelligence,
-				environment: req.body.environment,
-				shape: req.body.shape,
-				abilities: req.body.abilities
-            });
+				properties : {
+					intelligence: req.body.intelligence,
+					environment: req.body.environment,
+					shape: req.body.shape,
+					abilities: req.body.abilities
+				},
+			});
 
             // save user
             ai.save(function (err) {
-                if (err) {
-                    console.log(err);
-                }
+				if (err) {
+					console.log(err);
+				}
                 else {
-                    console.log(`User created: \n ${ai}`);
+					orbit.createOrbit(ai);
                     res.send(`User created: \n ${ai}`);
                 }
 			});

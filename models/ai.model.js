@@ -31,39 +31,35 @@ let AiSchema = new Schema({
         required: [true, "Field is required"],
         max: [100, "Last name must be below 100 characters"]
     },
-    contructionDate: {
+    constructionDate: {
         type: Date,
         required: [true, "Field is required"]
     },
     gender: {
         type: String,
         required: [true, "Field is required"]
-    },
-	intelligence: {
-		type: Number,
-    },
-    environment: {
-        type: String
 	},
-	shape: {
-        type: String
-    },
-    abilities: {
-        type: Array
+	properties : {
+		intelligence: {
+			type: Number,
+		},
+		environment: {
+			type: String
+		},
+		shape: {
+			type: String
+		},
+		abilities: {
+			type: Array
+		},
 	},
 	avatarUrl: {
         type: String,
 	},
-    privateImages: {
-        type: Array
-    },
-    publicImages: {
-        type: Array
-    },
-    matches: {
-        type: Array
+    orbits: {
+		type : Array
     }
-}, { autoCreate: true }); // autocreate: create the underlying collections
+});
 
 // Virtual property for fullname. This won't be stored in MongoDB
 AiSchema.virtual("brandModel")
