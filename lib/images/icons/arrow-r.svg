@@ -1,1 +1,19 @@
-<svg height="14" viewBox="0 0 22 14" width="22" xmlns="http://www.w3.org/2000/svg"><g fill="#c15663"><rect height="3" rx="1.5" width="21" y="6"/><rect height="3" rx="1.5" transform="matrix(.70710678 .70710678 -.70710678 .70710678 8.403806 -11.096194)" width="10" x="12.596194" y="3.096194"/><rect height="3" rx="1.5" transform="matrix(-.70710678 .70710678 .70710678 .70710678 23.253048 -9.631728)" width="10" x="12.596194" y="8.096194"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="15px" viewBox="0 0 22 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-330.000000, -620.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Group-6" transform="translate(268.000000, 611.000000)">
+                <g id="Group-2" transform="translate(39.000000, 0.000000)">
+                    <g id="Group" transform="translate(23.000000, 9.000000)">
+                        <rect id="Rectangle" x="0" y="6" width="21" height="2" rx="1"></rect>
+                        <rect id="Rectangle" transform="translate(17.242641, 4.242641) rotate(45.000000) translate(-17.242641, -4.242641) " x="12.2426407" y="3.24264069" width="10" height="2" rx="1"></rect>
+                        <rect id="Rectangle" transform="translate(17.242641, 10.242641) scale(-1, 1) rotate(45.000000) translate(-17.242641, -10.242641) " x="12.2426407" y="9.24264069" width="10" height="2" rx="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
