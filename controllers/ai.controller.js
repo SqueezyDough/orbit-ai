@@ -31,7 +31,7 @@ exports.ai_create = function (req, res) {
                 password: req.body.password,
                 instanceName: req.body.instanceName,
                 brandName: req.body.brandName,
-				contructionDate: new Date(formatDate),
+				constructionDate: new Date(formatDate),
 				gender: req.body.gender,
 				properties : {
 					intelligence: req.body.intelligence,

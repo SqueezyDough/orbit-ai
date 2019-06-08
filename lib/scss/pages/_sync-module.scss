@@ -1,10 +1,17 @@
 .form-sync {
+	padding-top: 2rem;
+
+	label {
+		display: block;
+		margin: 1.4rem 0 .6rem;
+	}
+
 	input {
 		display: block;
 		margin: 0 0 1rem;
 
 		&[type="submit"] {
-			margin: 2rem 0 3rem;
+			margin: 2rem 0 0;
 		}
 	}
 }

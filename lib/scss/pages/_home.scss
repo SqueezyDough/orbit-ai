@@ -1,23 +1,10 @@
 .brand__logo {
+	margin-top: 5rem;
 	width: 7.5rem;
 }
 
-.brand__title {
-	margin-top: 5rem;
-
-	span {
-		&:first-of-type {
-			color: $secondaryThemeColor;
-		}
-
-		&:nth-of-type(2) {
-			color: $mainThemeColor;
-		}
-	}
-}
-
 .brand__sub-title {
-	margin: -1rem 0 3rem;
+	margin: -1rem 0 5rem 4.5rem;
 	font-size: $bodyFontSize;
-	color: $white;
+	color: $watusi;
 }

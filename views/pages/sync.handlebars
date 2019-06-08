@@ -1,5 +1,11 @@
-<form action="/sync" method="POST">
+{{>_global-nav}}
+
+<h1 class="sync-header">Synchronise existing module</h1>
+<form class="form-sync" action="/sync" method="POST">
+	<label>Serial number</label>
 	<input type="text" name="serialNr">
+
+	<label>Password</label>
 	<input type="password" name="password">
-	<input type="submit">
+	<input class="btn--primary" type="submit">
 </form>

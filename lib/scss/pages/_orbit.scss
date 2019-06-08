@@ -1,5 +1,5 @@
 $orbit-size: 280px;
-$min-planet-size: 20px;
+$min-planet-size: 50px;
 $planet-count: 100;
 $colors: #DE6555,
 		 #E04A5C,
@@ -7,26 +7,27 @@ $colors: #DE6555,
 		 #16A59F,
 		 #15AE7D;
 
-.universe {
-	position: absolute;
+.orbit-container {
+	display: flex;
+	flex-wrap: wrap;
 	min-height: 440px;
-	width: 100vw;
+	width: 100%;
 	left: 0;
+	transform: translate-x(-100%);
+	position: absolute;
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
 
-.solar-system {
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .orbit__name {
 	margin: 0;
-	position: absolute;
+	padding: 0 .5rem;
+	width: $orbit-size - $min-planet-size;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	position: absolute;
+	box-sizing: border-box;
 	z-index: 1;
 	color: $white;
 	text-align: center;
@@ -46,23 +47,23 @@ $colors: #DE6555,
 }
 
 .star {
-	width: $orbit-size - $planet-size;
-	height: $orbit-size - $planet-size;
+	width: $orbit-size - $min-planet-size;
+	height: $orbit-size - $min-planet-size;
 	background-image: url('../../lib/images/star.png');
 	background-size: cover;
 	border-radius: 50%;
 	border: 2px solid $watusi;
 	position: relative;
-	top: $planet-size / 2;
-	left: $planet-size / 2;
+	top: $min-planet-size / 2;
+	left: $min-planet-size / 2;
 	z-index: 0;
 }
 
 .orbit-wrapper {
-	width: $planet-size;
+	width: $min-planet-size;
 	position: absolute;
 	top: 0;
-	left: ($orbit-size - $planet-size) / 2;
+	left: ($orbit-size - $min-planet-size) / 2;
 	transform: translate3d(0,0,0);
 	pointer-events: none;
 }
@@ -78,6 +79,7 @@ $colors: #DE6555,
 	$rotation: random(360);
 	$border: 100 + random(60);
 	$planet-size: $min-planet-size + random(30);
+	$border-width: random(16);
 	$opacity: random(10);
 	$speed: 10 + 100/random(10);
 	$color-key: random( length($colors) );
@@ -93,7 +95,7 @@ $colors: #DE6555,
   	}
 
 	.orbit-wrapper--#{$i} {
-    	animation: planet-#{$i} #{$speed}s linear infinite;
+		animation: planet-#{$i} #{$speed}s linear infinite;
 
 		.planet {
 			display: inline-block;
@@ -102,7 +104,7 @@ $colors: #DE6555,
 			height: $planet-size - $border * 2;
 			opacity: 0.4 + (0.6/$opacity);
 			background-color: $color;
-			border: .5rem solid darken($color, 30%);
+			border: #{$border-width}px solid darken($color, 30%);
 			pointer-events: auto;
 			cursor: pointer;
 
@@ -110,5 +112,33 @@ $colors: #DE6555,
 				opacity: 1;
 			}
 		}
+	}
+}
+
+.ai-details {
+	margin-top: 25rem;
+	position: relative;
+	z-index: 200;
+}
+
+.ai-details__properties {
+	li {
+		margin: 1.6rem 0;
+
+		&:last-of-type {
+			margin-bottom: 4rem;
+		}
+	}
+
+	label {
+		display: block;
+		margin: .2rem 0;
+		color: $watusi;
+		font-size: $smallFontSize;
+	}
+
+	span {
+		color: $white;
+		font-size: $bodyFontFamily;
 	}
 }
