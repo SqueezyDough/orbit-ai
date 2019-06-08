@@ -1,5 +1,5 @@
 $orbit-size: 280px;
-$planet-size: 60px;
+$min-planet-size: 20px;
 $planet-count: 100;
 $colors: #DE6555,
 		 #E04A5C,
@@ -9,7 +9,7 @@ $colors: #DE6555,
 
 .universe {
 	position: absolute;
-	min-height: 425px;
+	min-height: 440px;
 	width: 100vw;
 	left: 0;
 	overflow-x: hidden;
@@ -68,14 +68,16 @@ $colors: #DE6555,
 }
 
 .planet {
-	width: $planet-size;
-	height: $planet-size;
+	width: $min-planet-size;
+	height: $min-planet-size;
 	border-radius: 50%;
+	box-sizing: border-box;
 }
 
 @for $i from 1 through $planet-count {
 	$rotation: random(360);
 	$border: 100 + random(60);
+	$planet-size: $min-planet-size + random(30);
 	$opacity: random(10);
 	$speed: 10 + 100/random(10);
 	$color-key: random( length($colors) );
@@ -100,6 +102,7 @@ $colors: #DE6555,
 			height: $planet-size - $border * 2;
 			opacity: 0.4 + (0.6/$opacity);
 			background-color: $color;
+			border: .5rem solid darken($color, 30%);
 			pointer-events: auto;
 			cursor: pointer;
 

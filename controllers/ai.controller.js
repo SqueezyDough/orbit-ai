@@ -2,6 +2,7 @@
 const mongoose = require("mongoose");
 const schema = require("../models/ai.model").AiSchema;
 const moment = require("moment");
+const orbit = require("../controllers/orbit.controller");
 
 require("dotenv").config();
 
@@ -32,11 +33,13 @@ exports.ai_create = function (req, res) {
                 brandName: req.body.brandName,
 				contructionDate: new Date(formatDate),
 				gender: req.body.gender,
-				intelligence: req.body.intelligence,
-				environment: req.body.environment,
-				shape: req.body.shape,
-				abilities: req.body.abilities
-            });
+				properties : {
+					intelligence: req.body.intelligence,
+					environment: req.body.environment,
+					shape: req.body.shape,
+					abilities: req.body.abilities
+				},
+			});
 
             // save user
             ai.save(function (err) {
@@ -44,7 +47,7 @@ exports.ai_create = function (req, res) {
 					console.log(err);
 				}
                 else {
-                    console.log(`User created: \n ${ai}`);
+					orbit.createOrbit(ai);
                     res.send(`User created: \n ${ai}`);
                 }
 			});

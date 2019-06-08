@@ -5,8 +5,9 @@
 				{{ai.serialNr}}'s
 				<span>orbit</span>
 			</h2>
+
 			<div class='star'></div>
-			{{#each ai.orbit}}
+			{{#each planets}}
 				<div class="orbit-wrapper orbit-wrapper--{{increment @index}}">
 					<a href='{{this}}' class="planet"></a>
 				</div>

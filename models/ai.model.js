@@ -38,18 +38,20 @@ let AiSchema = new Schema({
     gender: {
         type: String,
         required: [true, "Field is required"]
-    },
-	intelligence: {
-		type: Number,
-    },
-    environment: {
-        type: String
 	},
-	shape: {
-        type: String
-    },
-    abilities: {
-        type: Array
+	properties : {
+		intelligence: {
+			type: Number,
+		},
+		environment: {
+			type: String
+		},
+		shape: {
+			type: String
+		},
+		abilities: {
+			type: Array
+		},
 	},
 	avatarUrl: {
         type: String,
