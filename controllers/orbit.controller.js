@@ -9,76 +9,62 @@ const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${proce
 const orbitController = {};
 
 orbitController.explore = function(req, res) {
-	mongoose.connect(url,  { useNewUrlParser: true });
+	mongoose.connect(url, { useNewUrlParser: true });
 
-	utils.findAi(req.session.passport.user).then(function(ai) {
-		Ai.find({ _id: { $ne: ai._id }}, (candidates) => {
-			candidates.forEach( (_ai) => {
-				utils.findOrbit(_ai._id ).then(function(orbit) {
-					if (isMatch(ai, _ai)) {
-						// push matched ais to orbit
-						orbit.planets.push(_ai._id);
-					}
-				});
+	utils.findOrbit(req.params.id).then(function(orbit) {
+		utils.findAi(orbit.ownerId).then(function(ai) {
+			res.render("pages/explore", {
+				title : `${process.env.APP_NAME} - ${ai.serialNr}'s Orbit`,
+				ai : ai,
+				url : "",
+				planets : orbit.planets,
+				isSynced: req.isAuthenticated()
 			});
-		});
-
-		// save user
-		ai.save(function (err) {
-			if (err) {
-				console.log(err);
-			}
-			else {
-				res.send(`Orbit updated: \n ${ai.orbits}`);
-			}
 		});
 	});
 };
 
 orbitController.createOrbit = async function(ai) {
-	//if (!ai.orbits[0]) {
-		mongoose.connect(url,  { useNewUrlParser: true });
+	mongoose.connect(url,  { useNewUrlParser: true });
 
-		let OrbitSchema = mongoose.model("Orbit", Orbit);
+	let OrbitSchema = mongoose.model("Orbit", Orbit);
 
-		// create ownership, connect ai to orbit
-		let orbit = new OrbitSchema({
-			ownerId : ai._id,
-			activeConnections : ai._id,
+	// create ownership, connect ai to orbit
+	let orbit = new OrbitSchema({
+		ownerId : ai._id,
+		activeConnections : ai._id,
+	});
+
+	// find possible candidates
+	Ai.find({ _id: { $ne: ai._id }}, (err, ais) => {
+		ais.forEach( (_ai) => {
+			if (isMatch(ai, _ai)) {
+				// push matched ais to orbit
+				_ai.orbits.forEach( (planet) => {
+					console.log(planet);
+					orbit.planets.push(planet);
+				});
+			}
 		});
 
-		// find possible candidates
-		Ai.find({ _id: { $ne: ai._id }}, (err, ais) => {
-			ais.forEach( (_ai) => {
-				if (isMatch(ai, _ai)) {
-					// push matched ais to orbit
-					console.log(orbit._id);
-					orbit.planets.push(orbit._id);
-				}
-			});
+		// push orbit to ai orbit
+		ai.orbits.push(orbit._id);
 
-			// push orbit to ai orbit
-			ai.orbits.push(orbit._id);
-
-			orbit.save(function (err) {
-				if (err) {
-					console.log(err);
-				}
-			});
-
-		});
-
-		ai.save(function (err) {
+		orbit.save(function (err) {
 			if (err) {
 				console.log(err);
 			}
-			else {
-				console.log("Orbit created: " + orbit);
-			}
 		});
-	// } else {
-	// 	res.send(`Orbit detected: ${ai.orbits}`);
-	// }
+	});
+
+	ai.save(function (err) {
+		if (err) {
+			console.log(err);
+		}
+		else {
+			//console.log("Orbit created: " + orbit);
+		}
+	});
 };
 
 function isMatch(ai, candidateAi) {

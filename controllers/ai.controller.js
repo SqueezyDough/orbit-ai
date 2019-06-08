@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 const mongoose = require("mongoose");
 const schema = require("../models/ai.model").AiSchema;
 const moment = require("moment");
@@ -9,6 +8,7 @@ require("dotenv").config();
 // conn string
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
 
+// create account
 exports.ai_newSync = function (req, res) {
     res.render("pages/sync-module", {
 		title: "Sync new module",

@@ -31,7 +31,7 @@ let AiSchema = new Schema({
         required: [true, "Field is required"],
         max: [100, "Last name must be below 100 characters"]
     },
-    contructionDate: {
+    constructionDate: {
         type: Date,
         required: [true, "Field is required"]
     },

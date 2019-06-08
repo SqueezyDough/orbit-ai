@@ -6,7 +6,7 @@ var orbit = require("../controllers/orbit.controller");
 // restrict index for logged in user only
 router.get("/", auth.home);
 
-router.get("/explore", orbit.explore);
+router.get("/explore/:id", orbit.explore);
 
 router.get("/create-orbit", isLoggedIn, orbit.createOrbit);
 

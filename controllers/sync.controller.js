@@ -1,6 +1,6 @@
 const passport = require("passport");
-require("dotenv").config();
 const utils = require("./utils/utils.controller");
+require("dotenv").config();
 
 const syncController = {};
 
@@ -15,6 +15,7 @@ syncController.home = function(req, res) {
 				res.render("pages/orbit", {
 					title : `${process.env.APP_NAME} - Orbit`,
 					ai : ai,
+					url : "explore/",
 					planets : planets,
 					isSynced: req.isAuthenticated()
 				});
