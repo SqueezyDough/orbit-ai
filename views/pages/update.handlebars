@@ -1,0 +1,24 @@
+<h1 class="sync-header">Update my AI's properties</h1>
+
+<form class="form-sync" method="POST" action="/ai/update">
+	<fieldset>
+		<legend>Ai Properties</legend>
+
+		<label for="sync-shape">Shape</label>
+		<input id="sync-shape" name="shape" type="text">
+
+		<label for="sync-gender">Gender</label>
+		<input id="sync-gender" name="gender" type="text">
+
+		<label for="sync-environment">Environment</label>
+		<input id="sync-environment" name="environment" type="text">
+
+		<label for="sync-abilities">Abilities</label>
+		<input id="sync-abilities" name="abilities" type="text">
+
+		<label for="sync-intelligence">Intelligence</label>
+		<input id="sync-intelligence" type="number" name="intelligence" min="0" max="10000">
+	</fieldset>
+
+	<input class="btn--primary" type="submit" value="Update Properties">
+</form>

@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const schema = require("../models/ai.model").AiSchema;
 const moment = require("moment");
 const orbit = require("../controllers/orbit.controller");
+const utils = require("../controllers/utils/utils.controller");
 
 require("dotenv").config();
 
@@ -56,4 +57,14 @@ exports.ai_create = function (req, res) {
         },
         err => { console.log(err); }
     );
+};
+
+// update account
+exports.ai_update = function (req, res) {
+	utils.findAi(req.session.passport.user).then(function(ai) {
+		res.render("pages/update", {
+			title: "Update my AI",
+			ai: ai
+		});
+	});
 };
