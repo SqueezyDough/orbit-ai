@@ -37,15 +37,27 @@ orbitController.createOrbit = async function(ai) {
 
 	// find possible candidates
 	Ai.find({ _id: { $ne: ai._id }}, (err, ais) => {
+		let matchedAis = 0;
+
+		// check for potential matches
 		ais.forEach( (_ai) => {
 			if (isMatch(ai, _ai)) {
+				matchedAis++;
 				// push matched ais to orbit
-				_ai.orbits.forEach( (planet) => {
-					console.log(planet);
-					orbit.planets.push(planet);
+				_ai.orbits.forEach( (_orbit) => {
+					orbit.planets.push(_orbit);
 				});
 			}
 		});
+
+		// if no match is found just add the first 5.
+		if (matchedAis == 0) {
+			for (let i = 0; i <= 5; i++) {
+				ais[i].orbits.forEach( (_orbit) => {
+					orbit.planets.push(_orbit);
+				});
+			}
+		}
 
 		// push orbit to ai orbit
 		ai.orbits.push(orbit._id);

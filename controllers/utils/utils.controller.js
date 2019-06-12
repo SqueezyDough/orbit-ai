@@ -26,6 +26,16 @@ utilsController.findOrbit = function(id) {
 	);
 };
 
+utilsController.findOrbitByOwner = function(id) {
+	mongoose.connect(url, { useNewUrlParser: true });
+	return Orbit
+			.findOne({ ownerId: id })
+			.then(function(orbit) {
+				return orbit;
+		}
+	);
+};
+
 utilsController.getOrbits = function(id) {
 	mongoose.connect(url, { useNewUrlParser: true });
 	return Orbit
