@@ -1,14 +1,15 @@
 const express = require("express");
 const router = express.Router();
-var auth = require("../controllers/sync.controller");
-var orbit = require("../controllers/orbit.controller");
+const auth = require("../controllers/sync.controller");
+const orbit = require("../controllers/orbit.controller");
+const utils = require("../controllers/utils/utils.controller");
 
 // restrict index for logged in user only
 router.get("/", auth.home);
 
-router.get("/explore/:id", orbit.explore);
+router.get("/explore/:id", utils.isLoggedIn, orbit.explore);
 
-router.get("/create-orbit", isLoggedIn, orbit.createOrbit);
+router.get("/create-orbit", utils.isLoggedIn, orbit.createOrbit);
 
 // route to sync page
 router.get("/sync", auth.sync);
@@ -17,14 +18,6 @@ router.get("/sync", auth.sync);
 router.post("/sync", auth.doSync);
 
 //route for unsync action
-router.get("/unsync", isLoggedIn, auth.unSync);
-
-function isLoggedIn(req, res, next) {
-	if (req.isAuthenticated()) {
-		return next();
-	} else {
-	res.redirect("/");
-	}
-}
+router.get("/unsync", utils.isLoggedIn, auth.unSync);
 
 module.exports = router;

@@ -45,4 +45,12 @@ utilsController.mergeOrbits = function(orbits) {
 	return mergedOrbit[0];
 };
 
+utilsController.isLoggedIn = function(req, res, next) {
+	if (req.isAuthenticated()) {
+		return next();
+	} else {
+	res.redirect("/");
+	}
+};
+
 module.exports = utilsController;
