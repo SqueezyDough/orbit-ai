@@ -26,7 +26,7 @@ This algorithm presents this same idea. At first, the Ai only sees other Ais whi
 
 ## Installation
 Clone repository
-`git clone https://github.com/SqueezyDough/Project-Tech.git`
+`git clone https://github.com/SqueezyDough/orbit-ai.git`
 
 Install packages
 `npm install`
