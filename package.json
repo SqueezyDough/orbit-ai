@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/SqueezyDough/Project-Tech#readme",
   "dependencies": {
+    "bad-words": "^3.0.2",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
@@ -40,10 +41,11 @@
     "multer": "^1.4.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^5.0.1"
+    "passport-local-mongoose": "^5.0.1",
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "eslint": "^5.16.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",

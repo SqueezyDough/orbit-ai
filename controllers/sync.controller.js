@@ -1,5 +1,6 @@
 const passport = require("passport");
 const utils = require("./utils/utils.controller");
+const path = require("path");
 require("dotenv").config();
 
 const syncController = {};
@@ -45,6 +46,13 @@ syncController.doSync = (req, res, next) => {
 syncController.unSync = function(req, res) {
   req.logout();
   res.redirect("/");
+};
+
+// Chat
+syncController.chat = (req, res) => {
+	res.render("pages/chat", {
+		message: "TEST"
+	});
 };
 
 module.exports = syncController;

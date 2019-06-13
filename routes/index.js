@@ -19,6 +19,9 @@ router.post("/sync", auth.doSync);
 //route for unsync action
 router.get("/unsync", isLoggedIn, auth.unSync);
 
+//route for chat action
+router.get("/chat", auth.chat);
+
 function isLoggedIn(req, res, next) {
 	if (req.isAuthenticated()) {
 		return next();
