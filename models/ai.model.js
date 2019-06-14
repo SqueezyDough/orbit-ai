@@ -11,7 +11,7 @@ mongoose.set("useCreateIndex", true);
 let AiSchema = new Schema({
     serialNr: {
         type: String,
-        required: [true, "Field is required"],
+        required: [false, "Field is required"],
         index: true,
         unique: [true, "Serial nr already exists"],
 		uniqueCaseInsensitive: true,

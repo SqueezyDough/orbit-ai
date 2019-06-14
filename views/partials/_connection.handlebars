@@ -1,0 +1,19 @@
+<section class="connections-container">
+	{{ai.serialNr}}
+	<fieldset>
+		<legend>Your properties</legend>
+		<h1>connections</h1>
+		<ul>
+			{{#each this}}
+				{{!#if ais._id}}
+					<li>
+						<h2>{{ais.instanceName}}</h2>
+						<button>Disconnect</button>
+					</li>
+				{{!/if}}
+			{{else}}
+			<p>No connections available.</p>
+			{{/each}}
+		</ul>
+	</fieldset>
+</section>
