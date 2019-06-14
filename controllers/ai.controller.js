@@ -18,9 +18,7 @@ exports.ai_newSync = function (req, res) {
 
 // create
 exports.ai_create = function (req, res) {
-	mongoose.connect(url, {
-		useNewUrlParser: true
-	}).then(
+	mongoose.connect(url, {	useNewUrlParser: true }).then(
 		() => {
 			// construct model
 			let AiSchema = mongoose.model("Ai", schema);
@@ -66,28 +64,27 @@ exports.ai_create = function (req, res) {
 exports.ai_update = function (req, res) {
 	utils.findAi(req.session.passport.user).then(function (ai) {
 		res.render("pages/update", {
-			title: "Update my AI",
+			title: `${process.env.APP_NAME} - Update my AI"`,
 			ai: ai
 		});
 	});
 };
 
 exports.ai_onUpdate = function (req, res) {
-		let AiSchema = mongoose.model("Ai", schema);
-		utils.findAi(req.session.passport.user).then(function (ai) {
-					AiSchema.findOneAndUpdate({
-						serialNr: ai.serialNr
-					}, {
-						gender: req.body.gender,
-						properties: {
-							intelligence: req.body.intelligence,
-							environment: req.body.environment,
-							shape: req.body.shape,
-							abilities: req.body.abilities
-						}
-					}).then(function () {
-							res.redirect("myAi");
-						}
-					);});
-
-				};
+	let AiSchema = mongoose.model("Ai", schema);
+	utils.findAi(req.session.passport.user).then(function (ai) {
+		AiSchema.findOneAndUpdate({
+			serialNr: ai.serialNr
+		}, {
+			gender: req.body.gender,
+			properties: {
+				intelligence: req.body.intelligence,
+				environment: req.body.environment,
+				shape: req.body.shape,
+				abilities: req.body.abilities
+			}
+		}).then(function () {
+			res.redirect("myAi");
+		});
+	});
+};
