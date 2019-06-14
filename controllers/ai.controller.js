@@ -26,7 +26,7 @@ exports.ai_create = function (req, res) {
 			let AiSchema = mongoose.model("Ai", schema);
 
 			// format date so db is happy
-			let formatDate = moment(req.body.contructionDate).format("YYYY-DD-MM");
+			let formatDate = moment(req.body.constructionDate).format("YYYY-DD-MM");
 
 			// create new instance of user
 			let ai = new AiSchema({
@@ -86,7 +86,7 @@ exports.ai_onUpdate = function (req, res) {
 							abilities: req.body.abilities
 						}
 					}).then(function () {
-							res.redirect("update");
+							res.redirect("myAi");
 						}
 					);});
 
