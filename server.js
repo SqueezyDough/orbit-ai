@@ -13,6 +13,7 @@ require("./config/passport");
 
 const routes = require("./routes/index.js");
 const ai = require("./routes/ai.route");
+const { generateMessage } = require("./controllers/utils/utils.controller");
 
 const path = require("path");
 const exphbs = require("express-handlebars");
@@ -24,13 +25,11 @@ const port = process.env.ENV_PORT || 3000;
 const server = require("http").Server(app);
 var io = require("socket.io")(server);
 
-let count = 0;
-
 io.on("connection", (socket) => {
     console.log("New WebSocket connection");
 
-    socket.emit("message", "Welcome!");
-    socket.broadcast.emit("message", "A new user has joined!");
+    socket.emit("message", generateMessage("Welcome!"));
+    socket.broadcast.emit("message", generateMessage("A new user has joined!"));
 
     socket.on("sendMessage", (message, callback) => {
         const filter = new Filter();
@@ -39,17 +38,12 @@ io.on("connection", (socket) => {
             return callback("Profanity is not allowed!");
         }
 
-        io.emit("message", message);
-        callback();
-    });
-
-    socket.on("sendLocation", (coords, callback) => {
-        io.emit("message", `https://google.com/maps?q=${coords.latitude},${coords.longitude}`);
+        io.emit("message", generateMessage(message));
         callback();
     });
 
     socket.on("disconnect", () => {
-        io.emit("message", "A user has left!");
+        io.emit("message", generateMessage("A user has left!"));
 	});
 });
 

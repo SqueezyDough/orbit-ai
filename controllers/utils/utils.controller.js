@@ -45,4 +45,11 @@ utilsController.mergeOrbits = function(orbits) {
 	return mergedOrbit[0];
 };
 
+utilsController.generateMessage = function(text) {
+	return {
+		text,
+		createdAt: new Date().getTime()
+	};
+};
+
 module.exports = utilsController;

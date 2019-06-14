@@ -1,17 +1,17 @@
-<p>Chat app</p>
+<h2>Chat with your AI</h2>
 
 <div id="messages"></div>
 
-<form id="message-form">
-    <input name="message" placeholder="Message">
-    <button>Send</button>
+<form id="message-form" autocomplete="off" >
+	<input autocomplete="false" name="hidden" type="text" style="display:none;">
+    <input autocomplete="off" name="message" placeholder="Message" type="text">
+    <button class="btn--tertiary">Send</button>
 </form>
 
-<button id="send-location">Send location</button>
-
 <script id="message-template" type="text/html">
-    <div>
-        <p>[[message]]</p>
+    <div class="chat__message">
+		<span class="chat__message-date">[[createdAt]]:</span>
+        <p class="chat__message-content">[[message]]</p>
     </div>
 </script>
 
