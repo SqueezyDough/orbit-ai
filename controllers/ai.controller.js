@@ -86,8 +86,8 @@ exports.ai_onUpdate = function (req, res) {
 		}).then(function () {
 			res.redirect("myAi");
         },
-        err => { console.log(err); }
-    );
+        err => { console.log(err); });
+	});
 };
 
 exports.ai_overview = function (req, res) {
