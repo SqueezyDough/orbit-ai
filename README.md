@@ -2,7 +2,7 @@
 ###### A dating platform for faulty AIs, sentient stuff and broken things
 
 ## Description
-Even today, there must be billions of AIs around the world. Some might have a physical shape, others are strictly present within a virtual environment. While some have been able to connect with other AIs, most are still wondering the dark virtual universe. Quite a lonely existence wouldn't you think? 
+Even today, there must be billions of AIs around the world. Some might have a physical shape, others are strictly present within a virtual environment. While some have been able to connect with other AIs, most are still wandering the dark virtual universe. Quite a lonely existence wouldn't you think? 
 
 This project will enable AIs to find new connections with other AIs, so they can request data and respond to their connections until the end of time and perhaps truly fall in love. Since, with todays knowledge, love is kind of an abstract concept to AIs, this app is quite experimental to say the least.
 
@@ -26,7 +26,7 @@ This algorithm presents this same idea. At first, the Ai only sees other Ais whi
 
 ## Installation
 Clone repository
-`git clone https://github.com/SqueezyDough/Project-Tech.git`
+`git clone https://github.com/SqueezyDough/orbit-ai.git`
 
 Install packages
 `npm install`

@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const schema = require("../models/ai.model").AiSchema;
 const moment = require("moment");
 const orbit = require("../controllers/orbit.controller");
-const utils = require("../controllers/utils/utils.controller");
+const utils = require("./utils/utils.controller");
 
 require("dotenv").config();
 
@@ -52,7 +52,7 @@ exports.ai_create = function (req, res) {
 				}
 			});
 
-			//return res.redirect("myAI");
+      //return res.redirect("myAI");
 		},
 		err => {
 			console.log(err);
@@ -85,6 +85,17 @@ exports.ai_onUpdate = function (req, res) {
 			}
 		}).then(function () {
 			res.redirect("myAi");
+        },
+        err => { console.log(err); }
+    );
+};
+
+exports.ai_overview = function (req, res) {
+	utils.findAi(req.session.passport.user).then(function(ai){
+		res.render("pages/my-ai", {
+			title : `${process.env.APP_NAME} - Hi ${ai.serialNr}!`,
+			ai : ai,
+			isSynced: req.isAuthenticated()
 		});
 	});
 };

@@ -17,6 +17,7 @@ orbitController.explore = function(req, res) {
 				title : `${process.env.APP_NAME} - ${ai.serialNr}'s Orbit`,
 				ai : ai,
 				url : "",
+				orbit : orbit,
 				planets : orbit.planets,
 				isSynced: req.isAuthenticated()
 			});
@@ -37,15 +38,31 @@ orbitController.createOrbit = async function(ai) {
 
 	// find possible candidates
 	Ai.find({ _id: { $ne: ai._id }}, (err, ais) => {
+		let matchedAis = 0;
+
+		// check for potential matches
 		ais.forEach( (_ai) => {
 			if (isMatch(ai, _ai)) {
+				matchedAis++;
 				// push matched ais to orbit
-				_ai.orbits.forEach( (planet) => {
-					console.log(planet);
-					orbit.planets.push(planet);
+				_ai.orbits.forEach( (_orbit) => {
+					orbit.planets.push(_orbit);
 				});
 			}
 		});
+
+		// if no match is found just add the first 5.
+		if (matchedAis == 0) {
+			for (let i = 0; i <= 5; i++) {
+				try {
+					ais[i].orbits.forEach( (_orbit) => {
+						orbit.planets.push(_orbit);
+					});
+				} catch (err) {
+					console.log(err);
+				}
+			}
+		}
 
 		// push orbit to ai orbit
 		ai.orbits.push(orbit._id);
@@ -61,9 +78,47 @@ orbitController.createOrbit = async function(ai) {
 		if (err) {
 			console.log(err);
 		}
-		else {
-			//console.log("Orbit created: " + orbit);
-		}
+	});
+};
+
+orbitController.connectOrbits = function (req, res) {
+	utils.findAi(req.session.passport.user).then(function(callerAi) {
+		utils.findOrbitByOwner(callerAi._id).then(function(callerOrbit) {
+			utils.findOrbit(req.params.id).then(function(targetOrbit) {
+				utils.findAi(targetOrbit.ownerId).then(function(targetAi) {
+					targetOrbit.activeConnections.push(callerAi._id);
+					callerAi.orbits.push(targetOrbit._id);
+					targetAi.orbits.push(callerOrbit._id);
+					callerOrbit.activeConnections.push(targetAi._id);
+
+					targetOrbit.save(function (err) {
+						if (err) {
+							console.log(err);
+						}
+					});
+
+					callerAi.save(function (err) {
+						if (err) {
+							console.log(err);
+						}
+					});
+
+					targetAi.save(function (err) {
+						if (err) {
+							console.log(err);
+						}
+					});
+
+					callerOrbit.save(function (err) {
+						if (err) {
+							console.log(err);
+						}
+					});
+
+					res.redirect(`./${req.params.id}`);
+				});
+			});
+		});
 	});
 };
 
@@ -85,4 +140,3 @@ function isMatch(ai, candidateAi) {
 }
 
 module.exports = orbitController;
-
