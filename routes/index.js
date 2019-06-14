@@ -8,6 +8,7 @@ const utils = require("../controllers/utils/utils.controller");
 router.get("/", auth.home);
 
 router.get("/explore/:id", utils.isLoggedIn, orbit.explore);
+router.post("/explore/:id", utils.isLoggedIn, orbit.connectOrbits);
 
 router.get("/create-orbit", utils.isLoggedIn, orbit.createOrbit);
 

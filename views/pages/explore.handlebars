@@ -4,4 +4,7 @@
 	{{> _properties}}
 </section>
 
-<button class="btn--primary">Connect to {{ai.serialNr}}</button>
+<form method="post" action="./{{orbit._id}}">
+	<input type="submit" class="btn--primary">Connect to {{ai.serialNr}}</input>
+</form>
+

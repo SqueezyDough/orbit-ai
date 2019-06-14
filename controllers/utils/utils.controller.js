@@ -48,11 +48,29 @@ utilsController.getOrbits = function(id) {
 
 utilsController.mergeOrbits = function(orbits) {
 	let mergedOrbit = [];
+	let orbit = [];
+
 	orbits.forEach( (orbit) => {
-		mergedOrbit.push(orbit.planets);
+		let planets = orbit.planets;
+
+		planets.forEach( (planet) => {
+			let str = JSON.stringify(planet);
+
+			if (mergedOrbit.includes(str)) {
+				console.log(`Planet: ${planet} already in orbit`);
+			} else {
+				mergedOrbit.push(str);
+			}
+		});
 	});
 
-	return mergedOrbit[0];
+	mergedOrbit.forEach( (str) => {
+		// eslint-disable-next-line quotes
+		str = str.replace(/"/g,"");
+		orbit.push(str);
+	});
+
+	return orbit;
 };
 
 utilsController.isLoggedIn = function(req, res, next) {
