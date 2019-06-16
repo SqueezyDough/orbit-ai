@@ -24,7 +24,7 @@ exports.ai_create = function (req, res) {
 			let AiSchema = mongoose.model("Ai", schema);
 
 			// format date so db is happy
-			let formatDate = moment(req.body.constructionDate).format("YYYY-DD-MM");
+			let formatDate = moment(req.body.constructionDate, "DD-MM-YYYY").format("YYYY-MM-DD");
 
 			// create new instance of user
 			let ai = new AiSchema({
@@ -48,11 +48,9 @@ exports.ai_create = function (req, res) {
 					console.log(err);
 				} else {
 					orbit.createOrbit(ai);
-					res.send(`User created: \n ${ai}`);
+					return res.redirect("/");
 				}
 			});
-
-      //return res.redirect("myAI");
 		},
 		err => {
 			console.log(err);

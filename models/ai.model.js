@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const passportLocalMongoose = require("passport-local-mongoose");
-const uniqueValidator = require("mongoose-unique-validator");
+const beautifyUnique = require("mongoose-beautiful-unique-validation");
 const Schema = mongoose.Schema,
     bcrypt = require("bcrypt"),
 	SALT_WORK_FACTOR = 10;
@@ -73,7 +73,7 @@ AiSchema.virtual("brandModel")
 	});
 
 // validate serial nr
-AiSchema.plugin(uniqueValidator, { message: "Error, expected {PATH} to be unique." });
+AiSchema.plugin(beautifyUnique, { message: "Error, expected {PATH} to be unique." });
 
 // authentication
 AiSchema.plugin(passportLocalMongoose);
