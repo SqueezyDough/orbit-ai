@@ -37,7 +37,7 @@ orbitController.createOrbit = async function(ai) {
 	});
 
 	// find possible candidates
-	Ai.find({ _id: { $ne: ai._id }}, (err, ais) => {
+    Ai.find({ _id: { $ne: ai._id }}, (err, ais) => {
 		let matchedAis = 0;
 
 		// check for potential matches
@@ -51,13 +51,11 @@ orbitController.createOrbit = async function(ai) {
 			}
 		});
 
-		// if no match is found just add the first 5.
+		// if no match is found just add the last 3.
 		if (matchedAis == 0) {
-			for (let i = 0; i <= 5; i++) {
+			for (let i = (ais.length - 1); i >= (ais.length - 3); i--) {
 				try {
-					ais[i].orbits.forEach( (_orbit) => {
-						orbit.planets.push(_orbit);
-					});
+					orbit.planets.push(ais[i].orbits[ais[i].orbits.length - 1]);
 				} catch (err) {
 					console.log(err);
 				}
@@ -72,12 +70,12 @@ orbitController.createOrbit = async function(ai) {
 				console.log(err);
 			}
 		});
-	});
 
-	ai.save(function (err) {
-		if (err) {
-			console.log(err);
-		}
+		ai.save(function (err) {
+			if (err) {
+				console.log(err);
+			}
+		});
 	});
 };
 
@@ -131,7 +129,7 @@ function isMatch(ai, candidateAi) {
 			matchedProperties++;
 		}
 	}
-	console.log(matchedProperties);
+
 	if (matchedProperties >= 3) {
 		return true;
 	}
