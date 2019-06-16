@@ -1,8 +1,8 @@
 <h2>Ai properties</h2>
 <ul class="ai-details__properties">
 	<li>
-		<label>Instance name</label>
-		<span>{{ai.instanceName}}</span>
+		<label>Serial Nr.</label>
+		<span>{{ai.serialNr}}</span>
 	</li>
 	<li>
 		<label>Gender</label>
@@ -23,7 +23,13 @@
 		<label>Brand</label>
 		<span>{{ai.brandName}}</span>
 	</li>
-		<li>
+	<li>
+		<label>Abilities</label>
+		{{#each abilities}}
+			<span>{{this}}</span>
+		{{/each}}
+	</li>
+	<li>
 		<label>Construction date</label>
 		<span>{{ai.constructionDate}}</span>
 	</li>
