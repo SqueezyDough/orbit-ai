@@ -18,6 +18,7 @@ orbitController.explore = function(req, res) {
 				ai : ai,
 				url : "",
 				orbit : orbit,
+				abilities : ai.properties.abilities,
 				planets : orbit.planets,
 				isSynced: req.isAuthenticated()
 			});
