@@ -99,3 +99,13 @@ exports.ai_overview = function (req, res) {
 		});
 	});
 };
+
+exports.ai_connection = function (req, res) {
+	utils.findAi(req.session.passport.user).then(function(ai){
+		res.render("pages/connection-overview", {
+			title : `${process.env.APP_NAME} - Hi ${ai.serialNr}!`,
+			ai : ai,
+			isSynced: req.isAuthenticated()
+		});
+	});
+};

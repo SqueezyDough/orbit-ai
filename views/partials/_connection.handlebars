@@ -7,8 +7,8 @@
 			{{#each this}}
 				{{!#if ai._id}}
 					<li>
-						<h2>{{this.orbits}}</h2>
-						<button>Disconnect</button>
+						<h2>{{this.ownerId}}</h2>
+						<a class="btn--primary" class="global-nav__menu__myAi">Disconnect</a>
 					</li>
 				{{!/if}}
 			{{else}}
