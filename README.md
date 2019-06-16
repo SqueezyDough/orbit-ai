@@ -50,6 +50,8 @@ Run app
 Run (auto)compile sass file
 `npm run watch`
 
+The dist CSS is not in this repo. It will be compiled after site.scss is saved and you have `npm run watch` running.
+
 ### Browser-sync
 I've included browser sync in the gulp.js file. Browser-sync can do mulitple things. It can auto-refresh the page after save. It also has grid and outlining options via the dashboard.
 
