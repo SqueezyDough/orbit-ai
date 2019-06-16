@@ -5,12 +5,10 @@
 		<h1>connections</h1>
 		<ul>
 			{{#each this}}
-				{{!#if ai._id}}
 					<li>
-						<h2>{{this.ownerId}}</h2>
+						<h2>{{instanceName}}</h2>
 						<a class="btn--primary" class="global-nav__menu__myAi">Disconnect</a>
 					</li>
-				{{!/if}}
 			{{else}}
 			<p>No connections available.</p>
 			{{/each}}
