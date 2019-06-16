@@ -82,7 +82,7 @@ exports.ai_onUpdate = function (req, res) {
 				abilities: req.body.abilities
 			}
 		}).then(function () {
-			res.redirect("myAi");
+			res.redirect("account");
         },
         err => { console.log(err); });
 	});
@@ -90,7 +90,7 @@ exports.ai_onUpdate = function (req, res) {
 
 exports.ai_overview = function (req, res) {
 	utils.findAi(req.session.passport.user).then(function(ai){
-		res.render("pages/my-ai", {
+		res.render("pages/iai", {
 			title : `${process.env.APP_NAME} - Hi ${ai.serialNr}!`,
 			ai : ai,
 			isSynced: req.isAuthenticated()

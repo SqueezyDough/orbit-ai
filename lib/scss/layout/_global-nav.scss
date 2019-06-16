@@ -8,14 +8,15 @@
 	height: 2.5rem;
 }
 
-.global-nav__menu__myAi {
-	margin-left: -3.2rem;
+.global-nav__menu__iai {
+	margin-left: -2.2rem;
 	background-color: none;
-	color: $white;
+	color: $delRio;
+	font-size: $smallFontSize;
 	line-height: 3rem;
 
 	&::after {
-		@extend .icon--myAi;
+		@extend .icon--iai;
 		content: '';
 		height: 3rem;
 		width: 3rem;
