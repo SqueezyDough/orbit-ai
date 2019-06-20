@@ -7,7 +7,7 @@
 		<div class='star'></div>
 		{{#each planets}}
 			<div class="orbit-wrapper orbit-wrapper--{{increment @index}}">
-				<a href="{{../url}}{{this}}" class="planet"></a>
+				<a href="{{../url}}{{this}}" url="{{../url}}" data-id="{{this}}" class="planet" data-long-press-delay="500"></a>
 			</div>
 		{{/each}}
 	</div>

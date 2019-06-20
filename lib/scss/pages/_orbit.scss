@@ -1,6 +1,7 @@
 $orbit-size: 280px;
 $min-planet-size: 50px;
 $planet-count: 100;
+$root-planet-count: 3;
 $colors: #DE6555,
 		 #E04A5C,
 		 #A22C65,
@@ -115,6 +116,52 @@ $colors: #DE6555,
 	}
 }
 
+@for $i from 1 through $root-planet-count {
+	$border: random(30);
+	$border-width: random(4);
+	$speed: 10 + 100/random(10);
+	$color-key: random( length($colors) );
+	$color: nth( $colors, $color-key );
+
+	@keyframes satellite-#{$i} {
+		from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+		to   { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+	}
+
+	.satellite--#{$i} {
+		position: absolute;
+		width: $min-planet-size / 3;
+		height: $min-planet-size / 3;
+		margin: #{$border}px;
+		box-sizing: border-box;
+		background-color: $color;
+		border-radius: 50%;
+		border: #{$border-width}px solid darken($color, 30%);
+		opacity: .75;
+		animation: satellite-#{$i} #{$speed}s linear infinite;
+	}
+}
+
+.pause-trajectory {
+	-webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+.scout-planet {
+	animation: scout .5s linear forwards;
+}
+
+.leave-planet {
+	animation: scout .5s linear backwards;
+}
+
+.hide-satellite {
+	opacity: 0;
+	transition: opacity .3s;
+}
+
 .ai-details {
 	margin-top: 25rem;
 	position: relative;
@@ -140,6 +187,16 @@ $colors: #DE6555,
 	span {
 		color: $white;
 		font-size: $bodyFontFamily;
+	}
+}
+
+@keyframes scout {
+	0% {
+	  transform: scale(1);
+	}
+
+	100% {
+	  transform: scale(1.2);
 	}
 }
 
