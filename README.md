@@ -34,7 +34,7 @@ Install packages
 ### .env
 This projects uses a .env file. Add it to this project. Here's sample file:
 ```
-ENV_PORT=<yourport>
+PORT=<yourport>
 DB_HOST=<hostname>
 DB_USER=<username>
 DB_PASS=<password>
