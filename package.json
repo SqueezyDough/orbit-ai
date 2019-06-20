@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "build": "node server.js",
+    "start": "node server.js",
     "dev": "nodemon server.js",
     "watch": "gulp watch",
     "compile": "node-sass lib/scss/site.scss lib/dist/site.css"
