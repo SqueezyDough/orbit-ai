@@ -10,6 +10,8 @@ router.get("/", auth.home);
 router.get("/explore/:id", utils.isLoggedIn, orbit.explore);
 router.post("/explore/:id", utils.isLoggedIn, orbit.connectOrbits);
 
+router.post("/scout/:id", utils.isLoggedIn, orbit.scoutOrbit);
+
 router.get("/create-orbit", utils.isLoggedIn, orbit.createOrbit);
 
 // route to sync page

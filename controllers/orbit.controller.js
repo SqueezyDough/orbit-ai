@@ -121,6 +121,14 @@ orbitController.connectOrbits = function (req, res) {
 	});
 };
 
+orbitController.scoutOrbit = function (req, res) {
+	utils.findOrbit(req.params.id).then(function(orbit) {
+		let satellitesInOrbit = orbit.planets.length;
+		res.write(JSON.stringify(satellitesInOrbit) );
+		res.end();
+	});
+};
+
 function isMatch(ai, candidateAi) {
 	let keys = Object.values(Object.keys(ai.properties));
 	let matchedProperties = 0;
