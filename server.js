@@ -18,7 +18,7 @@ const exphbs = require("express-handlebars");
 require("./views/helpers/helpers");
 
 const app = express();
-const port = process.env.ENV_PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app
 	.use(bodyParser.urlencoded({ extended: false }))
