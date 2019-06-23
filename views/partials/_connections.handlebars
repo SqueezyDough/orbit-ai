@@ -1,0 +1,12 @@
+<h2>Connected orbits</h2>
+
+<ul class="connections-list">
+	{{#each connections}}
+		<li class="connections-list__item">
+			<span class="connections-list__item__name">{{this.ownerName}}'s orbit</span>
+			<a href="/orbit/disconnect/{{this.id}}" class="btn--tertiary">Disconnect</a>
+		</li>
+		{{else}}
+		<li>You don't have any active connections</li>
+	{{/each}}
+</ul>

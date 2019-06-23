@@ -1,7 +1,7 @@
 $orbit-size: 280px;
 $min-planet-size: 50px;
 $planet-count: 100;
-$root-planet-count: 3;
+$root-planet-count: 30;
 $colors: #DE6555,
 		 #E04A5C,
 		 #A22C65,
@@ -117,9 +117,9 @@ $colors: #DE6555,
 }
 
 @for $i from 1 through $root-planet-count {
-	$border: random(30);
+	$border: random(20);
 	$border-width: random(4);
-	$speed: 10 + 100/random(10);
+	$sat-speed: 100/random(40);
 	$color-key: random( length($colors) );
 	$color: nth( $colors, $color-key );
 
@@ -138,7 +138,7 @@ $colors: #DE6555,
 		border-radius: 50%;
 		border: #{$border-width}px solid darken($color, 30%);
 		opacity: .75;
-		animation: satellite-#{$i} #{$speed}s linear infinite;
+		animation: satellite-#{$i} #{$sat-speed}s linear infinite;
 	}
 }
 
@@ -150,16 +150,44 @@ $colors: #DE6555,
 }
 
 .scout-planet {
-	animation: scout .3s ease-in-out forwards;
+	animation: scout .5s ease-in-out forwards;
 }
 
 .leave-planet {
-	animation: scout .3s ease-in-out backwards;
+	animation: scout .5s ease-in-out backwards;
 }
 
 .hide-satellite {
 	opacity: 0;
 	transition: opacity .3s;
+}
+
+.connection-indicator {
+	color: $delRio;
+	font-size: $smallFontSize;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		margin-right: .5rem;
+		width: .5rem;
+		height: .5rem;
+		background-color: #15AE7D;
+		border-radius: 50%;
+		animation: pulse 5s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
 }
 
 .ai-details {
@@ -173,7 +201,7 @@ $colors: #DE6555,
 		margin: 1.6rem 0;
 
 		&:last-of-type {
-			margin-bottom: 4rem;
+			margin-bottom: 2rem;
 		}
 	}
 
