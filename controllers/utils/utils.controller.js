@@ -46,16 +46,23 @@ utilsController.getOrbits = function(id) {
 	);
 };
 
-utilsController.mergeOrbits = function(orbits) {
+utilsController.mergeOrbits = function(orbits, ownerOrbit) {
 	let mergedOrbit = [];
 	let orbit = [];
 
 	orbits.forEach( (orbit) => {
 		let planets = orbit.planets;
 
+		// remove self from orbits
+		if (orbit.planets.includes(ownerOrbit._id)) {
+			let index = orbit.planets.indexOf(ownerOrbit._id);
+			orbit.planets.splice(index, 1);
+		}
+
 		planets.forEach( (planet) => {
 			let str = JSON.stringify(planet);
 
+			// check if there are duplicates
 			if (mergedOrbit.includes(str)) {
 				console.log(`Planet: ${planet} already in orbit`);
 			} else {

@@ -1,10 +1,15 @@
+{{#if connected}}
+	<span class="connection-indicator">Connected</span>
+{{/if}}
+
 {{> _orbit}}
 
 <section class="ai-details">
 	{{> _properties}}
 </section>
 
-<form method="post" action="./{{orbit._id}}">
-	<input type="submit" class="btn--primary" value="Connect to {{ai.instanceName}}">
-</form>
-
+{{#unless connected}}
+	<form method="post" action="./{{orbit._id}}">
+		<input type="submit" class="btn--primary" value="Connect to {{ai.instanceName}}">
+	</form>
+{{/unless}}

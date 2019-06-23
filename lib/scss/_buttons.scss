@@ -86,9 +86,9 @@
 .btn--tertiary {
 	@extend .btn;
 	@extend .btn-transition;
-	padding: 10px;
+	padding: 10px 0 10px 10px;
 	background: none;
-	color: $secondaryThemeColor;
+	color: $delRio;
 	transition: all $baseTransition;
 
 	&:hover {

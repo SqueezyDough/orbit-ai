@@ -89,11 +89,37 @@ exports.ai_onUpdate = function (req, res) {
 };
 
 exports.ai_overview = function (req, res) {
+	// find logged in ai
 	utils.findAi(req.session.passport.user).then(function(ai){
-		res.render("pages/iai", {
-			title : `${process.env.APP_NAME} - Hi ${ai.serialNr}!`,
-			ai : ai,
-			isSynced: req.isAuthenticated()
+		// get all orbits where ai is connected to
+		utils.getOrbits(ai._id).then( async (orbits) => {
+			let connections = [];
+
+			// for every connection, create a new orbit
+			for (let _orbit of orbits) {
+				// add the owner name and orbit id to the array
+				await utils.findAi(_orbit.ownerId).then( (owner) => {
+					// don't add if the orbit belongs to itself
+					if (_orbit.ownerId != ai._id) {
+						// create a new obj for the connection
+						let orbit = {};
+
+						// add the name and id as properties
+						orbit.id = _orbit._id;
+						orbit.ownerName = owner.instanceName;
+
+						// add the obj to the array
+						connections.push(orbit);
+					}
+				});
+			}
+
+			res.render("pages/iai", {
+				title : `${process.env.APP_NAME} - Hi ${ai.serialNr}!`,
+				ai : ai,
+				connections : connections,
+				isSynced : req.isAuthenticated()
+			});
 		});
 	});
 };

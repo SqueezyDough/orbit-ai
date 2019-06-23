@@ -10,14 +10,16 @@ syncController.home = function(req, res) {
 	if(req.isAuthenticated()) {
 		utils.findAi(req.session.passport.user).then(function(ai) {
 			utils.getOrbits(ai._id).then(function(orbits) {
-				let planets = utils.mergeOrbits(orbits);
+				utils.findOrbitByOwner(req.session.passport.user).then(function(ownerOrbit) {
+					let planets = utils.mergeOrbits(orbits, ownerOrbit);
 
-				res.render("pages/orbit", {
-					title : `${process.env.APP_NAME} - Orbit`,
-					ai : ai,
-					url : "explore/",
-					planets : planets,
-					isSynced: req.isAuthenticated()
+					res.render("pages/orbit", {
+						title : `${process.env.APP_NAME} - Orbit`,
+						ai : ai,
+						url : "explore/",
+						planets : planets,
+						isSynced: req.isAuthenticated()
+					});
 				});
 			});
 		});

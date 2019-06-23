@@ -11,6 +11,7 @@ router.get("/explore/:id", utils.isLoggedIn, orbit.explore);
 router.post("/explore/:id", utils.isLoggedIn, orbit.connectOrbits);
 
 router.post("/scout/:id", utils.isLoggedIn, orbit.scoutOrbit);
+router.get("/orbit/disconnect/:id", utils.isLoggedIn, orbit.disconnectFromOrbit);
 
 router.get("/create-orbit", utils.isLoggedIn, orbit.createOrbit);
 
