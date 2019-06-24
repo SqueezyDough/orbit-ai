@@ -6,7 +6,6 @@ const utils = require("./utils/utils.controller");
 const _url = require("url");
 
 require("dotenv").config();
-const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
 
 mongoose.set("useFindAndModify", false);
 
@@ -14,8 +13,6 @@ const orbitController = {};
 
 // explore someone elses orbit
 orbitController.explore = function(req, res) {
-	mongoose.connect(url, { useNewUrlParser: true });
-
 	utils.findOrbit(req.params.id).then(function(orbit) {
 		// remove self from this orbit if found
 		utils.findOrbitByOwner(req.session.passport.user).then(function(ownOrbit) {
@@ -49,8 +46,6 @@ orbitController.explore = function(req, res) {
 
 // create a new orbit on account creation
 orbitController.createOrbit = async function(ai) {
-	mongoose.connect(url,  { useNewUrlParser: true });
-
 	let OrbitSchema = mongoose.model("Orbit", Orbit);
 
 	// create ownership, connect ai to orbit

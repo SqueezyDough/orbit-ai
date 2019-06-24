@@ -1,13 +1,11 @@
-const mongoose = require("mongoose");
 const Ai = require("../../models/ai.model");
 const Orbit = require("../../models/orbit.model");
 require("dotenv").config();
-const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
 
 const utilsController = {};
 
+// find a single a with the id form the session
 utilsController.findAi = function(id) {
-	mongoose.connect(url, { useNewUrlParser: true });
 	return Ai
 			.findOne({ _id: id })
 			.then(function(ai) {
@@ -16,8 +14,8 @@ utilsController.findAi = function(id) {
 	);
 };
 
+// find orbit by id
 utilsController.findOrbit = function(id) {
-	mongoose.connect(url, { useNewUrlParser: true });
 	return Orbit
 			.findOne({ _id: id })
 			.then(function(orbit) {
@@ -26,8 +24,8 @@ utilsController.findOrbit = function(id) {
 	);
 };
 
+// find orbit by owner id
 utilsController.findOrbitByOwner = function(id) {
-	mongoose.connect(url, { useNewUrlParser: true });
 	return Orbit
 			.findOne({ ownerId: id })
 			.then(function(orbit) {
@@ -36,8 +34,8 @@ utilsController.findOrbitByOwner = function(id) {
 	);
 };
 
+// orbits all orbuts where the ai is connected to
 utilsController.getOrbits = function(id) {
-	mongoose.connect(url, { useNewUrlParser: true });
 	return Orbit
 			.find({ activeConnections: id })
 			.then(function(orbit) {
@@ -46,6 +44,7 @@ utilsController.getOrbits = function(id) {
 	);
 };
 
+// merge all orbits where the ai is connected to and return it as one array
 utilsController.mergeOrbits = function(orbits, ownerOrbit) {
 	let mergedOrbit = [];
 	let orbit = [];
@@ -80,6 +79,7 @@ utilsController.mergeOrbits = function(orbits, ownerOrbit) {
 	return orbit;
 };
 
+// look is the ai is logged in
 utilsController.isLoggedIn = function(req, res, next) {
 	if (req.isAuthenticated()) {
 		return next();

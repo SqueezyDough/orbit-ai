@@ -1,12 +1,9 @@
-const mongoose = require("mongoose");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const bcrypt = require("bcrypt");
 const Ai = require("../models/ai.model");
 
 require("dotenv").config();
-const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
-mongoose.connect(url, { useNewUrlParser: true });
 
 passport.use(new LocalStrategy({
 	usernameField: "serialNr",
