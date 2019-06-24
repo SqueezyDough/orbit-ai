@@ -260,20 +260,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-1 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(48deg); }
+    transform: translate3d(0, 0, 0) rotate(316deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(408deg); } }
+    transform: translate3d(0, 0, 0) rotate(676deg); } }
 
 .orbit-wrapper--1 {
   animation: planet-1 60s linear infinite; }
   .orbit-wrapper--1 .planet {
     display: inline-block;
-    margin: 128px;
-    width: -182px;
-    height: -182px;
-    opacity: 0.48571;
-    background-color: #A22C65;
-    border: 3px solid #2a0b1a;
+    margin: 104px;
+    width: -149px;
+    height: -149px;
+    opacity: 0.46;
+    background-color: #15AE7D;
+    border: 5px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--1 .planet:hover {
@@ -281,20 +281,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-2 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(198deg); }
+    transform: translate3d(0, 0, 0) rotate(115deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(558deg); } }
+    transform: translate3d(0, 0, 0) rotate(475deg); } }
 
 .orbit-wrapper--2 {
-  animation: planet-2 22.5s linear infinite; }
+  animation: planet-2 35s linear infinite; }
   .orbit-wrapper--2 .planet {
     display: inline-block;
-    margin: 147px;
-    width: -228px;
-    height: -228px;
-    opacity: 0.46667;
+    margin: 145px;
+    width: -238px;
+    height: -238px;
+    opacity: 0.52;
     background-color: #16A59F;
-    border: 7px solid #041e1d;
+    border: 2px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--2 .planet:hover {
@@ -302,20 +302,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-3 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(42deg); }
+    transform: translate3d(0, 0, 0) rotate(154deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(402deg); } }
+    transform: translate3d(0, 0, 0) rotate(514deg); } }
 
 .orbit-wrapper--3 {
-  animation: planet-3 24.28571s linear infinite; }
+  animation: planet-3 60s linear infinite; }
   .orbit-wrapper--3 .planet {
     display: inline-block;
-    margin: 124px;
-    width: -174px;
-    height: -174px;
-    opacity: 0.5;
-    background-color: #15AE7D;
-    border: 13px solid #05251b;
+    margin: 134px;
+    width: -216px;
+    height: -216px;
+    opacity: 0.6;
+    background-color: #16A59F;
+    border: 10px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--3 .planet:hover {
@@ -323,20 +323,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-4 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(196deg); }
+    transform: translate3d(0, 0, 0) rotate(273deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(556deg); } }
+    transform: translate3d(0, 0, 0) rotate(633deg); } }
 
 .orbit-wrapper--4 {
-  animation: planet-4 22.5s linear infinite; }
+  animation: planet-4 24.28571s linear infinite; }
   .orbit-wrapper--4 .planet {
     display: inline-block;
-    margin: 118px;
-    width: -171px;
-    height: -171px;
-    opacity: 0.7;
-    background-color: #15AE7D;
-    border: 7px solid #05251b;
+    margin: 153px;
+    width: -241px;
+    height: -241px;
+    opacity: 1;
+    background-color: #16A59F;
+    border: 2px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--4 .planet:hover {
@@ -344,20 +344,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-5 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(142deg); }
+    transform: translate3d(0, 0, 0) rotate(197deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(502deg); } }
+    transform: translate3d(0, 0, 0) rotate(557deg); } }
 
 .orbit-wrapper--5 {
-  animation: planet-5 110s linear infinite; }
+  animation: planet-5 60s linear infinite; }
   .orbit-wrapper--5 .planet {
     display: inline-block;
-    margin: 122px;
-    width: -168px;
-    height: -168px;
+    margin: 156px;
+    width: -248px;
+    height: -248px;
     opacity: 0.55;
-    background-color: #DE6555;
-    border: 9px solid #812519;
+    background-color: #15AE7D;
+    border: 9px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--5 .planet:hover {
@@ -365,20 +365,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-6 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(44deg); }
+    transform: translate3d(0, 0, 0) rotate(114deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(404deg); } }
+    transform: translate3d(0, 0, 0) rotate(474deg); } }
 
 .orbit-wrapper--6 {
   animation: planet-6 35s linear infinite; }
   .orbit-wrapper--6 .planet {
     display: inline-block;
-    margin: 142px;
-    width: -209px;
-    height: -209px;
-    opacity: 0.46;
-    background-color: #E04A5C;
-    border: 9px solid #7c1522;
+    margin: 124px;
+    width: -171px;
+    height: -171px;
+    opacity: 0.7;
+    background-color: #15AE7D;
+    border: 14px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--6 .planet:hover {
@@ -386,20 +386,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-7 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(255deg); }
+    transform: translate3d(0, 0, 0) rotate(351deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(615deg); } }
+    transform: translate3d(0, 0, 0) rotate(711deg); } }
 
 .orbit-wrapper--7 {
-  animation: planet-7 30s linear infinite; }
+  animation: planet-7 110s linear infinite; }
   .orbit-wrapper--7 .planet {
     display: inline-block;
-    margin: 124px;
-    width: -172px;
-    height: -172px;
-    opacity: 0.52;
+    margin: 155px;
+    width: -231px;
+    height: -231px;
+    opacity: 0.6;
     background-color: #A22C65;
-    border: 5px solid #2a0b1a;
+    border: 10px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--7 .planet:hover {
@@ -407,20 +407,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-8 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(144deg); }
+    transform: translate3d(0, 0, 0) rotate(20deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(504deg); } }
+    transform: translate3d(0, 0, 0) rotate(380deg); } }
 
 .orbit-wrapper--8 {
-  animation: planet-8 20s linear infinite; }
+  animation: planet-8 30s linear infinite; }
   .orbit-wrapper--8 .planet {
     display: inline-block;
-    margin: 117px;
-    width: -162px;
-    height: -162px;
-    opacity: 0.6;
-    background-color: #E04A5C;
-    border: 10px solid #7c1522;
+    margin: 124px;
+    width: -175px;
+    height: -175px;
+    opacity: 0.7;
+    background-color: #DE6555;
+    border: 9px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--8 .planet:hover {
@@ -428,20 +428,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-9 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(3deg); }
+    transform: translate3d(0, 0, 0) rotate(249deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(363deg); } }
+    transform: translate3d(0, 0, 0) rotate(609deg); } }
 
 .orbit-wrapper--9 {
-  animation: planet-9 110s linear infinite; }
+  animation: planet-9 20s linear infinite; }
   .orbit-wrapper--9 .planet {
     display: inline-block;
-    margin: 145px;
-    width: -223px;
-    height: -223px;
-    opacity: 0.6;
-    background-color: #E04A5C;
-    border: 5px solid #7c1522;
+    margin: 156px;
+    width: -239px;
+    height: -239px;
+    opacity: 0.52;
+    background-color: #DE6555;
+    border: 14px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--9 .planet:hover {
@@ -449,20 +449,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-10 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(139deg); }
+    transform: translate3d(0, 0, 0) rotate(300deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(499deg); } }
+    transform: translate3d(0, 0, 0) rotate(660deg); } }
 
 .orbit-wrapper--10 {
-  animation: planet-10 21.11111s linear infinite; }
+  animation: planet-10 22.5s linear infinite; }
   .orbit-wrapper--10 .planet {
     display: inline-block;
-    margin: 152px;
-    width: -241px;
-    height: -241px;
-    opacity: 0.52;
+    margin: 146px;
+    width: -212px;
+    height: -212px;
+    opacity: 0.6;
     background-color: #16A59F;
-    border: 11px solid #041e1d;
+    border: 16px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--10 .planet:hover {
@@ -470,20 +470,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-11 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(153deg); }
+    transform: translate3d(0, 0, 0) rotate(330deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(513deg); } }
+    transform: translate3d(0, 0, 0) rotate(690deg); } }
 
 .orbit-wrapper--11 {
-  animation: planet-11 30s linear infinite; }
+  animation: planet-11 26.66667s linear infinite; }
   .orbit-wrapper--11 .planet {
     display: inline-block;
     margin: 143px;
-    width: -222px;
-    height: -222px;
-    opacity: 0.6;
-    background-color: #E04A5C;
-    border: 6px solid #7c1522;
+    width: -211px;
+    height: -211px;
+    opacity: 0.46;
+    background-color: #16A59F;
+    border: 1px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--11 .planet:hover {
@@ -491,20 +491,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-12 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(151deg); }
+    transform: translate3d(0, 0, 0) rotate(224deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(511deg); } }
+    transform: translate3d(0, 0, 0) rotate(584deg); } }
 
 .orbit-wrapper--12 {
-  animation: planet-12 60s linear infinite; }
+  animation: planet-12 110s linear infinite; }
   .orbit-wrapper--12 .planet {
     display: inline-block;
-    margin: 113px;
-    width: -165px;
-    height: -165px;
-    opacity: 0.7;
-    background-color: #15AE7D;
-    border: 6px solid #05251b;
+    margin: 132px;
+    width: -211px;
+    height: -211px;
+    opacity: 0.52;
+    background-color: #DE6555;
+    border: 7px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--12 .planet:hover {
@@ -512,20 +512,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-13 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(216deg); }
+    transform: translate3d(0, 0, 0) rotate(197deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(576deg); } }
+    transform: translate3d(0, 0, 0) rotate(557deg); } }
 
 .orbit-wrapper--13 {
-  animation: planet-13 110s linear infinite; }
+  animation: planet-13 22.5s linear infinite; }
   .orbit-wrapper--13 .planet {
     display: inline-block;
-    margin: 120px;
-    width: -164px;
-    height: -164px;
-    opacity: 0.6;
+    margin: 114px;
+    width: -154px;
+    height: -154px;
+    opacity: 0.52;
     background-color: #DE6555;
-    border: 6px solid #812519;
+    border: 14px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--13 .planet:hover {
@@ -533,20 +533,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-14 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(54deg); }
+    transform: translate3d(0, 0, 0) rotate(199deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(414deg); } }
+    transform: translate3d(0, 0, 0) rotate(559deg); } }
 
 .orbit-wrapper--14 {
-  animation: planet-14 22.5s linear infinite; }
+  animation: planet-14 21.11111s linear infinite; }
   .orbit-wrapper--14 .planet {
     display: inline-block;
-    margin: 119px;
-    width: -163px;
-    height: -163px;
-    opacity: 0.5;
+    margin: 104px;
+    width: -152px;
+    height: -152px;
+    opacity: 1;
     background-color: #DE6555;
-    border: 16px solid #812519;
+    border: 7px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--14 .planet:hover {
@@ -554,20 +554,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-15 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(55deg); }
+    transform: translate3d(0, 0, 0) rotate(197deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(415deg); } }
+    transform: translate3d(0, 0, 0) rotate(557deg); } }
 
 .orbit-wrapper--15 {
   animation: planet-15 20s linear infinite; }
   .orbit-wrapper--15 .planet {
     display: inline-block;
-    margin: 152px;
-    width: -235px;
-    height: -235px;
-    opacity: 0.7;
-    background-color: #15AE7D;
-    border: 13px solid #05251b;
+    margin: 147px;
+    width: -223px;
+    height: -223px;
+    opacity: 1;
+    background-color: #16A59F;
+    border: 9px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--15 .planet:hover {
@@ -575,20 +575,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-16 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(229deg); }
+    transform: translate3d(0, 0, 0) rotate(279deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(589deg); } }
+    transform: translate3d(0, 0, 0) rotate(639deg); } }
 
 .orbit-wrapper--16 {
-  animation: planet-16 21.11111s linear infinite; }
+  animation: planet-16 26.66667s linear infinite; }
   .orbit-wrapper--16 .planet {
     display: inline-block;
-    margin: 106px;
-    width: -152px;
-    height: -152px;
-    opacity: 0.5;
-    background-color: #15AE7D;
-    border: 11px solid #05251b;
+    margin: 121px;
+    width: -185px;
+    height: -185px;
+    opacity: 0.55;
+    background-color: #16A59F;
+    border: 10px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--16 .planet:hover {
@@ -596,20 +596,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-17 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(278deg); }
+    transform: translate3d(0, 0, 0) rotate(254deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(638deg); } }
+    transform: translate3d(0, 0, 0) rotate(614deg); } }
 
 .orbit-wrapper--17 {
-  animation: planet-17 20s linear infinite; }
+  animation: planet-17 110s linear infinite; }
   .orbit-wrapper--17 .planet {
     display: inline-block;
-    margin: 148px;
-    width: -226px;
-    height: -226px;
-    opacity: 0.475;
-    background-color: #E04A5C;
-    border: 14px solid #7c1522;
+    margin: 158px;
+    width: -246px;
+    height: -246px;
+    opacity: 0.46667;
+    background-color: #16A59F;
+    border: 3px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--17 .planet:hover {
@@ -617,20 +617,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-18 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(317deg); }
+    transform: translate3d(0, 0, 0) rotate(162deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(677deg); } }
+    transform: translate3d(0, 0, 0) rotate(522deg); } }
 
 .orbit-wrapper--18 {
-  animation: planet-18 20s linear infinite; }
+  animation: planet-18 60s linear infinite; }
   .orbit-wrapper--18 .planet {
     display: inline-block;
-    margin: 118px;
-    width: -185px;
-    height: -185px;
-    opacity: 1;
-    background-color: #A22C65;
-    border: 4px solid #2a0b1a;
+    margin: 105px;
+    width: -138px;
+    height: -138px;
+    opacity: 0.46;
+    background-color: #E04A5C;
+    border: 6px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--18 .planet:hover {
@@ -638,20 +638,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-19 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(291deg); }
+    transform: translate3d(0, 0, 0) rotate(302deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(651deg); } }
+    transform: translate3d(0, 0, 0) rotate(662deg); } }
 
 .orbit-wrapper--19 {
-  animation: planet-19 43.33333s linear infinite; }
+  animation: planet-19 24.28571s linear infinite; }
   .orbit-wrapper--19 .planet {
     display: inline-block;
-    margin: 105px;
-    width: -132px;
-    height: -132px;
-    opacity: 0.52;
-    background-color: #DE6555;
-    border: 12px solid #812519;
+    margin: 112px;
+    width: -168px;
+    height: -168px;
+    opacity: 0.5;
+    background-color: #A22C65;
+    border: 15px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--19 .planet:hover {
@@ -659,20 +659,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-20 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(340deg); }
+    transform: translate3d(0, 0, 0) rotate(304deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(700deg); } }
+    transform: translate3d(0, 0, 0) rotate(664deg); } }
 
 .orbit-wrapper--20 {
-  animation: planet-20 20s linear infinite; }
+  animation: planet-20 43.33333s linear infinite; }
   .orbit-wrapper--20 .planet {
     display: inline-block;
-    margin: 134px;
-    width: -210px;
-    height: -210px;
-    opacity: 0.48571;
-    background-color: #DE6555;
-    border: 13px solid #812519;
+    margin: 120px;
+    width: -187px;
+    height: -187px;
+    opacity: 0.46667;
+    background-color: #E04A5C;
+    border: 8px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--20 .planet:hover {
@@ -680,20 +680,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-21 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(253deg); }
+    transform: translate3d(0, 0, 0) rotate(205deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(613deg); } }
+    transform: translate3d(0, 0, 0) rotate(565deg); } }
 
 .orbit-wrapper--21 {
-  animation: planet-21 35s linear infinite; }
+  animation: planet-21 43.33333s linear infinite; }
   .orbit-wrapper--21 .planet {
     display: inline-block;
-    margin: 156px;
-    width: -249px;
-    height: -249px;
-    opacity: 0.52;
-    background-color: #DE6555;
-    border: 7px solid #812519;
+    margin: 101px;
+    width: -131px;
+    height: -131px;
+    opacity: 1;
+    background-color: #A22C65;
+    border: 2px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--21 .planet:hover {
@@ -701,20 +701,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-22 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(167deg); }
+    transform: translate3d(0, 0, 0) rotate(238deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(527deg); } }
+    transform: translate3d(0, 0, 0) rotate(598deg); } }
 
 .orbit-wrapper--22 {
   animation: planet-22 60s linear infinite; }
   .orbit-wrapper--22 .planet {
     display: inline-block;
-    margin: 142px;
-    width: -224px;
-    height: -224px;
-    opacity: 0.46;
-    background-color: #A22C65;
-    border: 1px solid #2a0b1a;
+    margin: 128px;
+    width: -200px;
+    height: -200px;
+    opacity: 0.7;
+    background-color: #16A59F;
+    border: 12px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--22 .planet:hover {
@@ -722,18 +722,18 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-23 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(203deg); }
+    transform: translate3d(0, 0, 0) rotate(100deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(563deg); } }
+    transform: translate3d(0, 0, 0) rotate(460deg); } }
 
 .orbit-wrapper--23 {
-  animation: planet-23 35s linear infinite; }
+  animation: planet-23 21.11111s linear infinite; }
   .orbit-wrapper--23 .planet {
     display: inline-block;
-    margin: 155px;
-    width: -237px;
-    height: -237px;
-    opacity: 0.46;
+    margin: 146px;
+    width: -236px;
+    height: -236px;
+    opacity: 0.55;
     background-color: #16A59F;
     border: 1px solid #041e1d;
     pointer-events: auto;
@@ -743,20 +743,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-24 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(132deg); }
+    transform: translate3d(0, 0, 0) rotate(113deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(492deg); } }
+    transform: translate3d(0, 0, 0) rotate(473deg); } }
 
 .orbit-wrapper--24 {
-  animation: planet-24 43.33333s linear infinite; }
+  animation: planet-24 22.5s linear infinite; }
   .orbit-wrapper--24 .planet {
     display: inline-block;
-    margin: 108px;
-    width: -139px;
-    height: -139px;
-    opacity: 0.46;
-    background-color: #DE6555;
-    border: 1px solid #812519;
+    margin: 141px;
+    width: -218px;
+    height: -218px;
+    opacity: 0.46667;
+    background-color: #15AE7D;
+    border: 15px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--24 .planet:hover {
@@ -764,20 +764,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-25 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(360deg); }
+    transform: translate3d(0, 0, 0) rotate(128deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(720deg); } }
+    transform: translate3d(0, 0, 0) rotate(488deg); } }
 
 .orbit-wrapper--25 {
-  animation: planet-25 35s linear infinite; }
+  animation: planet-25 20s linear infinite; }
   .orbit-wrapper--25 .planet {
     display: inline-block;
-    margin: 136px;
-    width: -192px;
-    height: -192px;
-    opacity: 0.475;
-    background-color: #DE6555;
-    border: 3px solid #812519;
+    margin: 104px;
+    width: -145px;
+    height: -145px;
+    opacity: 0.5;
+    background-color: #A22C65;
+    border: 1px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--25 .planet:hover {
@@ -785,20 +785,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-26 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(111deg); }
+    transform: translate3d(0, 0, 0) rotate(351deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(471deg); } }
+    transform: translate3d(0, 0, 0) rotate(711deg); } }
 
 .orbit-wrapper--26 {
   animation: planet-26 60s linear infinite; }
   .orbit-wrapper--26 .planet {
     display: inline-block;
-    margin: 103px;
-    width: -150px;
-    height: -150px;
-    opacity: 0.55;
-    background-color: #15AE7D;
-    border: 14px solid #05251b;
+    margin: 119px;
+    width: -177px;
+    height: -177px;
+    opacity: 0.6;
+    background-color: #E04A5C;
+    border: 6px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--26 .planet:hover {
@@ -806,20 +806,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-27 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(30deg); }
+    transform: translate3d(0, 0, 0) rotate(347deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(390deg); } }
+    transform: translate3d(0, 0, 0) rotate(707deg); } }
 
 .orbit-wrapper--27 {
-  animation: planet-27 24.28571s linear infinite; }
+  animation: planet-27 35s linear infinite; }
   .orbit-wrapper--27 .planet {
     display: inline-block;
-    margin: 123px;
-    width: -183px;
-    height: -183px;
-    opacity: 0.46;
-    background-color: #16A59F;
-    border: 7px solid #041e1d;
+    margin: 125px;
+    width: -172px;
+    height: -172px;
+    opacity: 0.5;
+    background-color: #DE6555;
+    border: 16px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--27 .planet:hover {
@@ -827,20 +827,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-28 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(47deg); }
+    transform: translate3d(0, 0, 0) rotate(212deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(407deg); } }
+    transform: translate3d(0, 0, 0) rotate(572deg); } }
 
 .orbit-wrapper--28 {
-  animation: planet-28 30s linear infinite; }
+  animation: planet-28 24.28571s linear infinite; }
   .orbit-wrapper--28 .planet {
     display: inline-block;
-    margin: 123px;
-    width: -186px;
-    height: -186px;
-    opacity: 0.46667;
-    background-color: #16A59F;
-    border: 14px solid #041e1d;
+    margin: 116px;
+    width: -168px;
+    height: -168px;
+    opacity: 0.46;
+    background-color: #E04A5C;
+    border: 10px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--28 .planet:hover {
@@ -848,20 +848,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-29 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(257deg); }
+    transform: translate3d(0, 0, 0) rotate(312deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(617deg); } }
+    transform: translate3d(0, 0, 0) rotate(672deg); } }
 
 .orbit-wrapper--29 {
-  animation: planet-29 30s linear infinite; }
+  animation: planet-29 26.66667s linear infinite; }
   .orbit-wrapper--29 .planet {
     display: inline-block;
-    margin: 109px;
-    width: -161px;
-    height: -161px;
-    opacity: 0.6;
+    margin: 102px;
+    width: -147px;
+    height: -147px;
+    opacity: 0.48571;
     background-color: #15AE7D;
-    border: 13px solid #05251b;
+    border: 9px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--29 .planet:hover {
@@ -869,20 +869,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-30 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(86deg); }
+    transform: translate3d(0, 0, 0) rotate(292deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(446deg); } }
+    transform: translate3d(0, 0, 0) rotate(652deg); } }
 
 .orbit-wrapper--30 {
-  animation: planet-30 26.66667s linear infinite; }
+  animation: planet-30 43.33333s linear infinite; }
   .orbit-wrapper--30 .planet {
     display: inline-block;
-    margin: 145px;
-    width: -238px;
-    height: -238px;
-    opacity: 0.7;
-    background-color: #16A59F;
-    border: 2px solid #041e1d;
+    margin: 141px;
+    width: -217px;
+    height: -217px;
+    opacity: 0.475;
+    background-color: #E04A5C;
+    border: 4px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--30 .planet:hover {
@@ -890,20 +890,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-31 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(96deg); }
+    transform: translate3d(0, 0, 0) rotate(219deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(456deg); } }
+    transform: translate3d(0, 0, 0) rotate(579deg); } }
 
 .orbit-wrapper--31 {
-  animation: planet-31 26.66667s linear infinite; }
+  animation: planet-31 22.5s linear infinite; }
   .orbit-wrapper--31 .planet {
     display: inline-block;
-    margin: 131px;
-    width: -211px;
-    height: -211px;
-    opacity: 1;
-    background-color: #15AE7D;
-    border: 6px solid #05251b;
+    margin: 127px;
+    width: -188px;
+    height: -188px;
+    opacity: 0.48571;
+    background-color: #A22C65;
+    border: 6px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--31 .planet:hover {
@@ -911,20 +911,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-32 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(273deg); }
+    transform: translate3d(0, 0, 0) rotate(195deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(633deg); } }
+    transform: translate3d(0, 0, 0) rotate(555deg); } }
 
 .orbit-wrapper--32 {
-  animation: planet-32 60s linear infinite; }
+  animation: planet-32 21.11111s linear infinite; }
   .orbit-wrapper--32 .planet {
     display: inline-block;
-    margin: 144px;
-    width: -232px;
-    height: -232px;
+    margin: 115px;
+    width: -161px;
+    height: -161px;
     opacity: 0.46667;
-    background-color: #E04A5C;
-    border: 3px solid #7c1522;
+    background-color: #DE6555;
+    border: 16px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--32 .planet:hover {
@@ -932,20 +932,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-33 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(198deg); }
+    transform: translate3d(0, 0, 0) rotate(280deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(558deg); } }
+    transform: translate3d(0, 0, 0) rotate(640deg); } }
 
 .orbit-wrapper--33 {
-  animation: planet-33 30s linear infinite; }
+  animation: planet-33 35s linear infinite; }
   .orbit-wrapper--33 .planet {
     display: inline-block;
-    margin: 137px;
-    width: -218px;
-    height: -218px;
-    opacity: 0.52;
+    margin: 125px;
+    width: -198px;
+    height: -198px;
+    opacity: 0.55;
     background-color: #16A59F;
-    border: 4px solid #041e1d;
+    border: 10px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--33 .planet:hover {
@@ -953,20 +953,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-34 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(357deg); }
+    transform: translate3d(0, 0, 0) rotate(65deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(717deg); } }
+    transform: translate3d(0, 0, 0) rotate(425deg); } }
 
 .orbit-wrapper--34 {
-  animation: planet-34 22.5s linear infinite; }
+  animation: planet-34 35s linear infinite; }
   .orbit-wrapper--34 .planet {
     display: inline-block;
-    margin: 139px;
-    width: -208px;
-    height: -208px;
-    opacity: 0.6;
-    background-color: #15AE7D;
-    border: 12px solid #05251b;
+    margin: 146px;
+    width: -233px;
+    height: -233px;
+    opacity: 0.46667;
+    background-color: #DE6555;
+    border: 7px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--34 .planet:hover {
@@ -974,20 +974,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-35 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(322deg); }
+    transform: translate3d(0, 0, 0) rotate(290deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(682deg); } }
+    transform: translate3d(0, 0, 0) rotate(650deg); } }
 
 .orbit-wrapper--35 {
-  animation: planet-35 21.11111s linear infinite; }
+  animation: planet-35 60s linear infinite; }
   .orbit-wrapper--35 .planet {
     display: inline-block;
-    margin: 156px;
-    width: -261px;
-    height: -261px;
-    opacity: 0.48571;
-    background-color: #E04A5C;
-    border: 6px solid #7c1522;
+    margin: 102px;
+    width: -127px;
+    height: -127px;
+    opacity: 0.46;
+    background-color: #DE6555;
+    border: 14px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--35 .planet:hover {
@@ -995,20 +995,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-36 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(337deg); }
+    transform: translate3d(0, 0, 0) rotate(275deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(697deg); } }
+    transform: translate3d(0, 0, 0) rotate(635deg); } }
 
 .orbit-wrapper--36 {
-  animation: planet-36 26.66667s linear infinite; }
+  animation: planet-36 20s linear infinite; }
   .orbit-wrapper--36 .planet {
     display: inline-block;
-    margin: 155px;
-    width: -244px;
-    height: -244px;
-    opacity: 0.6;
-    background-color: #15AE7D;
-    border: 14px solid #05251b;
+    margin: 152px;
+    width: -226px;
+    height: -226px;
+    opacity: 0.5;
+    background-color: #A22C65;
+    border: 9px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--36 .planet:hover {
@@ -1016,20 +1016,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-37 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(80deg); }
+    transform: translate3d(0, 0, 0) rotate(290deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(440deg); } }
+    transform: translate3d(0, 0, 0) rotate(650deg); } }
 
 .orbit-wrapper--37 {
-  animation: planet-37 22.5s linear infinite; }
+  animation: planet-37 21.11111s linear infinite; }
   .orbit-wrapper--37 .planet {
     display: inline-block;
-    margin: 148px;
-    width: -241px;
-    height: -241px;
-    opacity: 0.475;
-    background-color: #16A59F;
-    border: 15px solid #041e1d;
+    margin: 138px;
+    width: -225px;
+    height: -225px;
+    opacity: 0.46667;
+    background-color: #E04A5C;
+    border: 7px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--37 .planet:hover {
@@ -1037,20 +1037,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-38 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(103deg); }
+    transform: translate3d(0, 0, 0) rotate(70deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(463deg); } }
+    transform: translate3d(0, 0, 0) rotate(430deg); } }
 
 .orbit-wrapper--38 {
-  animation: planet-38 43.33333s linear infinite; }
+  animation: planet-38 60s linear infinite; }
   .orbit-wrapper--38 .planet {
     display: inline-block;
-    margin: 104px;
-    width: -148px;
-    height: -148px;
-    opacity: 0.7;
+    margin: 126px;
+    width: -184px;
+    height: -184px;
+    opacity: 0.6;
     background-color: #DE6555;
-    border: 7px solid #812519;
+    border: 2px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--38 .planet:hover {
@@ -1058,20 +1058,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-39 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(82deg); }
+    transform: translate3d(0, 0, 0) rotate(182deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(442deg); } }
+    transform: translate3d(0, 0, 0) rotate(542deg); } }
 
 .orbit-wrapper--39 {
-  animation: planet-39 22.5s linear infinite; }
+  animation: planet-39 110s linear infinite; }
   .orbit-wrapper--39 .planet {
     display: inline-block;
-    margin: 142px;
-    width: -214px;
-    height: -214px;
+    margin: 159px;
+    width: -254px;
+    height: -254px;
     opacity: 0.55;
-    background-color: #DE6555;
-    border: 16px solid #812519;
+    background-color: #E04A5C;
+    border: 6px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--39 .planet:hover {
@@ -1079,20 +1079,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-40 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(305deg); }
+    transform: translate3d(0, 0, 0) rotate(177deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(665deg); } }
+    transform: translate3d(0, 0, 0) rotate(537deg); } }
 
 .orbit-wrapper--40 {
-  animation: planet-40 110s linear infinite; }
+  animation: planet-40 26.66667s linear infinite; }
   .orbit-wrapper--40 .planet {
     display: inline-block;
-    margin: 120px;
-    width: -188px;
-    height: -188px;
-    opacity: 0.6;
-    background-color: #DE6555;
-    border: 13px solid #812519;
+    margin: 150px;
+    width: -247px;
+    height: -247px;
+    opacity: 0.5;
+    background-color: #E04A5C;
+    border: 7px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--40 .planet:hover {
@@ -1100,20 +1100,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-41 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(106deg); }
+    transform: translate3d(0, 0, 0) rotate(132deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(466deg); } }
+    transform: translate3d(0, 0, 0) rotate(492deg); } }
 
 .orbit-wrapper--41 {
-  animation: planet-41 24.28571s linear infinite; }
+  animation: planet-41 110s linear infinite; }
   .orbit-wrapper--41 .planet {
     display: inline-block;
-    margin: 153px;
-    width: -253px;
-    height: -253px;
-    opacity: 0.46;
+    margin: 143px;
+    width: -235px;
+    height: -235px;
+    opacity: 0.55;
     background-color: #E04A5C;
-    border: 11px solid #7c1522;
+    border: 7px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--41 .planet:hover {
@@ -1121,20 +1121,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-42 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(73deg); }
+    transform: translate3d(0, 0, 0) rotate(269deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(433deg); } }
+    transform: translate3d(0, 0, 0) rotate(629deg); } }
 
 .orbit-wrapper--42 {
-  animation: planet-42 43.33333s linear infinite; }
+  animation: planet-42 20s linear infinite; }
   .orbit-wrapper--42 .planet {
     display: inline-block;
-    margin: 153px;
-    width: -239px;
-    height: -239px;
+    margin: 134px;
+    width: -216px;
+    height: -216px;
     opacity: 0.46;
-    background-color: #E04A5C;
-    border: 2px solid #7c1522;
+    background-color: #16A59F;
+    border: 15px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--42 .planet:hover {
@@ -1142,20 +1142,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-43 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(137deg); }
+    transform: translate3d(0, 0, 0) rotate(281deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(497deg); } }
+    transform: translate3d(0, 0, 0) rotate(641deg); } }
 
 .orbit-wrapper--43 {
-  animation: planet-43 26.66667s linear infinite; }
+  animation: planet-43 24.28571s linear infinite; }
   .orbit-wrapper--43 .planet {
     display: inline-block;
-    margin: 101px;
-    width: -136px;
-    height: -136px;
-    opacity: 0.46667;
-    background-color: #E04A5C;
-    border: 12px solid #7c1522;
+    margin: 136px;
+    width: -211px;
+    height: -211px;
+    opacity: 0.48571;
+    background-color: #A22C65;
+    border: 10px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--43 .planet:hover {
@@ -1163,20 +1163,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-44 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(339deg); }
+    transform: translate3d(0, 0, 0) rotate(242deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(699deg); } }
+    transform: translate3d(0, 0, 0) rotate(602deg); } }
 
 .orbit-wrapper--44 {
-  animation: planet-44 43.33333s linear infinite; }
+  animation: planet-44 60s linear infinite; }
   .orbit-wrapper--44 .planet {
     display: inline-block;
-    margin: 155px;
-    width: -256px;
-    height: -256px;
+    margin: 134px;
+    width: -211px;
+    height: -211px;
     opacity: 0.5;
-    background-color: #DE6555;
-    border: 2px solid #812519;
+    background-color: #15AE7D;
+    border: 6px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--44 .planet:hover {
@@ -1184,20 +1184,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-45 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(288deg); }
+    transform: translate3d(0, 0, 0) rotate(281deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(648deg); } }
+    transform: translate3d(0, 0, 0) rotate(641deg); } }
 
 .orbit-wrapper--45 {
-  animation: planet-45 43.33333s linear infinite; }
+  animation: planet-45 21.11111s linear infinite; }
   .orbit-wrapper--45 .planet {
     display: inline-block;
-    margin: 115px;
-    width: -163px;
-    height: -163px;
-    opacity: 0.46667;
-    background-color: #E04A5C;
-    border: 14px solid #7c1522;
+    margin: 108px;
+    width: -151px;
+    height: -151px;
+    opacity: 1;
+    background-color: #DE6555;
+    border: 11px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--45 .planet:hover {
@@ -1205,20 +1205,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-46 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(88deg); }
+    transform: translate3d(0, 0, 0) rotate(261deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(448deg); } }
+    transform: translate3d(0, 0, 0) rotate(621deg); } }
 
 .orbit-wrapper--46 {
-  animation: planet-46 60s linear infinite; }
+  animation: planet-46 20s linear infinite; }
   .orbit-wrapper--46 .planet {
     display: inline-block;
     margin: 115px;
-    width: -154px;
-    height: -154px;
-    opacity: 0.48571;
-    background-color: #A22C65;
-    border: 16px solid #2a0b1a;
+    width: -159px;
+    height: -159px;
+    opacity: 0.5;
+    background-color: #E04A5C;
+    border: 8px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--46 .planet:hover {
@@ -1226,20 +1226,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-47 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(310deg); }
+    transform: translate3d(0, 0, 0) rotate(342deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(670deg); } }
+    transform: translate3d(0, 0, 0) rotate(702deg); } }
 
 .orbit-wrapper--47 {
-  animation: planet-47 21.11111s linear infinite; }
+  animation: planet-47 20s linear infinite; }
   .orbit-wrapper--47 .planet {
     display: inline-block;
-    margin: 157px;
-    width: -256px;
-    height: -256px;
-    opacity: 0.46667;
+    margin: 118px;
+    width: -178px;
+    height: -178px;
+    opacity: 0.6;
     background-color: #DE6555;
-    border: 8px solid #812519;
+    border: 4px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--47 .planet:hover {
@@ -1247,20 +1247,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-48 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(48deg); }
+    transform: translate3d(0, 0, 0) rotate(299deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(408deg); } }
+    transform: translate3d(0, 0, 0) rotate(659deg); } }
 
 .orbit-wrapper--48 {
-  animation: planet-48 24.28571s linear infinite; }
+  animation: planet-48 22.5s linear infinite; }
   .orbit-wrapper--48 .planet {
     display: inline-block;
-    margin: 138px;
-    width: -213px;
-    height: -213px;
-    opacity: 0.475;
-    background-color: #15AE7D;
-    border: 12px solid #05251b;
+    margin: 140px;
+    width: -211px;
+    height: -211px;
+    opacity: 0.5;
+    background-color: #E04A5C;
+    border: 6px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--48 .planet:hover {
@@ -1268,20 +1268,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-49 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(231deg); }
+    transform: translate3d(0, 0, 0) rotate(255deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(591deg); } }
+    transform: translate3d(0, 0, 0) rotate(615deg); } }
 
 .orbit-wrapper--49 {
-  animation: planet-49 110s linear infinite; }
+  animation: planet-49 43.33333s linear infinite; }
   .orbit-wrapper--49 .planet {
     display: inline-block;
-    margin: 133px;
-    width: -207px;
-    height: -207px;
-    opacity: 0.48571;
-    background-color: #16A59F;
-    border: 11px solid #041e1d;
+    margin: 101px;
+    width: -132px;
+    height: -132px;
+    opacity: 0.5;
+    background-color: #15AE7D;
+    border: 15px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--49 .planet:hover {
@@ -1289,20 +1289,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-50 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(231deg); }
+    transform: translate3d(0, 0, 0) rotate(194deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(591deg); } }
+    transform: translate3d(0, 0, 0) rotate(554deg); } }
 
 .orbit-wrapper--50 {
-  animation: planet-50 110s linear infinite; }
+  animation: planet-50 24.28571s linear infinite; }
   .orbit-wrapper--50 .planet {
     display: inline-block;
     margin: 134px;
-    width: -199px;
-    height: -199px;
-    opacity: 0.55;
-    background-color: #DE6555;
-    border: 7px solid #812519;
+    width: -211px;
+    height: -211px;
+    opacity: 0.5;
+    background-color: #16A59F;
+    border: 13px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--50 .planet:hover {
@@ -1310,20 +1310,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-51 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(319deg); }
+    transform: translate3d(0, 0, 0) rotate(359deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(679deg); } }
+    transform: translate3d(0, 0, 0) rotate(719deg); } }
 
 .orbit-wrapper--51 {
-  animation: planet-51 22.5s linear infinite; }
+  animation: planet-51 60s linear infinite; }
   .orbit-wrapper--51 .planet {
     display: inline-block;
-    margin: 147px;
-    width: -237px;
-    height: -237px;
-    opacity: 0.6;
-    background-color: #E04A5C;
-    border: 7px solid #7c1522;
+    margin: 148px;
+    width: -245px;
+    height: -245px;
+    opacity: 1;
+    background-color: #15AE7D;
+    border: 3px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--51 .planet:hover {
@@ -1331,20 +1331,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-52 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(326deg); }
+    transform: translate3d(0, 0, 0) rotate(147deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(686deg); } }
+    transform: translate3d(0, 0, 0) rotate(507deg); } }
 
 .orbit-wrapper--52 {
-  animation: planet-52 43.33333s linear infinite; }
+  animation: planet-52 22.5s linear infinite; }
   .orbit-wrapper--52 .planet {
     display: inline-block;
-    margin: 138px;
-    width: -198px;
-    height: -198px;
+    margin: 102px;
+    width: -149px;
+    height: -149px;
     opacity: 0.46;
-    background-color: #A22C65;
-    border: 7px solid #2a0b1a;
+    background-color: #15AE7D;
+    border: 4px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--52 .planet:hover {
@@ -1352,20 +1352,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-53 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(85deg); }
+    transform: translate3d(0, 0, 0) rotate(225deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(445deg); } }
+    transform: translate3d(0, 0, 0) rotate(585deg); } }
 
 .orbit-wrapper--53 {
-  animation: planet-53 24.28571s linear infinite; }
+  animation: planet-53 22.5s linear infinite; }
   .orbit-wrapper--53 .planet {
     display: inline-block;
-    margin: 106px;
-    width: -152px;
-    height: -152px;
-    opacity: 0.48571;
-    background-color: #DE6555;
-    border: 1px solid #812519;
+    margin: 121px;
+    width: -188px;
+    height: -188px;
+    opacity: 0.5;
+    background-color: #E04A5C;
+    border: 6px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--53 .planet:hover {
@@ -1373,20 +1373,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-54 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(33deg); }
+    transform: translate3d(0, 0, 0) rotate(49deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(393deg); } }
+    transform: translate3d(0, 0, 0) rotate(409deg); } }
 
 .orbit-wrapper--54 {
-  animation: planet-54 30s linear infinite; }
+  animation: planet-54 22.5s linear infinite; }
   .orbit-wrapper--54 .planet {
     display: inline-block;
-    margin: 121px;
-    width: -186px;
-    height: -186px;
-    opacity: 0.7;
-    background-color: #DE6555;
-    border: 7px solid #812519;
+    margin: 107px;
+    width: -136px;
+    height: -136px;
+    opacity: 0.46667;
+    background-color: #15AE7D;
+    border: 10px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--54 .planet:hover {
@@ -1394,20 +1394,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-55 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(138deg); }
+    transform: translate3d(0, 0, 0) rotate(50deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(498deg); } }
+    transform: translate3d(0, 0, 0) rotate(410deg); } }
 
 .orbit-wrapper--55 {
-  animation: planet-55 22.5s linear infinite; }
+  animation: planet-55 24.28571s linear infinite; }
   .orbit-wrapper--55 .planet {
     display: inline-block;
-    margin: 141px;
-    width: -206px;
-    height: -206px;
-    opacity: 0.46667;
-    background-color: #16A59F;
-    border: 9px solid #041e1d;
+    margin: 142px;
+    width: -213px;
+    height: -213px;
+    opacity: 0.6;
+    background-color: #A22C65;
+    border: 1px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--55 .planet:hover {
@@ -1415,20 +1415,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-56 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(293deg); }
+    transform: translate3d(0, 0, 0) rotate(178deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(653deg); } }
+    transform: translate3d(0, 0, 0) rotate(538deg); } }
 
 .orbit-wrapper--56 {
-  animation: planet-56 21.11111s linear infinite; }
+  animation: planet-56 20s linear infinite; }
   .orbit-wrapper--56 .planet {
     display: inline-block;
-    margin: 129px;
-    width: -205px;
-    height: -205px;
-    opacity: 0.48571;
-    background-color: #15AE7D;
-    border: 6px solid #05251b;
+    margin: 122px;
+    width: -171px;
+    height: -171px;
+    opacity: 0.52;
+    background-color: #A22C65;
+    border: 2px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--56 .planet:hover {
@@ -1436,20 +1436,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-57 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(103deg); }
+    transform: translate3d(0, 0, 0) rotate(277deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(463deg); } }
+    transform: translate3d(0, 0, 0) rotate(637deg); } }
 
 .orbit-wrapper--57 {
   animation: planet-57 60s linear infinite; }
   .orbit-wrapper--57 .planet {
     display: inline-block;
-    margin: 138px;
-    width: -196px;
-    height: -196px;
-    opacity: 0.48571;
-    background-color: #15AE7D;
-    border: 13px solid #05251b;
+    margin: 120px;
+    width: -173px;
+    height: -173px;
+    opacity: 0.475;
+    background-color: #DE6555;
+    border: 2px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--57 .planet:hover {
@@ -1457,20 +1457,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-58 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(14deg); }
+    transform: translate3d(0, 0, 0) rotate(353deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(374deg); } }
+    transform: translate3d(0, 0, 0) rotate(713deg); } }
 
 .orbit-wrapper--58 {
-  animation: planet-58 22.5s linear infinite; }
+  animation: planet-58 20s linear infinite; }
   .orbit-wrapper--58 .planet {
     display: inline-block;
-    margin: 108px;
-    width: -144px;
-    height: -144px;
-    opacity: 0.7;
-    background-color: #16A59F;
-    border: 15px solid #041e1d;
+    margin: 141px;
+    width: -222px;
+    height: -222px;
+    opacity: 0.52;
+    background-color: #15AE7D;
+    border: 7px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--58 .planet:hover {
@@ -1478,20 +1478,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-59 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(290deg); }
+    transform: translate3d(0, 0, 0) rotate(328deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(650deg); } }
+    transform: translate3d(0, 0, 0) rotate(688deg); } }
 
 .orbit-wrapper--59 {
   animation: planet-59 60s linear infinite; }
   .orbit-wrapper--59 .planet {
     display: inline-block;
-    margin: 115px;
-    width: -164px;
-    height: -164px;
-    opacity: 0.46667;
-    background-color: #16A59F;
-    border: 14px solid #041e1d;
+    margin: 102px;
+    width: -144px;
+    height: -144px;
+    opacity: 0.48571;
+    background-color: #DE6555;
+    border: 4px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--59 .planet:hover {
@@ -1499,20 +1499,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-60 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(12deg); }
+    transform: translate3d(0, 0, 0) rotate(114deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(372deg); } }
+    transform: translate3d(0, 0, 0) rotate(474deg); } }
 
 .orbit-wrapper--60 {
-  animation: planet-60 22.5s linear infinite; }
+  animation: planet-60 21.11111s linear infinite; }
   .orbit-wrapper--60 .planet {
     display: inline-block;
-    margin: 119px;
-    width: -178px;
-    height: -178px;
-    opacity: 0.46667;
-    background-color: #16A59F;
-    border: 2px solid #041e1d;
+    margin: 154px;
+    width: -235px;
+    height: -235px;
+    opacity: 0.6;
+    background-color: #DE6555;
+    border: 2px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--60 .planet:hover {
@@ -1520,20 +1520,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-61 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(87deg); }
+    transform: translate3d(0, 0, 0) rotate(56deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(447deg); } }
+    transform: translate3d(0, 0, 0) rotate(416deg); } }
 
 .orbit-wrapper--61 {
-  animation: planet-61 30s linear infinite; }
+  animation: planet-61 21.11111s linear infinite; }
   .orbit-wrapper--61 .planet {
     display: inline-block;
-    margin: 120px;
-    width: -188px;
-    height: -188px;
-    opacity: 0.46667;
+    margin: 121px;
+    width: -183px;
+    height: -183px;
+    opacity: 0.5;
     background-color: #A22C65;
-    border: 15px solid #2a0b1a;
+    border: 16px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--61 .planet:hover {
@@ -1541,20 +1541,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-62 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(334deg); }
+    transform: translate3d(0, 0, 0) rotate(19deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(694deg); } }
+    transform: translate3d(0, 0, 0) rotate(379deg); } }
 
 .orbit-wrapper--62 {
-  animation: planet-62 26.66667s linear infinite; }
+  animation: planet-62 21.11111s linear infinite; }
   .orbit-wrapper--62 .planet {
     display: inline-block;
-    margin: 121px;
-    width: -178px;
-    height: -178px;
+    margin: 148px;
+    width: -224px;
+    height: -224px;
     opacity: 0.52;
     background-color: #E04A5C;
-    border: 10px solid #7c1522;
+    border: 4px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--62 .planet:hover {
@@ -1562,20 +1562,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-63 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(171deg); }
+    transform: translate3d(0, 0, 0) rotate(50deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(531deg); } }
+    transform: translate3d(0, 0, 0) rotate(410deg); } }
 
 .orbit-wrapper--63 {
-  animation: planet-63 30s linear infinite; }
+  animation: planet-63 21.11111s linear infinite; }
   .orbit-wrapper--63 .planet {
     display: inline-block;
-    margin: 126px;
-    width: -176px;
-    height: -176px;
-    opacity: 0.6;
-    background-color: #15AE7D;
-    border: 11px solid #05251b;
+    margin: 139px;
+    width: -205px;
+    height: -205px;
+    opacity: 0.55;
+    background-color: #DE6555;
+    border: 6px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--63 .planet:hover {
@@ -1583,20 +1583,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-64 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(360deg); }
+    transform: translate3d(0, 0, 0) rotate(30deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(720deg); } }
+    transform: translate3d(0, 0, 0) rotate(390deg); } }
 
 .orbit-wrapper--64 {
-  animation: planet-64 60s linear infinite; }
+  animation: planet-64 22.5s linear infinite; }
   .orbit-wrapper--64 .planet {
     display: inline-block;
-    margin: 107px;
-    width: -149px;
-    height: -149px;
-    opacity: 1;
-    background-color: #15AE7D;
-    border: 3px solid #05251b;
+    margin: 145px;
+    width: -221px;
+    height: -221px;
+    opacity: 0.48571;
+    background-color: #16A59F;
+    border: 11px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--64 .planet:hover {
@@ -1604,20 +1604,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-65 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(188deg); }
+    transform: translate3d(0, 0, 0) rotate(230deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(548deg); } }
+    transform: translate3d(0, 0, 0) rotate(590deg); } }
 
 .orbit-wrapper--65 {
-  animation: planet-65 26.66667s linear infinite; }
+  animation: planet-65 43.33333s linear infinite; }
   .orbit-wrapper--65 .planet {
     display: inline-block;
-    margin: 107px;
-    width: -159px;
-    height: -159px;
-    opacity: 0.5;
-    background-color: #16A59F;
-    border: 9px solid #041e1d;
+    margin: 160px;
+    width: -266px;
+    height: -266px;
+    opacity: 0.52;
+    background-color: #DE6555;
+    border: 11px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--65 .planet:hover {
@@ -1625,20 +1625,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-66 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(330deg); }
+    transform: translate3d(0, 0, 0) rotate(83deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(690deg); } }
+    transform: translate3d(0, 0, 0) rotate(443deg); } }
 
 .orbit-wrapper--66 {
-  animation: planet-66 22.5s linear infinite; }
+  animation: planet-66 60s linear infinite; }
   .orbit-wrapper--66 .planet {
     display: inline-block;
-    margin: 139px;
-    width: -221px;
-    height: -221px;
-    opacity: 0.55;
-    background-color: #A22C65;
-    border: 14px solid #2a0b1a;
+    margin: 138px;
+    width: -219px;
+    height: -219px;
+    opacity: 0.5;
+    background-color: #16A59F;
+    border: 11px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--66 .planet:hover {
@@ -1646,20 +1646,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-67 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(178deg); }
+    transform: translate3d(0, 0, 0) rotate(201deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(538deg); } }
+    transform: translate3d(0, 0, 0) rotate(561deg); } }
 
 .orbit-wrapper--67 {
-  animation: planet-67 30s linear infinite; }
+  animation: planet-67 26.66667s linear infinite; }
   .orbit-wrapper--67 .planet {
     display: inline-block;
-    margin: 119px;
-    width: -171px;
-    height: -171px;
-    opacity: 0.5;
-    background-color: #DE6555;
-    border: 6px solid #812519;
+    margin: 106px;
+    width: -159px;
+    height: -159px;
+    opacity: 0.475;
+    background-color: #16A59F;
+    border: 12px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--67 .planet:hover {
@@ -1667,20 +1667,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-68 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(310deg); }
+    transform: translate3d(0, 0, 0) rotate(173deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(670deg); } }
+    transform: translate3d(0, 0, 0) rotate(533deg); } }
 
 .orbit-wrapper--68 {
-  animation: planet-68 43.33333s linear infinite; }
+  animation: planet-68 110s linear infinite; }
   .orbit-wrapper--68 .planet {
     display: inline-block;
-    margin: 154px;
-    width: -232px;
-    height: -232px;
-    opacity: 1;
-    background-color: #15AE7D;
-    border: 1px solid #05251b;
+    margin: 143px;
+    width: -230px;
+    height: -230px;
+    opacity: 0.46667;
+    background-color: #DE6555;
+    border: 9px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--68 .planet:hover {
@@ -1688,20 +1688,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-69 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(276deg); }
+    transform: translate3d(0, 0, 0) rotate(150deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(636deg); } }
+    transform: translate3d(0, 0, 0) rotate(510deg); } }
 
 .orbit-wrapper--69 {
-  animation: planet-69 26.66667s linear infinite; }
+  animation: planet-69 35s linear infinite; }
   .orbit-wrapper--69 .planet {
     display: inline-block;
-    margin: 157px;
-    width: -240px;
-    height: -240px;
-    opacity: 0.46667;
-    background-color: #16A59F;
-    border: 11px solid #041e1d;
+    margin: 137px;
+    width: -203px;
+    height: -203px;
+    opacity: 0.52;
+    background-color: #15AE7D;
+    border: 8px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--69 .planet:hover {
@@ -1709,20 +1709,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-70 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(154deg); }
+    transform: translate3d(0, 0, 0) rotate(8deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(514deg); } }
+    transform: translate3d(0, 0, 0) rotate(368deg); } }
 
 .orbit-wrapper--70 {
-  animation: planet-70 21.11111s linear infinite; }
+  animation: planet-70 30s linear infinite; }
   .orbit-wrapper--70 .planet {
     display: inline-block;
-    margin: 105px;
-    width: -153px;
-    height: -153px;
-    opacity: 0.46;
-    background-color: #DE6555;
-    border: 10px solid #812519;
+    margin: 149px;
+    width: -239px;
+    height: -239px;
+    opacity: 0.475;
+    background-color: #16A59F;
+    border: 4px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--70 .planet:hover {
@@ -1730,20 +1730,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-71 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(290deg); }
+    transform: translate3d(0, 0, 0) rotate(261deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(650deg); } }
+    transform: translate3d(0, 0, 0) rotate(621deg); } }
 
 .orbit-wrapper--71 {
-  animation: planet-71 20s linear infinite; }
+  animation: planet-71 35s linear infinite; }
   .orbit-wrapper--71 .planet {
     display: inline-block;
-    margin: 132px;
-    width: -195px;
-    height: -195px;
-    opacity: 0.5;
+    margin: 131px;
+    width: -206px;
+    height: -206px;
+    opacity: 0.46;
     background-color: #16A59F;
-    border: 3px solid #041e1d;
+    border: 9px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--71 .planet:hover {
@@ -1751,20 +1751,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-72 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(83deg); }
+    transform: translate3d(0, 0, 0) rotate(33deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(443deg); } }
+    transform: translate3d(0, 0, 0) rotate(393deg); } }
 
 .orbit-wrapper--72 {
-  animation: planet-72 110s linear infinite; }
+  animation: planet-72 20s linear infinite; }
   .orbit-wrapper--72 .planet {
     display: inline-block;
-    margin: 120px;
-    width: -174px;
-    height: -174px;
-    opacity: 0.46667;
-    background-color: #DE6555;
-    border: 6px solid #812519;
+    margin: 123px;
+    width: -172px;
+    height: -172px;
+    opacity: 1;
+    background-color: #16A59F;
+    border: 6px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--72 .planet:hover {
@@ -1772,20 +1772,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-73 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(111deg); }
+    transform: translate3d(0, 0, 0) rotate(345deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(471deg); } }
+    transform: translate3d(0, 0, 0) rotate(705deg); } }
 
 .orbit-wrapper--73 {
-  animation: planet-73 21.11111s linear infinite; }
+  animation: planet-73 110s linear infinite; }
   .orbit-wrapper--73 .planet {
     display: inline-block;
-    margin: 160px;
-    width: -264px;
-    height: -264px;
-    opacity: 0.7;
-    background-color: #DE6555;
-    border: 15px solid #812519;
+    margin: 153px;
+    width: -250px;
+    height: -250px;
+    opacity: 0.46;
+    background-color: #15AE7D;
+    border: 9px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--73 .planet:hover {
@@ -1793,20 +1793,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-74 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(307deg); }
+    transform: translate3d(0, 0, 0) rotate(190deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(667deg); } }
+    transform: translate3d(0, 0, 0) rotate(550deg); } }
 
 .orbit-wrapper--74 {
-  animation: planet-74 30s linear infinite; }
+  animation: planet-74 60s linear infinite; }
   .orbit-wrapper--74 .planet {
     display: inline-block;
-    margin: 127px;
-    width: -201px;
-    height: -201px;
-    opacity: 0.48571;
-    background-color: #15AE7D;
-    border: 2px solid #05251b;
+    margin: 144px;
+    width: -232px;
+    height: -232px;
+    opacity: 0.55;
+    background-color: #16A59F;
+    border: 14px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--74 .planet:hover {
@@ -1814,20 +1814,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-75 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(249deg); }
+    transform: translate3d(0, 0, 0) rotate(219deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(609deg); } }
+    transform: translate3d(0, 0, 0) rotate(579deg); } }
 
 .orbit-wrapper--75 {
-  animation: planet-75 35s linear infinite; }
+  animation: planet-75 110s linear infinite; }
   .orbit-wrapper--75 .planet {
     display: inline-block;
-    margin: 160px;
-    width: -269px;
-    height: -269px;
-    opacity: 1;
-    background-color: #16A59F;
-    border: 8px solid #041e1d;
+    margin: 123px;
+    width: -185px;
+    height: -185px;
+    opacity: 0.6;
+    background-color: #DE6555;
+    border: 3px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--75 .planet:hover {
@@ -1835,20 +1835,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-76 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(43deg); }
+    transform: translate3d(0, 0, 0) rotate(113deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(403deg); } }
+    transform: translate3d(0, 0, 0) rotate(473deg); } }
 
 .orbit-wrapper--76 {
-  animation: planet-76 26.66667s linear infinite; }
+  animation: planet-76 60s linear infinite; }
   .orbit-wrapper--76 .planet {
     display: inline-block;
-    margin: 149px;
+    margin: 144px;
     width: -234px;
     height: -234px;
-    opacity: 0.46667;
+    opacity: 0.7;
     background-color: #DE6555;
-    border: 11px solid #812519;
+    border: 12px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--76 .planet:hover {
@@ -1856,20 +1856,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-77 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(124deg); }
+    transform: translate3d(0, 0, 0) rotate(43deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(484deg); } }
+    transform: translate3d(0, 0, 0) rotate(403deg); } }
 
 .orbit-wrapper--77 {
-  animation: planet-77 30s linear infinite; }
+  animation: planet-77 20s linear infinite; }
   .orbit-wrapper--77 .planet {
     display: inline-block;
-    margin: 108px;
-    width: -140px;
-    height: -140px;
-    opacity: 0.52;
+    margin: 118px;
+    width: -158px;
+    height: -158px;
+    opacity: 0.46667;
     background-color: #E04A5C;
-    border: 13px solid #7c1522;
+    border: 5px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--77 .planet:hover {
@@ -1877,20 +1877,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-78 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(254deg); }
+    transform: translate3d(0, 0, 0) rotate(229deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(614deg); } }
+    transform: translate3d(0, 0, 0) rotate(589deg); } }
 
 .orbit-wrapper--78 {
-  animation: planet-78 24.28571s linear infinite; }
+  animation: planet-78 43.33333s linear infinite; }
   .orbit-wrapper--78 .planet {
     display: inline-block;
-    margin: 110px;
-    width: -144px;
-    height: -144px;
-    opacity: 0.475;
-    background-color: #A22C65;
-    border: 9px solid #2a0b1a;
+    margin: 154px;
+    width: -252px;
+    height: -252px;
+    opacity: 0.48571;
+    background-color: #DE6555;
+    border: 15px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--78 .planet:hover {
@@ -1898,20 +1898,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-79 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(243deg); }
+    transform: translate3d(0, 0, 0) rotate(283deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(603deg); } }
+    transform: translate3d(0, 0, 0) rotate(643deg); } }
 
 .orbit-wrapper--79 {
-  animation: planet-79 110s linear infinite; }
+  animation: planet-79 43.33333s linear infinite; }
   .orbit-wrapper--79 .planet {
     display: inline-block;
-    margin: 107px;
-    width: -158px;
-    height: -158px;
-    opacity: 0.7;
+    margin: 103px;
+    width: -153px;
+    height: -153px;
+    opacity: 0.46667;
     background-color: #E04A5C;
-    border: 13px solid #7c1522;
+    border: 11px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--79 .planet:hover {
@@ -1919,20 +1919,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-80 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(332deg); }
+    transform: translate3d(0, 0, 0) rotate(57deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(692deg); } }
+    transform: translate3d(0, 0, 0) rotate(417deg); } }
 
 .orbit-wrapper--80 {
-  animation: planet-80 24.28571s linear infinite; }
+  animation: planet-80 21.11111s linear infinite; }
   .orbit-wrapper--80 .planet {
     display: inline-block;
-    margin: 111px;
-    width: -166px;
-    height: -166px;
-    opacity: 0.55;
-    background-color: #15AE7D;
-    border: 7px solid #05251b;
+    margin: 160px;
+    width: -267px;
+    height: -267px;
+    opacity: 0.6;
+    background-color: #A22C65;
+    border: 6px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--80 .planet:hover {
@@ -1940,20 +1940,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-81 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(335deg); }
+    transform: translate3d(0, 0, 0) rotate(124deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(695deg); } }
+    transform: translate3d(0, 0, 0) rotate(484deg); } }
 
 .orbit-wrapper--81 {
-  animation: planet-81 24.28571s linear infinite; }
+  animation: planet-81 30s linear infinite; }
   .orbit-wrapper--81 .planet {
     display: inline-block;
     margin: 108px;
-    width: -140px;
-    height: -140px;
-    opacity: 0.46;
-    background-color: #15AE7D;
-    border: 1px solid #05251b;
+    width: -162px;
+    height: -162px;
+    opacity: 0.55;
+    background-color: #E04A5C;
+    border: 12px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--81 .planet:hover {
@@ -1961,20 +1961,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-82 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(234deg); }
+    transform: translate3d(0, 0, 0) rotate(223deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(594deg); } }
+    transform: translate3d(0, 0, 0) rotate(583deg); } }
 
 .orbit-wrapper--82 {
-  animation: planet-82 24.28571s linear infinite; }
+  animation: planet-82 60s linear infinite; }
   .orbit-wrapper--82 .planet {
     display: inline-block;
-    margin: 106px;
-    width: -152px;
-    height: -152px;
-    opacity: 0.46;
+    margin: 126px;
+    width: -188px;
+    height: -188px;
+    opacity: 0.6;
     background-color: #DE6555;
-    border: 11px solid #812519;
+    border: 6px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--82 .planet:hover {
@@ -1982,20 +1982,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-83 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(219deg); }
+    transform: translate3d(0, 0, 0) rotate(68deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(579deg); } }
+    transform: translate3d(0, 0, 0) rotate(428deg); } }
 
 .orbit-wrapper--83 {
-  animation: planet-83 43.33333s linear infinite; }
+  animation: planet-83 22.5s linear infinite; }
   .orbit-wrapper--83 .planet {
     display: inline-block;
-    margin: 114px;
-    width: -175px;
-    height: -175px;
-    opacity: 0.55;
-    background-color: #16A59F;
-    border: 4px solid #041e1d;
+    margin: 146px;
+    width: -233px;
+    height: -233px;
+    opacity: 0.52;
+    background-color: #15AE7D;
+    border: 9px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--83 .planet:hover {
@@ -2003,20 +2003,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-84 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(55deg); }
+    transform: translate3d(0, 0, 0) rotate(203deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(415deg); } }
+    transform: translate3d(0, 0, 0) rotate(563deg); } }
 
 .orbit-wrapper--84 {
-  animation: planet-84 21.11111s linear infinite; }
+  animation: planet-84 110s linear infinite; }
   .orbit-wrapper--84 .planet {
     display: inline-block;
-    margin: 151px;
-    width: -227px;
-    height: -227px;
-    opacity: 0.52;
-    background-color: #A22C65;
-    border: 10px solid #2a0b1a;
+    margin: 129px;
+    width: -187px;
+    height: -187px;
+    opacity: 0.46667;
+    background-color: #15AE7D;
+    border: 5px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--84 .planet:hover {
@@ -2024,20 +2024,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-85 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(87deg); }
+    transform: translate3d(0, 0, 0) rotate(161deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(447deg); } }
+    transform: translate3d(0, 0, 0) rotate(521deg); } }
 
 .orbit-wrapper--85 {
   animation: planet-85 26.66667s linear infinite; }
   .orbit-wrapper--85 .planet {
     display: inline-block;
-    margin: 117px;
-    width: -154px;
-    height: -154px;
-    opacity: 0.46;
-    background-color: #E04A5C;
-    border: 16px solid #7c1522;
+    margin: 124px;
+    width: -184px;
+    height: -184px;
+    opacity: 0.7;
+    background-color: #16A59F;
+    border: 16px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--85 .planet:hover {
@@ -2045,20 +2045,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-86 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(336deg); }
+    transform: translate3d(0, 0, 0) rotate(175deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(696deg); } }
+    transform: translate3d(0, 0, 0) rotate(535deg); } }
 
 .orbit-wrapper--86 {
-  animation: planet-86 110s linear infinite; }
+  animation: planet-86 43.33333s linear infinite; }
   .orbit-wrapper--86 .planet {
     display: inline-block;
-    margin: 116px;
-    width: -172px;
-    height: -172px;
-    opacity: 0.55;
-    background-color: #A22C65;
-    border: 15px solid #2a0b1a;
+    margin: 129px;
+    width: -187px;
+    height: -187px;
+    opacity: 0.7;
+    background-color: #E04A5C;
+    border: 4px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--86 .planet:hover {
@@ -2066,20 +2066,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-87 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(194deg); }
+    transform: translate3d(0, 0, 0) rotate(92deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(554deg); } }
+    transform: translate3d(0, 0, 0) rotate(452deg); } }
 
 .orbit-wrapper--87 {
-  animation: planet-87 20s linear infinite; }
+  animation: planet-87 43.33333s linear infinite; }
   .orbit-wrapper--87 .planet {
     display: inline-block;
-    margin: 126px;
-    width: -191px;
-    height: -191px;
-    opacity: 1;
-    background-color: #E04A5C;
-    border: 4px solid #7c1522;
+    margin: 118px;
+    width: -163px;
+    height: -163px;
+    opacity: 0.55;
+    background-color: #16A59F;
+    border: 11px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--87 .planet:hover {
@@ -2087,20 +2087,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-88 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(332deg); }
+    transform: translate3d(0, 0, 0) rotate(198deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(692deg); } }
+    transform: translate3d(0, 0, 0) rotate(558deg); } }
 
 .orbit-wrapper--88 {
-  animation: planet-88 20s linear infinite; }
+  animation: planet-88 35s linear infinite; }
   .orbit-wrapper--88 .planet {
     display: inline-block;
-    margin: 136px;
-    width: -210px;
-    height: -210px;
-    opacity: 0.55;
+    margin: 101px;
+    width: -122px;
+    height: -122px;
+    opacity: 0.475;
     background-color: #15AE7D;
-    border: 9px solid #05251b;
+    border: 5px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--88 .planet:hover {
@@ -2108,20 +2108,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-89 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(85deg); }
+    transform: translate3d(0, 0, 0) rotate(242deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(445deg); } }
+    transform: translate3d(0, 0, 0) rotate(602deg); } }
 
 .orbit-wrapper--89 {
-  animation: planet-89 22.5s linear infinite; }
+  animation: planet-89 110s linear infinite; }
   .orbit-wrapper--89 .planet {
     display: inline-block;
-    margin: 118px;
-    width: -156px;
-    height: -156px;
-    opacity: 1;
-    background-color: #15AE7D;
-    border: 8px solid #05251b;
+    margin: 144px;
+    width: -215px;
+    height: -215px;
+    opacity: 0.5;
+    background-color: #E04A5C;
+    border: 15px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--89 .planet:hover {
@@ -2129,20 +2129,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-90 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(82deg); }
+    transform: translate3d(0, 0, 0) rotate(323deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(442deg); } }
+    transform: translate3d(0, 0, 0) rotate(683deg); } }
 
 .orbit-wrapper--90 {
-  animation: planet-90 43.33333s linear infinite; }
+  animation: planet-90 24.28571s linear infinite; }
   .orbit-wrapper--90 .planet {
     display: inline-block;
-    margin: 126px;
-    width: -185px;
-    height: -185px;
-    opacity: 0.55;
-    background-color: #DE6555;
-    border: 9px solid #812519;
+    margin: 128px;
+    width: -194px;
+    height: -194px;
+    opacity: 0.52;
+    background-color: #15AE7D;
+    border: 3px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--90 .planet:hover {
@@ -2150,20 +2150,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-91 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(340deg); }
+    transform: translate3d(0, 0, 0) rotate(268deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(700deg); } }
+    transform: translate3d(0, 0, 0) rotate(628deg); } }
 
 .orbit-wrapper--91 {
   animation: planet-91 24.28571s linear infinite; }
   .orbit-wrapper--91 .planet {
     display: inline-block;
-    margin: 155px;
-    width: -259px;
-    height: -259px;
-    opacity: 0.52;
-    background-color: #A22C65;
-    border: 15px solid #2a0b1a;
+    margin: 152px;
+    width: -234px;
+    height: -234px;
+    opacity: 0.46;
+    background-color: #DE6555;
+    border: 15px solid #812519;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--91 .planet:hover {
@@ -2171,20 +2171,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-92 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(167deg); }
+    transform: translate3d(0, 0, 0) rotate(166deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(527deg); } }
+    transform: translate3d(0, 0, 0) rotate(526deg); } }
 
 .orbit-wrapper--92 {
-  animation: planet-92 43.33333s linear infinite; }
+  animation: planet-92 30s linear infinite; }
   .orbit-wrapper--92 .planet {
     display: inline-block;
-    margin: 158px;
-    width: -250px;
-    height: -250px;
-    opacity: 0.48571;
-    background-color: #DE6555;
-    border: 15px solid #812519;
+    margin: 138px;
+    width: -196px;
+    height: -196px;
+    opacity: 0.6;
+    background-color: #E04A5C;
+    border: 9px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--92 .planet:hover {
@@ -2192,20 +2192,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-93 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(24deg); }
+    transform: translate3d(0, 0, 0) rotate(67deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(384deg); } }
+    transform: translate3d(0, 0, 0) rotate(427deg); } }
 
 .orbit-wrapper--93 {
-  animation: planet-93 26.66667s linear infinite; }
+  animation: planet-93 35s linear infinite; }
   .orbit-wrapper--93 .planet {
     display: inline-block;
-    margin: 125px;
-    width: -175px;
-    height: -175px;
-    opacity: 0.6;
+    margin: 151px;
+    width: -249px;
+    height: -249px;
+    opacity: 0.52;
     background-color: #A22C65;
-    border: 4px solid #2a0b1a;
+    border: 9px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--93 .planet:hover {
@@ -2213,20 +2213,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-94 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(315deg); }
+    transform: translate3d(0, 0, 0) rotate(261deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(675deg); } }
+    transform: translate3d(0, 0, 0) rotate(621deg); } }
 
 .orbit-wrapper--94 {
-  animation: planet-94 60s linear infinite; }
+  animation: planet-94 22.5s linear infinite; }
   .orbit-wrapper--94 .planet {
     display: inline-block;
-    margin: 160px;
-    width: -254px;
-    height: -254px;
-    opacity: 0.475;
-    background-color: #E04A5C;
-    border: 4px solid #7c1522;
+    margin: 119px;
+    width: -177px;
+    height: -177px;
+    opacity: 0.46667;
+    background-color: #15AE7D;
+    border: 12px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--94 .planet:hover {
@@ -2234,20 +2234,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-95 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(27deg); }
+    transform: translate3d(0, 0, 0) rotate(215deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(387deg); } }
+    transform: translate3d(0, 0, 0) rotate(575deg); } }
 
 .orbit-wrapper--95 {
-  animation: planet-95 43.33333s linear infinite; }
+  animation: planet-95 35s linear infinite; }
   .orbit-wrapper--95 .planet {
     display: inline-block;
-    margin: 153px;
+    margin: 159px;
     width: -252px;
     height: -252px;
     opacity: 0.55;
-    background-color: #15AE7D;
-    border: 14px solid #05251b;
+    background-color: #16A59F;
+    border: 3px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--95 .planet:hover {
@@ -2255,20 +2255,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-96 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(94deg); }
+    transform: translate3d(0, 0, 0) rotate(97deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(454deg); } }
+    transform: translate3d(0, 0, 0) rotate(457deg); } }
 
 .orbit-wrapper--96 {
-  animation: planet-96 43.33333s linear infinite; }
+  animation: planet-96 30s linear infinite; }
   .orbit-wrapper--96 .planet {
     display: inline-block;
-    margin: 142px;
-    width: -230px;
-    height: -230px;
-    opacity: 0.55;
-    background-color: #DE6555;
-    border: 15px solid #812519;
+    margin: 136px;
+    width: -210px;
+    height: -210px;
+    opacity: 0.46;
+    background-color: #15AE7D;
+    border: 13px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--96 .planet:hover {
@@ -2276,20 +2276,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-97 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(359deg); }
+    transform: translate3d(0, 0, 0) rotate(292deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(719deg); } }
+    transform: translate3d(0, 0, 0) rotate(652deg); } }
 
 .orbit-wrapper--97 {
-  animation: planet-97 22.5s linear infinite; }
+  animation: planet-97 20s linear infinite; }
   .orbit-wrapper--97 .planet {
     display: inline-block;
-    margin: 147px;
-    width: -242px;
-    height: -242px;
+    margin: 137px;
+    width: -216px;
+    height: -216px;
     opacity: 0.6;
-    background-color: #A22C65;
-    border: 3px solid #2a0b1a;
+    background-color: #15AE7D;
+    border: 6px solid #05251b;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--97 .planet:hover {
@@ -2297,20 +2297,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-98 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(105deg); }
+    transform: translate3d(0, 0, 0) rotate(134deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(465deg); } }
+    transform: translate3d(0, 0, 0) rotate(494deg); } }
 
 .orbit-wrapper--98 {
   animation: planet-98 21.11111s linear infinite; }
   .orbit-wrapper--98 .planet {
     display: inline-block;
-    margin: 145px;
-    width: -234px;
-    height: -234px;
-    opacity: 0.6;
-    background-color: #16A59F;
-    border: 13px solid #041e1d;
+    margin: 138px;
+    width: -203px;
+    height: -203px;
+    opacity: 0.48571;
+    background-color: #A22C65;
+    border: 14px solid #2a0b1a;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--98 .planet:hover {
@@ -2318,20 +2318,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-99 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(37deg); }
+    transform: translate3d(0, 0, 0) rotate(281deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(397deg); } }
+    transform: translate3d(0, 0, 0) rotate(641deg); } }
 
 .orbit-wrapper--99 {
-  animation: planet-99 30s linear infinite; }
+  animation: planet-99 22.5s linear infinite; }
   .orbit-wrapper--99 .planet {
     display: inline-block;
-    margin: 127px;
-    width: -201px;
-    height: -201px;
-    opacity: 0.475;
+    margin: 155px;
+    width: -243px;
+    height: -243px;
+    opacity: 1;
     background-color: #16A59F;
-    border: 11px solid #041e1d;
+    border: 8px solid #041e1d;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--99 .planet:hover {
@@ -2339,20 +2339,20 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
 
 @keyframes planet-100 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(141deg); }
+    transform: translate3d(0, 0, 0) rotate(78deg); }
   100% {
-    transform: translate3d(0, 0, 0) rotate(501deg); } }
+    transform: translate3d(0, 0, 0) rotate(438deg); } }
 
 .orbit-wrapper--100 {
-  animation: planet-100 20s linear infinite; }
+  animation: planet-100 60s linear infinite; }
   .orbit-wrapper--100 .planet {
     display: inline-block;
-    margin: 126px;
-    width: -198px;
-    height: -198px;
-    opacity: 0.55;
-    background-color: #16A59F;
-    border: 2px solid #041e1d;
+    margin: 106px;
+    width: -157px;
+    height: -157px;
+    opacity: 0.52;
+    background-color: #E04A5C;
+    border: 11px solid #7c1522;
     pointer-events: auto;
     cursor: pointer; }
     .orbit-wrapper--100 .planet:hover {
@@ -2368,13 +2368,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 1px;
+  margin: 4px;
   box-sizing: border-box;
-  background-color: #15AE7D;
+  background-color: #A22C65;
   border-radius: 50%;
-  border: 3px solid #05251b;
+  border: 1px solid #2a0b1a;
   opacity: .75;
-  animation: satellite-1 5s linear infinite; }
+  animation: satellite-1 100s linear infinite; }
 
 @keyframes satellite-2 {
   from {
@@ -2386,13 +2386,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 11px;
+  margin: 14px;
   box-sizing: border-box;
-  background-color: #A22C65;
+  background-color: #DE6555;
   border-radius: 50%;
-  border: 1px solid #2a0b1a;
+  border: 1px solid #812519;
   opacity: .75;
-  animation: satellite-2 5s linear infinite; }
+  animation: satellite-2 2.85714s linear infinite; }
 
 @keyframes satellite-3 {
   from {
@@ -2404,13 +2404,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 19px;
+  margin: 7px;
   box-sizing: border-box;
-  background-color: #E04A5C;
+  background-color: #16A59F;
   border-radius: 50%;
-  border: 2px solid #7c1522;
+  border: 3px solid #041e1d;
   opacity: .75;
-  animation: satellite-3 6.66667s linear infinite; }
+  animation: satellite-3 3.44828s linear infinite; }
 
 @keyframes satellite-4 {
   from {
@@ -2424,11 +2424,11 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   height: 16.66667px;
   margin: 6px;
   box-sizing: border-box;
-  background-color: #A22C65;
+  background-color: #15AE7D;
   border-radius: 50%;
-  border: 3px solid #2a0b1a;
+  border: 4px solid #05251b;
   opacity: .75;
-  animation: satellite-4 5.55556s linear infinite; }
+  animation: satellite-4 5s linear infinite; }
 
 @keyframes satellite-5 {
   from {
@@ -2440,13 +2440,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 20px;
+  margin: 2px;
   box-sizing: border-box;
   background-color: #E04A5C;
   border-radius: 50%;
-  border: 1px solid #7c1522;
+  border: 3px solid #7c1522;
   opacity: .75;
-  animation: satellite-5 5.88235s linear infinite; }
+  animation: satellite-5 16.66667s linear infinite; }
 
 @keyframes satellite-6 {
   from {
@@ -2458,13 +2458,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 20px;
+  margin: 5px;
   box-sizing: border-box;
-  background-color: #16A59F;
+  background-color: #DE6555;
   border-radius: 50%;
-  border: 1px solid #041e1d;
+  border: 1px solid #812519;
   opacity: .75;
-  animation: satellite-6 7.14286s linear infinite; }
+  animation: satellite-6 5.55556s linear infinite; }
 
 @keyframes satellite-7 {
   from {
@@ -2476,13 +2476,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 5px;
+  margin: 17px;
   box-sizing: border-box;
-  background-color: #15AE7D;
+  background-color: #E04A5C;
   border-radius: 50%;
-  border: 2px solid #05251b;
+  border: 4px solid #7c1522;
   opacity: .75;
-  animation: satellite-7 2.85714s linear infinite; }
+  animation: satellite-7 25s linear infinite; }
 
 @keyframes satellite-8 {
   from {
@@ -2494,13 +2494,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 12px;
+  margin: 19px;
   box-sizing: border-box;
   background-color: #15AE7D;
   border-radius: 50%;
   border: 1px solid #05251b;
   opacity: .75;
-  animation: satellite-8 7.69231s linear infinite; }
+  animation: satellite-8 6.66667s linear infinite; }
 
 @keyframes satellite-9 {
   from {
@@ -2512,13 +2512,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 4px;
+  margin: 14px;
   box-sizing: border-box;
-  background-color: #DE6555;
+  background-color: #A22C65;
   border-radius: 50%;
-  border: 3px solid #812519;
+  border: 1px solid #2a0b1a;
   opacity: .75;
-  animation: satellite-9 4.16667s linear infinite; }
+  animation: satellite-9 4.7619s linear infinite; }
 
 @keyframes satellite-10 {
   from {
@@ -2530,13 +2530,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 1px;
+  margin: 17px;
   box-sizing: border-box;
-  background-color: #15AE7D;
+  background-color: #E04A5C;
   border-radius: 50%;
-  border: 1px solid #05251b;
+  border: 1px solid #7c1522;
   opacity: .75;
-  animation: satellite-10 5.55556s linear infinite; }
+  animation: satellite-10 10s linear infinite; }
 
 @keyframes satellite-11 {
   from {
@@ -2548,13 +2548,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 16px;
+  margin: 4px;
   box-sizing: border-box;
-  background-color: #E04A5C;
+  background-color: #A22C65;
   border-radius: 50%;
-  border: 4px solid #7c1522;
+  border: 4px solid #2a0b1a;
   opacity: .75;
-  animation: satellite-11 3.7037s linear infinite; }
+  animation: satellite-11 3.84615s linear infinite; }
 
 @keyframes satellite-12 {
   from {
@@ -2566,13 +2566,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 4px;
+  margin: 11px;
   box-sizing: border-box;
-  background-color: #15AE7D;
+  background-color: #16A59F;
   border-radius: 50%;
-  border: 2px solid #05251b;
+  border: 1px solid #041e1d;
   opacity: .75;
-  animation: satellite-12 3.84615s linear infinite; }
+  animation: satellite-12 2.94118s linear infinite; }
 
 @keyframes satellite-13 {
   from {
@@ -2584,13 +2584,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 18px;
+  margin: 13px;
   box-sizing: border-box;
-  background-color: #15AE7D;
+  background-color: #16A59F;
   border-radius: 50%;
-  border: 2px solid #05251b;
+  border: 1px solid #041e1d;
   opacity: .75;
-  animation: satellite-13 4.34783s linear infinite; }
+  animation: satellite-13 7.14286s linear infinite; }
 
 @keyframes satellite-14 {
   from {
@@ -2602,13 +2602,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 13px;
+  margin: 2px;
   box-sizing: border-box;
-  background-color: #E04A5C;
+  background-color: #16A59F;
   border-radius: 50%;
-  border: 1px solid #7c1522;
+  border: 3px solid #041e1d;
   opacity: .75;
-  animation: satellite-14 50s linear infinite; }
+  animation: satellite-14 8.33333s linear infinite; }
 
 @keyframes satellite-15 {
   from {
@@ -2620,13 +2620,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 4px;
+  margin: 2px;
   box-sizing: border-box;
-  background-color: #A22C65;
+  background-color: #16A59F;
   border-radius: 50%;
-  border: 1px solid #2a0b1a;
+  border: 2px solid #041e1d;
   opacity: .75;
-  animation: satellite-15 4.34783s linear infinite; }
+  animation: satellite-15 20s linear infinite; }
 
 @keyframes satellite-16 {
   from {
@@ -2638,13 +2638,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 9px;
+  margin: 15px;
   box-sizing: border-box;
   background-color: #DE6555;
   border-radius: 50%;
-  border: 1px solid #812519;
+  border: 3px solid #812519;
   opacity: .75;
-  animation: satellite-16 7.69231s linear infinite; }
+  animation: satellite-16 3.57143s linear infinite; }
 
 @keyframes satellite-17 {
   from {
@@ -2656,13 +2656,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 17px;
+  margin: 9px;
   box-sizing: border-box;
-  background-color: #DE6555;
+  background-color: #16A59F;
   border-radius: 50%;
-  border: 1px solid #812519;
+  border: 1px solid #041e1d;
   opacity: .75;
-  animation: satellite-17 7.69231s linear infinite; }
+  animation: satellite-17 3.7037s linear infinite; }
 
 @keyframes satellite-18 {
   from {
@@ -2674,13 +2674,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 18px;
+  margin: 3px;
   box-sizing: border-box;
-  background-color: #E04A5C;
+  background-color: #15AE7D;
   border-radius: 50%;
-  border: 1px solid #7c1522;
+  border: 2px solid #05251b;
   opacity: .75;
-  animation: satellite-18 3.7037s linear infinite; }
+  animation: satellite-18 10s linear infinite; }
 
 @keyframes satellite-19 {
   from {
@@ -2692,13 +2692,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 12px;
+  margin: 19px;
   box-sizing: border-box;
   background-color: #E04A5C;
   border-radius: 50%;
-  border: 4px solid #7c1522;
+  border: 1px solid #7c1522;
   opacity: .75;
-  animation: satellite-19 50s linear infinite; }
+  animation: satellite-19 33.33333s linear infinite; }
 
 @keyframes satellite-20 {
   from {
@@ -2710,13 +2710,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 11px;
+  margin: 6px;
   box-sizing: border-box;
-  background-color: #16A59F;
+  background-color: #A22C65;
   border-radius: 50%;
-  border: 1px solid #041e1d;
+  border: 3px solid #2a0b1a;
   opacity: .75;
-  animation: satellite-20 2.77778s linear infinite; }
+  animation: satellite-20 33.33333s linear infinite; }
 
 @keyframes satellite-21 {
   from {
@@ -2728,13 +2728,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 5px;
+  margin: 11px;
   box-sizing: border-box;
-  background-color: #16A59F;
+  background-color: #DE6555;
   border-radius: 50%;
-  border: 1px solid #041e1d;
+  border: 4px solid #812519;
   opacity: .75;
-  animation: satellite-21 4.16667s linear infinite; }
+  animation: satellite-21 4.54545s linear infinite; }
 
 @keyframes satellite-22 {
   from {
@@ -2746,13 +2746,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 9px;
+  margin: 2px;
   box-sizing: border-box;
   background-color: #15AE7D;
   border-radius: 50%;
-  border: 4px solid #05251b;
+  border: 1px solid #05251b;
   opacity: .75;
-  animation: satellite-22 5.55556s linear infinite; }
+  animation: satellite-22 3.84615s linear infinite; }
 
 @keyframes satellite-23 {
   from {
@@ -2764,13 +2764,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 18px;
+  margin: 13px;
   box-sizing: border-box;
-  background-color: #A22C65;
+  background-color: #15AE7D;
   border-radius: 50%;
-  border: 1px solid #2a0b1a;
+  border: 1px solid #05251b;
   opacity: .75;
-  animation: satellite-23 2.5s linear infinite; }
+  animation: satellite-23 2.85714s linear infinite; }
 
 @keyframes satellite-24 {
   from {
@@ -2782,13 +2782,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 4px;
+  margin: 11px;
   box-sizing: border-box;
-  background-color: #16A59F;
+  background-color: #15AE7D;
   border-radius: 50%;
-  border: 3px solid #041e1d;
+  border: 1px solid #05251b;
   opacity: .75;
-  animation: satellite-24 3.57143s linear infinite; }
+  animation: satellite-24 2.85714s linear infinite; }
 
 @keyframes satellite-25 {
   from {
@@ -2800,13 +2800,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 1px;
+  margin: 12px;
   box-sizing: border-box;
-  background-color: #A22C65;
+  background-color: #E04A5C;
   border-radius: 50%;
-  border: 1px solid #2a0b1a;
+  border: 3px solid #7c1522;
   opacity: .75;
-  animation: satellite-25 33.33333s linear infinite; }
+  animation: satellite-25 4.16667s linear infinite; }
 
 @keyframes satellite-26 {
   from {
@@ -2818,13 +2818,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 20px;
+  margin: 18px;
   box-sizing: border-box;
-  background-color: #A22C65;
+  background-color: #16A59F;
   border-radius: 50%;
-  border: 4px solid #2a0b1a;
+  border: 4px solid #041e1d;
   opacity: .75;
-  animation: satellite-26 6.25s linear infinite; }
+  animation: satellite-26 3.57143s linear infinite; }
 
 @keyframes satellite-27 {
   from {
@@ -2836,11 +2836,11 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 14px;
+  margin: 9px;
   box-sizing: border-box;
-  background-color: #E04A5C;
+  background-color: #A22C65;
   border-radius: 50%;
-  border: 3px solid #7c1522;
+  border: 3px solid #2a0b1a;
   opacity: .75;
   animation: satellite-27 5.26316s linear infinite; }
 
@@ -2854,13 +2854,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 5px;
+  margin: 6px;
   box-sizing: border-box;
   background-color: #15AE7D;
   border-radius: 50%;
-  border: 4px solid #05251b;
+  border: 3px solid #05251b;
   opacity: .75;
-  animation: satellite-28 25s linear infinite; }
+  animation: satellite-28 3.33333s linear infinite; }
 
 @keyframes satellite-29 {
   from {
@@ -2872,13 +2872,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 9px;
+  margin: 1px;
   box-sizing: border-box;
-  background-color: #16A59F;
+  background-color: #DE6555;
   border-radius: 50%;
-  border: 1px solid #041e1d;
+  border: 1px solid #812519;
   opacity: .75;
-  animation: satellite-29 2.63158s linear infinite; }
+  animation: satellite-29 12.5s linear infinite; }
 
 @keyframes satellite-30 {
   from {
@@ -2890,13 +2890,13 @@ input[type="text"], input[type="number"], input[type="date"], input[type="passwo
   position: absolute;
   width: 16.66667px;
   height: 16.66667px;
-  margin: 16px;
+  margin: 3px;
   box-sizing: border-box;
   background-color: #16A59F;
   border-radius: 50%;
-  border: 1px solid #041e1d;
+  border: 4px solid #041e1d;
   opacity: .75;
-  animation: satellite-30 7.69231s linear infinite; }
+  animation: satellite-30 2.7027s linear infinite; }
 
 .pause-trajectory {
   -webkit-animation-play-state: paused;

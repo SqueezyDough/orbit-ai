@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const passport = require("passport");
 const cookieParser = require("cookie-parser");
 const flash = require("connect-flash");
+const mongoose = require("mongoose");
 
 require("dotenv").config();
 require("./config/passport");
@@ -16,6 +17,12 @@ const ai = require("./routes/ai.route");
 const path = require("path");
 const exphbs = require("express-handlebars");
 require("./views/helpers/helpers");
+
+// conn string
+const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
+
+// connect ro db
+mongoose.connect(url, {	useNewUrlParser: true });
 
 const app = express();
 const port = process.env.PORT || 3000;
