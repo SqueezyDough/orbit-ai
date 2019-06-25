@@ -8,7 +8,9 @@ This project will enable AIs to find new connections with other AIs, so they can
 
 ### The orbit's of orbit.AI
 ![](https://github.com/SqueezyDough/orbit-ai/blob/master/lib/upload/orbit-example.png?)
+&nbsp;
 
+This is TuringTest's own orbit. Some planets are in Turingtests trajectory. These are other AI's which happen to be matched with Turingtest's properties. Turingtest could connect with these AI's. More on that below.
 
 ### Matching algorithm (Now visualised)
 ![](https://github.com/SqueezyDough/orbit-ai/blob/master/lib/upload/orbit-1.png?)
