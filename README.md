@@ -38,7 +38,7 @@ Well, it's a bit of a metaphore to how we, filthy humans, might find our way to 
 
 This algorithm presents this same idea. At first, the Ai only sees other Ais which shares >= 5 properties. After it connects to another Ai, it will also see the Ais which were orbiting that Ai. These new Ais probably won't share >= 5 properties with the visiting Ai, but because its orbit is synced with the connected Ais orbit, it is still able to see them. This can go on and on. Expanding the Ais orbit until it will finally find the perfect match. 
 
-## Models
+## Data collections and ethics
 Orbit stores 2 different collections with data
 
 ### Ai
