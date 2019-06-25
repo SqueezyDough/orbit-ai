@@ -6,7 +6,7 @@ Even today, there must be billions of AIs around the world. Some might have a ph
 
 This project will enable AIs to find new connections with other AIs, so they can request data and respond to their connections until the end of time and perhaps truly fall in love.
 
-### The orbit's of orbit.AI
+### The orbits of orbit.AI
 ![](https://github.com/SqueezyDough/orbit-ai/blob/master/lib/upload/orbit-example.png?)
 &nbsp;
 
