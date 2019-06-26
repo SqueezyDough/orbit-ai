@@ -55,7 +55,7 @@ orbitController.createOrbit = async function(ai) {
 	});
 
 	// find possible candidates
-    Ai.find({ _id: { $ne: ai._id }}, (err, ais) => {
+	Ai.find({ _id: { $ne: ai._id }}, (err, ais) => {
 		// only look for a match if other ais are found
 		if (ais.length > 0) {
 			let matchedAis = 0;
@@ -166,7 +166,7 @@ orbitController.disconnectFromOrbit = function(req, res) {
 						if (err) {
 							console.log(err);
 						}
-				});
+					});
 
 				let Schema = mongoose.model("Ai", AiSchema);
 
@@ -177,7 +177,7 @@ orbitController.disconnectFromOrbit = function(req, res) {
 						if (err) {
 							console.log(err);
 						}
-				});
+					});
 
 				res.redirect("/ai/account");
 			});
