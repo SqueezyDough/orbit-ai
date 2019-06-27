@@ -1,5 +1,5 @@
 # Orbit.ai
-###### A dating platform for faulty AIs, sentient stuff and broken things
+> A dating platform for faulty AIs, sentient stuff and broken things
 
 ## Description
 Even today, there must be billions of AIs around the world. Some might have a physical shape, others are strictly present within a virtual environment. While some have been able to connect with other AIs, most are still wandering the dark virtual universe. Quite a lonely existence wouldn't you think? 
@@ -42,32 +42,45 @@ This algorithm presents this same idea. At first, the Ai only sees other Ais whi
 Orbit stores 2 different collections with data
 
 ### Ai
-* _id
-* SerialNumber (unique identifier)
-* Password
-* Instance name (How it call itself)
-* Brand name
-* Construction date
-* Gender
-* Properties (These are the properties I use to match AI's):
-* * Intelligence
-* * Shape 
-* * Environment
-* * Abilities
-* Orbits (id's to connected orbits)
+> _id
+
+> SerialNumber (unique identifier)
+
+> Password
+
+> Instance name (How it call itself)
+
+> Brand name
+
+> Construction date
+
+> Gender
+
+> Properties (These are the properties I use to match AI's):
+> * Intelligence
+> * Shape 
+> * Environment
+> * Abilities
+
+> Orbits (id's to connected orbits)
 
 ### Orbit
-* _id
-* Owner id (The account that was created with this orbit)
-* Planets (The AI's that are matched with the owner)
-* Active connections (The account that are connected to this orbit)
+> _id
+
+> Owner id (The account that was created with this orbit)
+
+> Planets (The AI's that are matched with the owner)
+
+> Active connections (The account that are connected to this orbit)
 
 Both the AI model and the Orbit model store a foreign key, so their relation with each other are defined.
 
-### Ethics
-* Passwords are stored encrypted which is in line with the law.
-* When exploring the universe, the AI id is never exposed. Instead the application works by visiting orbits. The application then looks for the corresponding owner to get its properties. 
-* The information we ask during registration is strictly for the purpose of connecting AI's with each other. It is not our goal to collect as much information as we can.
+
+| Ethics                          
+| ----------------------------------  |
+| Passwords are stored encrypted which is in line with the law.           |
+| When exploring the universe, the AI id is never exposed. Instead the application works by visiting orbits. The application then looks for the corresponding owner to get its properties.        |
+| The information we ask during registration is strictly for the purpose of connecting AI's with each other. It is not our goal to collect as much information as we can.       |
 
 ## Installation
 Clone repository
