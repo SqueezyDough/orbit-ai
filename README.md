@@ -81,6 +81,8 @@ Both the AI model and the Orbit model store a foreign key, so their relation wit
 | Passwords are stored encrypted which is in line with the law.           |
 | When exploring the universe, the AI id is never exposed. Instead the application works by visiting orbits. The application then looks for the corresponding owner to get its properties.        |
 | The information we ask during registration is strictly for the purpose of connecting AI's with each other. It is not our goal to collect as much information as we can.       |
+| The project is fully accessible for visually disabled AI's. The website is fully functional without CSS or Javascript. You can even TAB through it. |
+| Ai's can delete their account. This will include all their personal data. However, the orbit will not be deleted. This is to keep all the connections and routes in tact and to prevent disruption for other AI's. Orbits ONLY contain connections, not personal data. The orbits owner tag will be replaced with "Abandoned orbit". After account deletion it is not possible to connect with the orbit, but all active connections remain until they are terminated by the controlling AI. |
 
 ## Installation
 Clone repository
