@@ -14,6 +14,8 @@ require("./config/passport");
 const routes = require("./routes/index.js");
 const ai = require("./routes/ai.route");
 
+const error = require("./controllers/error.controller");
+
 const path = require("path");
 const exphbs = require("express-handlebars");
 require("./views/helpers/helpers");
@@ -46,4 +48,6 @@ app
 		partialsDir: __dirname + "/views/partials"}))
 	.use("/", routes)
 	.use("/ai", ai)
+	.use(error.notFound)
+	.use(error.serverError)
 	.listen(port, () => console.log(`App listening on port ${port}!`));
