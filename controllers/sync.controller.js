@@ -31,7 +31,7 @@ syncController.home = function(req, res) {
 
 // Go to login page
 syncController.sync = function(req, res) {
-  res.render("pages/sync");
+	res.render("pages/sync");
 };
 
 // Post login
@@ -45,8 +45,8 @@ syncController.doSync = (req, res, next) => {
 
 // logout
 syncController.unSync = function(req, res) {
-  req.logout();
-  res.redirect("/");
+	req.logout();
+	res.redirect("/");
 };
 
 module.exports = syncController;

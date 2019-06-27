@@ -1,13 +1,18 @@
 <section class="orbit-container">
 	<div class='orbit orbit--one'>
 		<h2 class="orbit__name">
-			{{ai.instanceName}}'s
-			<span>orbit</span>
+			{{#if ai}}
+				{{ai.instanceName}}'s
+				<span>orbit</span>
+				{{else}}
+				Abandoned
+				<span>orbit</span>
+			{{/if}}
 		</h2>
 		<div class='star'></div>
 		{{#each planets}}
 			<div class="orbit-wrapper orbit-wrapper--{{increment @index}}">
-				<a href="{{../url}}{{this}}" url="{{../url}}" data-id="{{this}}" class="planet" data-long-press-delay="500">
+				<a href="{{../url}}{{this}}" url="{{../url}}" data-id="{{this}}" class="planet" data-long-press-delay="300">
 					<span class="is-hidden">Click here to go to this orbit</span>
 				</a>
 			</div>
