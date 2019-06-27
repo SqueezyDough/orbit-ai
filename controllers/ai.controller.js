@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
-const schema = require("../models/ai.model").AiSchema;
+const Ai = require("../models/ai.model").AiSchema;
+const AiSchema = require("../models/ai.model");
 const moment = require("moment");
 const orbit = require("../controllers/orbit.controller");
 const utils = require("./utils/utils.controller");
+const sync = require("./sync.controller");
 
 require("dotenv").config();
 
@@ -10,13 +12,14 @@ require("dotenv").config();
 exports.ai_newSync = function (req, res) {
 	res.render("pages/sync-module", {
 		title: "Sync new module",
+		isSynced : req.isAuthenticated()
 	});
 };
 
 // create
 exports.ai_create = function (req, res) {
 	// construct model
-	let AiSchema = mongoose.model("Ai", schema);
+	let AiSchema = mongoose.model("Ai", Ai);
 
 	// format date so db is happy
 	let formatDate = moment(req.body.constructionDate, "DD-MM-YYYY").format("YYYY-MM-DD");
@@ -48,18 +51,30 @@ exports.ai_create = function (req, res) {
 	});
 };
 
+exports.ai_delete = function (req, res) {
+	// find and delete user
+	AiSchema.deleteOne({ _id: req.session.passport.user }, function (err) {
+		if (err) return console.log(err);
+
+	// destroy session and redirect to /
+	}).then( () => {
+		sync.unSync(req, res);
+	});
+};
+
 // update account
 exports.ai_update = function (req, res) {
 	utils.findAi(req.session.passport.user).then(function (ai) {
 		res.render("pages/update", {
 			title: `${process.env.APP_NAME} - Update my AI"`,
-			ai: ai
+			ai: ai,
+			isSynced : req.isAuthenticated()
 		});
 	});
 };
 
 exports.ai_onUpdate = function (req, res) {
-	let AiSchema = mongoose.model("Ai", schema);
+	let AiSchema = mongoose.model("Ai", Ai);
 	utils.findAi(req.session.passport.user).then(function (ai) {
 		AiSchema.findOneAndUpdate({
 			serialNr: ai.serialNr
@@ -73,8 +88,8 @@ exports.ai_onUpdate = function (req, res) {
 			}
 		}).then(function () {
 			res.redirect("account");
-        },
-        err => { console.log(err); });
+		},
+		err => { console.log(err); });
 	});
 };
 
@@ -94,10 +109,18 @@ exports.ai_overview = function (req, res) {
 						// create a new obj for the connection
 						let orbit = {};
 
-						// add the name and id as properties
 						orbit.id = _orbit._id;
-						orbit.ownerName = owner.instanceName;
 
+						// check if ai is still there
+						if (owner === null) {
+							// add the name and id as properties
+							// add the name and id as properties
+							orbit.ownerName = "Abandoned orbit";
+
+						} else {
+							// add the name and id as properties
+							orbit.ownerName = owner.instanceName;
+						}
 						// add the obj to the array
 						connections.push(orbit);
 					}

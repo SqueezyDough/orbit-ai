@@ -29,12 +29,20 @@ orbitController.explore = function(req, res) {
 					connected = true;
 				}
 
+				let title;
+
+				// check if ai is still there
+				if (ai === null) {
+					title = "Abandoned orbit";
+				} else {
+					title = `${process.env.APP_NAME} - ${ai.serialNr}'s Orbit`;
+				}
+
 				res.render("pages/explore", {
-					title : `${process.env.APP_NAME} - ${ai.serialNr}'s Orbit`,
+					title : title,
 					ai : ai,
 					url : "",
 					orbit : orbit,
-					abilities : ai.properties.abilities,
 					planets : orbit.planets,
 					connected : connected,
 					isSynced: req.isAuthenticated()
