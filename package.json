@@ -43,7 +43,7 @@
     "passport-local-mongoose": "^5.0.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.27.10",
     "eslint": "^5.16.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
